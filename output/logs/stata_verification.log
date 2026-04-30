@@ -1,0 +1,184 @@
+-------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  C:\Users\nuobe\Desktop\Apps\Contoller OS\uzbekistan_thesis\output/
+> logs/stata_verification.log
+  log type:  text
+ opened on:  30 Apr 2026, 18:32:03
+
+. 
+. /* Import processed data from R */
+. import delimited "data/processed/wb_indicators.csv", clear
+(encoding automatically selected: ISO-8859-2)
+(21 vars, 70 obs)
+
+. 
+. /* -------------------------------------------------------
+>    VERIFY: Structural break test (Uzbekistan only)
+>    ------------------------------------------------------- */
+. keep if country_code == "UZB"
+(56 observations deleted)
+
+. xtset year
+
+Panel variable: year (balanced)
+
+. 
+. /* Trend regression with reform dummy */
+. gen post_reform = (year >= 2017)
+
+. gen time_trend  = year - 2010
+
+. gen interaction = post_reform * time_trend
+
+. 
+. reg manuf_va_gdp time_trend post_reform interaction
+
+      Source |       SS           df       MS      Number of obs   =        14
+-------------+----------------------------------   F(3, 10)        =     89.03
+       Model |  163.622533         3  54.5408445   Prob > F        =    0.0000
+    Residual |  6.12641076        10  .612641076   R-squared       =    0.9639
+-------------+----------------------------------   Adj R-squared   =    0.9531
+       Total |  169.748944        13  13.0576111   Root MSE        =    .78271
+
+------------------------------------------------------------------------------
+manuf_va_gdp | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+  time_trend |   .6321572    .147919     4.27   0.002     .3025731    .9617414
+ post_reform |  -.4746912   1.599989    -0.30   0.773    -4.039689    3.090306
+ interaction |   .2193806   .2091891     1.05   0.319    -.2467218    .6854829
+       _cons |   9.778952   .5333296    18.34   0.000     8.590619    10.96728
+------------------------------------------------------------------------------
+
+. estimates store model_full
+
+. 
+. /* Test coefficient on interaction term */
+. /* Significant positive = manufacturing increasing post-reform */
+. test interaction
+
+ ( 1)  interaction = 0
+
+       F(  1,    10) =    1.10
+            Prob > F =    0.3190
+
+. 
+. /* -------------------------------------------------------
+>    VERIFY: FDI composition shift
+>    ------------------------------------------------------- */
+. reg fdi_gdp time_trend post_reform interaction
+
+      Source |       SS           df       MS      Number of obs   =        14
+-------------+----------------------------------   F(3, 10)        =      2.02
+       Model |  4.15800217         3  1.38600072   Prob > F        =    0.1753
+    Residual |  6.86625325        10  .686625325   R-squared       =    0.3772
+-------------+----------------------------------   Adj R-squared   =    0.1903
+       Total |  11.0242554        13  .848019648   Root MSE        =    .82863
+
+------------------------------------------------------------------------------
+     fdi_gdp | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+  time_trend |  -.2602021   .1565961    -1.66   0.128    -.6091199    .0887157
+ post_reform |  -.6552502   1.693846    -0.39   0.707    -4.429373    3.118873
+ interaction |   .3258869   .2214603     1.47   0.172    -.1675574    .8193312
+       _cons |   2.525026   .5646152     4.47   0.001     1.266985    3.783067
+------------------------------------------------------------------------------
+
+. estimates store model_fdi
+
+. 
+. /* -------------------------------------------------------
+>    OUTPUT TABLE
+>    ------------------------------------------------------- */
+. estimates restore model_full
+(results model_full are active now)
+
+. local manuf_time_b = _b[time_trend]
+
+. local manuf_time_se = _se[time_trend]
+
+. local manuf_post_b = _b[post_reform]
+
+. local manuf_post_se = _se[post_reform]
+
+. local manuf_int_b = _b[interaction]
+
+. local manuf_int_se = _se[interaction]
+
+. local manuf_cons_b = _b[_cons]
+
+. local manuf_cons_se = _se[_cons]
+
+. local manuf_n = e(N)
+
+. local manuf_r2 = e(r2)
+
+. 
+. estimates restore model_fdi
+(results model_fdi are active now)
+
+. local fdi_time_b = _b[time_trend]
+
+. local fdi_time_se = _se[time_trend]
+
+. local fdi_post_b = _b[post_reform]
+
+. local fdi_post_se = _se[post_reform]
+
+. local fdi_int_b = _b[interaction]
+
+. local fdi_int_se = _se[interaction]
+
+. local fdi_cons_b = _b[_cons]
+
+. local fdi_cons_se = _se[_cons]
+
+. local fdi_n = e(N)
+
+. local fdi_r2 = e(r2)
+
+. 
+. file open tbl using "output/tables/stata_verification_table.rtf", write repla
+> ce
+
+. file write tbl "{\rtf1\ansi" _n
+
+. file write tbl "\b Table: Stata Verification of R Results\b0\par" _n
+
+. file write tbl "Coefficient (standard error)\par" _n
+
+. file write tbl "\par" _n
+
+. file write tbl "Variable\tab Manufacturing VA\tab FDI GDP\par" _n
+
+. file write tbl "Time trend\tab " %9.4f (`manuf_time_b') " (" %9.4f (`manuf_ti
+> me_se') ")\tab " %9.4f (`fdi_time_b') " (" %9.4f (`fdi_time_se') ")\par" _n
+
+. file write tbl "Post reform\tab " %9.4f (`manuf_post_b') " (" %9.4f (`manuf_p
+> ost_se') ")\tab " %9.4f (`fdi_post_b') " (" %9.4f (`fdi_post_se') ")\par" _n
+
+. file write tbl "Interaction\tab " %9.4f (`manuf_int_b') " (" %9.4f (`manuf_in
+> t_se') ")\tab " %9.4f (`fdi_int_b') " (" %9.4f (`fdi_int_se') ")\par" _n
+
+. file write tbl "Constant\tab " %9.4f (`manuf_cons_b') " (" %9.4f (`manuf_cons
+> _se') ")\tab " %9.4f (`fdi_cons_b') " (" %9.4f (`fdi_cons_se') ")\par" _n
+
+. file write tbl "\par" _n
+
+. file write tbl "Observations\tab " %9.0f (`manuf_n') "\tab " %9.0f (`fdi_n') 
+> "\par" _n
+
+. file write tbl "R-squared\tab " %9.4f (`manuf_r2') "\tab " %9.4f (`fdi_r2') "
+> \par" _n
+
+. file write tbl "}" _n
+
+. file close tbl
+
+. 
+. log close
+      name:  <unnamed>
+       log:  C:\Users\nuobe\Desktop\Apps\Contoller OS\uzbekistan_thesis\output/
+> logs/stata_verification.log
+  log type:  text
+ closed on:  30 Apr 2026, 18:32:05
+-------------------------------------------------------------------------------

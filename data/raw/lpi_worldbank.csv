@@ -1,0 +1,29 @@
+country_code,country,year,indicator_code,indicator,value,source_url
+UZB,Uzbekistan,2010,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2.79,https://api.worldbank.org/v2/country/UZB/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2011,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),,https://api.worldbank.org/v2/country/UZB/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2012,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2.46,https://api.worldbank.org/v2/country/UZB/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2013,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),,https://api.worldbank.org/v2/country/UZB/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2014,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2.39477,https://api.worldbank.org/v2/country/UZB/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2015,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),,https://api.worldbank.org/v2/country/UZB/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2016,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2.404525,https://api.worldbank.org/v2/country/UZB/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2017,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),,https://api.worldbank.org/v2/country/UZB/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2018,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2.58,https://api.worldbank.org/v2/country/UZB/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2019,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),,https://api.worldbank.org/v2/country/UZB/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2020,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),,https://api.worldbank.org/v2/country/UZB/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2021,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),,https://api.worldbank.org/v2/country/UZB/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2022,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2.6,https://api.worldbank.org/v2/country/UZB/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2023,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),,https://api.worldbank.org/v2/country/UZB/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2010,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2.96,https://api.worldbank.org/v2/country/VNM/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2011,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),,https://api.worldbank.org/v2/country/VNM/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2012,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),3,https://api.worldbank.org/v2/country/VNM/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2013,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),,https://api.worldbank.org/v2/country/VNM/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2014,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),3.154763,https://api.worldbank.org/v2/country/VNM/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2015,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),,https://api.worldbank.org/v2/country/VNM/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2016,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2.976629,https://api.worldbank.org/v2/country/VNM/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2017,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),,https://api.worldbank.org/v2/country/VNM/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2018,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),3.27,https://api.worldbank.org/v2/country/VNM/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2019,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),,https://api.worldbank.org/v2/country/VNM/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2020,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),,https://api.worldbank.org/v2/country/VNM/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2021,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),,https://api.worldbank.org/v2/country/VNM/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2022,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),3.3,https://api.worldbank.org/v2/country/VNM/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2023,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),,https://api.worldbank.org/v2/country/VNM/indicator/LP.LPI.OVRL.XQ?format=json&date=2010:2023&per_page=20000

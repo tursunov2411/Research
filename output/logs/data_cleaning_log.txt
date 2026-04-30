@@ -1,0 +1,10 @@
+DATA CLEANING LOG
+Date: 2026-04-30 
+
+World Bank: 70 observations
+Uzbek FDI: 210 observations
+Comtrade/BACI exports: 291 observations
+ECI data: 28 observations
+
+Raw files preserved unmodified in data/raw/.
+See data/raw/source_manifest.csv for source caveats.

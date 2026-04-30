@@ -1,0 +1,57 @@
+country_code,country,year,indicator_code,indicator,value,source_url
+UZB,Uzbekistan,2010,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",10.1811359695823,https://api.worldbank.org/v2/country/UZB/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2011,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",10.2450890019411,https://api.worldbank.org/v2/country/UZB/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2012,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",10.5353690643513,https://api.worldbank.org/v2/country/UZB/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2013,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",11.6145232608903,https://api.worldbank.org/v2/country/UZB/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2014,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",12.6883574975987,https://api.worldbank.org/v2/country/UZB/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2015,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",12.8094689336525,https://api.worldbank.org/v2/country/UZB/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2016,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",13.6540206285506,https://api.worldbank.org/v2/country/UZB/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2017,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",14.0025699748323,https://api.worldbank.org/v2/country/UZB/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2018,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",16.1531607468822,https://api.worldbank.org/v2/country/UZB/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2019,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",17.547885761433,https://api.worldbank.org/v2/country/UZB/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2020,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",19.1278574156415,https://api.worldbank.org/v2/country/UZB/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2021,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",19.470717302152,https://api.worldbank.org/v2/country/UZB/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2022,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",19.0715817765466,https://api.worldbank.org/v2/country/UZB/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2023,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",19.3636989151573,https://api.worldbank.org/v2/country/UZB/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2010,NY.GDP.MKTP.CD,GDP (current US$),49765676402.4495,https://api.worldbank.org/v2/country/UZB/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2011,NY.GDP.MKTP.CD,GDP (current US$),60178909297.208,https://api.worldbank.org/v2/country/UZB/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2012,NY.GDP.MKTP.CD,GDP (current US$),67517349212.0609,https://api.worldbank.org/v2/country/UZB/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2013,NY.GDP.MKTP.CD,GDP (current US$),73180037914.9104,https://api.worldbank.org/v2/country/UZB/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2014,NY.GDP.MKTP.CD,GDP (current US$),80845385809.4529,https://api.worldbank.org/v2/country/UZB/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2015,NY.GDP.MKTP.CD,GDP (current US$),86196264755.3105,https://api.worldbank.org/v2/country/UZB/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2016,NY.GDP.MKTP.CD,GDP (current US$),86138288644.171,https://api.worldbank.org/v2/country/UZB/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2017,NY.GDP.MKTP.CD,GDP (current US$),69703222282.7278,https://api.worldbank.org/v2/country/UZB/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2018,NY.GDP.MKTP.CD,GDP (current US$),58695899092.1083,https://api.worldbank.org/v2/country/UZB/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2019,NY.GDP.MKTP.CD,GDP (current US$),67293639798.3996,https://api.worldbank.org/v2/country/UZB/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2020,NY.GDP.MKTP.CD,GDP (current US$),66443265418.3086,https://api.worldbank.org/v2/country/UZB/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2021,NY.GDP.MKTP.CD,GDP (current US$),77340060003.0347,https://api.worldbank.org/v2/country/UZB/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2022,NY.GDP.MKTP.CD,GDP (current US$),90095926567.4359,https://api.worldbank.org/v2/country/UZB/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+UZB,Uzbekistan,2023,NY.GDP.MKTP.CD,GDP (current US$),102641879248.764,https://api.worldbank.org/v2/country/UZB/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2010,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",17.1305705708367,https://api.worldbank.org/v2/country/VNM/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2011,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",18.694145538196,https://api.worldbank.org/v2/country/VNM/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2012,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",20.2740924828827,https://api.worldbank.org/v2/country/VNM/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2013,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",20.6874536915425,https://api.worldbank.org/v2/country/VNM/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2014,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",20.371229229791,https://api.worldbank.org/v2/country/VNM/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2015,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",20.9600916821922,https://api.worldbank.org/v2/country/VNM/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2016,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",21.4882532002034,https://api.worldbank.org/v2/country/VNM/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2017,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",22.6271239749306,https://api.worldbank.org/v2/country/VNM/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2018,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",23.3671679233065,https://api.worldbank.org/v2/country/VNM/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2019,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",23.7867165015145,https://api.worldbank.org/v2/country/VNM/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2020,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",23.9472430412931,https://api.worldbank.org/v2/country/VNM/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2021,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",24.4593726835115,https://api.worldbank.org/v2/country/VNM/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2022,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",24.7772286923041,https://api.worldbank.org/v2/country/VNM/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2023,NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)",24.179672453009,https://api.worldbank.org/v2/country/VNM/indicator/NV.IND.MANF.ZS?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2010,NY.GDP.MKTP.CD,GDP (current US$),147201173196.979,https://api.worldbank.org/v2/country/VNM/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2011,NY.GDP.MKTP.CD,GDP (current US$),172595049183.925,https://api.worldbank.org/v2/country/VNM/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2012,NY.GDP.MKTP.CD,GDP (current US$),195590661129.249,https://api.worldbank.org/v2/country/VNM/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2013,NY.GDP.MKTP.CD,GDP (current US$),213708811665.34,https://api.worldbank.org/v2/country/VNM/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2014,NY.GDP.MKTP.CD,GDP (current US$),233451469642.519,https://api.worldbank.org/v2/country/VNM/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2015,NY.GDP.MKTP.CD,GDP (current US$),239258328381.741,https://api.worldbank.org/v2/country/VNM/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2016,NY.GDP.MKTP.CD,GDP (current US$),257096001177.982,https://api.worldbank.org/v2/country/VNM/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2017,NY.GDP.MKTP.CD,GDP (current US$),281353605986.903,https://api.worldbank.org/v2/country/VNM/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2018,NY.GDP.MKTP.CD,GDP (current US$),310106478394.659,https://api.worldbank.org/v2/country/VNM/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2019,NY.GDP.MKTP.CD,GDP (current US$),334365270496.667,https://api.worldbank.org/v2/country/VNM/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2020,NY.GDP.MKTP.CD,GDP (current US$),346615738537.796,https://api.worldbank.org/v2/country/VNM/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2021,NY.GDP.MKTP.CD,GDP (current US$),366474752771.009,https://api.worldbank.org/v2/country/VNM/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2022,NY.GDP.MKTP.CD,GDP (current US$),413445230668.578,https://api.worldbank.org/v2/country/VNM/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000
+VNM,Viet Nam,2023,NY.GDP.MKTP.CD,GDP (current US$),433857681378.291,https://api.worldbank.org/v2/country/VNM/indicator/NY.GDP.MKTP.CD?format=json&date=2010:2023&per_page=20000

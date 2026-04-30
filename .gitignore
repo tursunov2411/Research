@@ -1,0 +1,8 @@
+.Rhistory
+.RData
+.Ruserdata/
+
+*.Rproj.user/
+
+output/logs/*.tmp
+verification.log

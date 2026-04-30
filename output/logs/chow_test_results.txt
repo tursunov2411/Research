@@ -1,0 +1,81 @@
+STRUCTURAL BREAK ANALYSIS - UZBEKISTAN 2017 REFORMS
+
+Pre-reform model:
+
+Call:
+lm(formula = manuf_va_gdp ~ time_trend, data = filter(uzb_ts, 
+    year < 2017))
+
+Residuals:
+      1       2       3       4       5       6       7 
+ 0.4022 -0.1660 -0.5079 -0.0609  0.3808 -0.1303  0.0821 
+attr(,"label")
+[1] "Manufacturing, value added (% of GDP)"
+
+Coefficients:
+            Estimate Std. Error t value   Pr(>|t|)    
+(Intercept)   9.7790     0.2399    40.8 0.00000017 ***
+time_trend    0.6322     0.0665     9.5    0.00022 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.352 on 5 degrees of freedom
+Multiple R-squared:  0.948,	Adjusted R-squared:  0.937 
+F-statistic: 90.3 on 1 and 5 DF,  p-value: 0.000218
+
+
+Post-reform model:
+
+Call:
+lm(formula = manuf_va_gdp ~ time_trend, data = filter(uzb_ts, 
+    year >= 2017))
+
+Residuals:
+      1       2       3       4       5       6       7 
+-1.2625  0.0366  0.5798  1.3082  0.7995 -0.4511 -1.0106 
+attr(,"label")
+[1] "Manufacturing, value added (% of GDP)"
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept)    9.304      2.023    4.60   0.0058 **
+time_trend     0.852      0.198    4.29   0.0078 **
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 1.05 on 5 degrees of freedom
+Multiple R-squared:  0.787,	Adjusted R-squared:  0.744 
+F-statistic: 18.4 on 1 and 5 DF,  p-value: 0.00776
+
+
+Full model:
+
+Call:
+lm(formula = manuf_va_gdp ~ time_trend + post_reform + interaction, 
+    data = uzb_ts)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.2625 -0.3799 -0.0122  0.3968  1.3082 
+
+Coefficients:
+            Estimate Std. Error t value    Pr(>|t|)    
+(Intercept)    9.779      0.533   18.34 0.000000005 ***
+time_trend     0.632      0.148    4.27      0.0016 ** 
+post_reform   -0.475      1.600   -0.30      0.7728    
+interaction    0.219      0.209    1.05      0.3190    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.783 on 10 degrees of freedom
+Multiple R-squared:  0.964,	Adjusted R-squared:  0.953 
+F-statistic:   89 on 3 and 10 DF,  p-value: 0.000000163
+
+
+Chow test:
+
+	Chow test
+
+data:  manuf_va_gdp ~ time_trend
+F = 6.9, p-value = 0.01
+
