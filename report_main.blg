@@ -3,122 +3,57 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: report_main.aux
 Reallocating 'name_of_file' (item size: 1) to 5 items.
 The style file: agsm.bst
-Reallocating 'name_of_file' (item size: 1) to 11 items.
-Reallocating 'name_of_file' (item size: 1) to 20 items.
-Database file #1: references.bib
-Repeated entry---line 493 of file references.bib
- : @book{bhaskar1975
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 509 of file references.bib
- : @book{danermark2019
- :                    ,
-I'm skipping whatever remains of this entry
-Database file #2: references_expanded.bib
-Repeated entry---line 2627 of file references_expanded.bib
- : @book{amsden1989
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2643 of file references_expanded.bib
- : @book{wade1990
- :               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2659 of file references_expanded.bib
- : @book{evans1995
- :                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2675 of file references_expanded.bib
- : @article{rodrik2016
- :                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2695 of file references_expanded.bib
- : @article{humphrey2002
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2715 of file references_expanded.bib
- : @book{dunning1981
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2731 of file references_expanded.bib
- : @book{baldwin2016
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2747 of file references_expanded.bib
- : @article{diao2019
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2765 of file references_expanded.bib
- : @article{mcmillan2017
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2779 of file references_expanded.bib
- : @article{sturgeon2008
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2799 of file references_expanded.bib
- : @incollection{gereffi1994
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2821 of file references_expanded.bib
- : @article{arvis2016
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2837 of file references_expanded.bib
- : @article{carrere2004
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2857 of file references_expanded.bib
- : @article{andreoni2023
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2877 of file references_expanded.bib
- : @book{bhaskar1975
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2893 of file references_expanded.bib
- : @book{danermark2019
- :                    ,
-I'm skipping whatever remains of this entry
+Reallocating 'name_of_file' (item size: 1) to 19 items.
+Database file #1: references_cleaned.bib
+Warning--I didn't find a database entry for "gereffi2005"
+Warning--I didn't find a database entry for "milberg2013"
+Warning--I didn't find a database entry for "chang2002"
+Warning--I didn't find a database entry for "limao2001"
+Warning--I didn't find a database entry for "akamatsu1962"
+Warning--I didn't find a database entry for "hidalgo2009"
+Warning--I didn't find a database entry for "balassa1965"
+Warning--I didn't find a database entry for "mackinnon1985"
+Warning--I didn't find a database entry for "farole2011"
 Warning--there's a number but no volume in arvis2016
-You've used 26 entries,
+You've used 17 entries,
             2909 wiz_defined-function locations,
-            804 strings with 8563 characters,
-and the built_in function-call counts, 83589 in all, are:
-= -- 13382
-> -- 1068
+            754 strings with 7360 characters,
+and the built_in function-call counts, 54502 in all, are:
+= -- 8710
+> -- 714
 < -- 0
-+ -- 6204
-- -- 317
-* -- 6994
-:= -- 17221
-add.period$ -- 27
-call.type$ -- 26
-change.case$ -- 354
-chr.to.int$ -- 26
-cite$ -- 27
-duplicate$ -- 425
-empty$ -- 853
-format.name$ -- 403
-if$ -- 14945
++ -- 4046
+- -- 212
+* -- 4543
+:= -- 11249
+add.period$ -- 18
+call.type$ -- 17
+change.case$ -- 232
+chr.to.int$ -- 17
+cite$ -- 18
+duplicate$ -- 281
+empty$ -- 551
+format.name$ -- 263
+if$ -- 9748
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 35
-newline$ -- 82
-num.names$ -- 268
-pop$ -- 145
+missing$ -- 23
+newline$ -- 56
+num.names$ -- 177
+pop$ -- 97
 preamble$ -- 1
-purify$ -- 390
+purify$ -- 255
 quote$ -- 0
-skip$ -- 321
+skip$ -- 214
 stack$ -- 0
-substring$ -- 18649
-swap$ -- 64
-text.length$ -- 364
+substring$ -- 12117
+swap$ -- 43
+text.length$ -- 238
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 84
+type$ -- 54
 warning$ -- 1
-while$ -- 574
+while$ -- 373
 width$ -- 0
-write$ -- 334
-(There were 18 error messages)
+write$ -- 229
+(There were 10 warnings)
