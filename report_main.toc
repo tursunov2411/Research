@@ -1,78 +1,82 @@
-\contentsline {section}{\numberline {1}Introduction}{6}{section.1}%
-\contentsline {section}{\numberline {2}Literature Review: Re-evaluating GVCs, the State, and Structural Transformation}{7}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Global Value Chains: Governance, Upgrading, and Contemporary Reconfigurations}{8}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}The Developmental State and the Rebirth of Industrial Policy}{9}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}The Flying Geese Paradigm and South-South Cooperation}{10}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Comparative Development Benchmarks: Vietnam and Thailand}{10}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Central Asian Structural Constraints and Landlocked Theory}{11}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Technology Transfer and FDI Spillovers}{11}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}Synthesis: Economic Complexity and Upgrading}{12}{subsection.2.7}%
-\contentsline {section}{\numberline {3}Data and Methodology}{12}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Data Sources}{12}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Structural Break Analysis}{13}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Regression Analysis}{14}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Scenario Forecasting}{14}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Research Design and Methodology}{15}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Research Philosophy and Ontological Position}{15}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Research Design: Sequential Explanatory Mixed-Methods}{16}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Variable Operationalisation}{16}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Data Sources and API Endpoints}{18}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Empirical Models}{19}{subsection.4.5}%
-\contentsline {subsubsection}{\numberline {4.5.1}Chow Structural Break Test}{19}{subsubsection.4.5.1}%
-\contentsline {subsubsection}{\numberline {4.5.2}OLS Regression: Manufacturing Value Added}{19}{subsubsection.4.5.2}%
-\contentsline {subsubsection}{\numberline {4.5.3}OLS Regression: Economic Complexity}{20}{subsubsection.4.5.3}%
-\contentsline {subsubsection}{\numberline {4.5.4}Scenario Forecasting}{20}{subsubsection.4.5.4}%
-\contentsline {subsection}{\numberline {4.6}Scope, Limitations, and Robustness}{20}{subsection.4.6}%
-\contentsline {section}{\numberline {5}Structural Break Analysis: The 2017 Reform as a Manufacturing Turning Point}{21}{section.5}%
-\contentsline {section}{\numberline {6}Revealed Comparative Advantage: Export Sophistication and Its Limits}{23}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Overall RCA Structure}{23}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Manufacturing-Sector RCA Dynamics}{24}{subsection.6.2}%
-\contentsline {section}{\numberline {7}Northeast Asian Trade and FDI Flows}{26}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Bilateral Trade Dynamics}{26}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Intermediate Goods Composition}{27}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}FDI Origin Structure}{28}{subsection.7.3}%
-\contentsline {section}{\numberline {8}Trade Network Analysis: Value-Chain Positioning}{29}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Value-Chain Positioning Map}{29}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Intermediate Goods Dependence by Partner}{30}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Export Composition: Structural Change 2010--2023}{31}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Re-export Potential Through Central Asian Corridors}{32}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}GVC Positioning: Backward and Forward Integration}{33}{subsection.8.5}%
-\contentsline {section}{\numberline {9}Comparative Trajectory: Uzbekistan and Vietnam}{35}{section.9}%
-\contentsline {section}{\numberline {10}Thailand Comparative Benchmarking: The Eastern Seaboard Model}{37}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Rationale for the Thailand Comparator}{37}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Thailand's Industrialisation Pathway}{37}{subsection.10.2}%
-\contentsline {subsection}{\numberline {10.3}Comparative Benchmarking: Thailand, Vietnam, and Uzbekistan}{38}{subsection.10.3}%
-\contentsline {subsection}{\numberline {10.4}The Automotive Sector Parallel}{40}{subsection.10.4}%
-\contentsline {section}{\numberline {11}Institutional Readiness for GVC Integration}{41}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Analytical Framework: Institutions as GVC Entry Conditions}{41}{subsection.11.1}%
-\contentsline {subsection}{\numberline {11.2}World Governance Indicators: Uzbekistan in Comparative Perspective}{42}{subsection.11.2}%
-\contentsline {subsection}{\numberline {11.3}Regulatory Quality: Investment Climate Dimensions}{43}{subsection.11.3}%
-\contentsline {subsection}{\numberline {11.4}Investment Treaty Architecture}{44}{subsection.11.4}%
-\contentsline {subsection}{\numberline {11.5}Human Capital: The Skill Supply Constraint}{45}{subsection.11.5}%
-\contentsline {subsection}{\numberline {11.6}Synthesis: The Institutional Gap Score}{46}{subsection.11.6}%
-\contentsline {section}{\numberline {12}Special Economic Zone Effectiveness}{48}{section.12}%
-\contentsline {subsection}{\numberline {12.1}The Theoretical Role of SEZs in GVC Embedding}{48}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}Uzbekistan's SEZ Landscape}{48}{subsection.12.2}%
-\contentsline {subsection}{\numberline {12.3}SEZ Incentive Structure}{50}{subsection.12.3}%
-\contentsline {subsection}{\numberline {12.4}The Navoiy Model: Aviation Logistics as a Landlocked GVC Solution}{51}{subsection.12.4}%
-\contentsline {subsection}{\numberline {12.5}SEZ Performance Assessment: A Comparative Scorecard}{51}{subsection.12.5}%
-\contentsline {section}{\numberline {13}Structural Constraints on GVC Integration}{53}{section.13}%
-\contentsline {subsection}{\numberline {13.1}A Framework for Constraint Analysis}{53}{subsection.13.1}%
-\contentsline {subsection}{\numberline {13.2}Constraint 1: Landlockedness and Transit Costs}{53}{subsection.13.2}%
-\contentsline {subsection}{\numberline {13.3}Constraint 2: Energy and Utility Infrastructure}{55}{subsection.13.3}%
-\contentsline {subsection}{\numberline {13.4}Constraint 3: Financial Sector Depth and Trade Finance}{56}{subsection.13.4}%
-\contentsline {subsection}{\numberline {13.5}Constraint 4: Political Economy of Reform Continuity}{56}{subsection.13.5}%
-\contentsline {subsection}{\numberline {13.6}Constraint Hierarchy and the Binding Constraint}{57}{subsection.13.6}%
-\contentsline {section}{\numberline {14}Regression Analysis}{59}{section.14}%
-\contentsline {section}{\numberline {15}Scenario Forecasts: Manufacturing Value Added through 2030}{61}{section.15}%
-\contentsline {section}{\numberline {16}Mechanisms: Trade Openness, ECI, and the Complexity Trajectory}{62}{section.16}%
-\contentsline {section}{\numberline {17}Discussion: Synthesis, Theory Revisited, and the Road Not Taken}{64}{section.17}%
-\contentsline {subsection}{\numberline {17.1}Revisiting the Central Research Question}{64}{subsection.17.1}%
-\contentsline {subsection}{\numberline {17.2}The Flying Geese Mechanism: Operating But Distorted}{65}{subsection.17.2}%
-\contentsline {subsection}{\numberline {17.3}The Vietnam Comparison: What Uzbekistan Has and Has Not Replicated}{66}{subsection.17.3}%
-\contentsline {subsection}{\numberline {17.4}The Thailand Comparison: Sectoral Targeting over Spatial Concentration}{67}{subsection.17.4}%
-\contentsline {subsection}{\numberline {17.5}WTO Accession as Institutional Lock-In: The Vietnam Parallel}{68}{subsection.17.5}%
-\contentsline {subsection}{\numberline {17.6}The Limits of This Analysis}{68}{subsection.17.6}%
-\contentsline {section}{\numberline {18}Policy Implications}{69}{section.18}%
-\contentsline {section}{\numberline {19}Conclusion}{70}{section.19}%
-\contentsline {section}{\numberline {A}Additional Figures}{72}{appendix.1.A}%
+\contentsline {section}{\numberline {1}Introduction}{7}{section.1}%
+\contentsline {section}{\numberline {2}Literature Review: Re-evaluating GVCs, the State, and Structural Transformation}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Global Value Chains: Governance, Upgrading, and Contemporary Reconfigurations}{9}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}The Premature Deindustrialisation Counter-Thesis}{10}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}The Developmental State and the Rebirth of Industrial Policy}{10}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}The Flying Geese Paradigm and South-South Cooperation}{11}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Comparative Development Benchmarks: Vietnam and Thailand}{12}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Central Asian Structural Constraints and Landlocked Theory}{12}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Technology Transfer and FDI Spillovers}{13}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Synthesis: Economic Complexity and Upgrading}{13}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}Research Gap}{14}{subsection.2.9}%
+\contentsline {section}{\numberline {3}Data and Methodology}{14}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Data Sources}{14}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Structural Break Analysis}{15}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Regression Analysis}{16}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Scenario Forecasting}{16}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Research Design and Methodology}{17}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Research Philosophy and Ontological Position}{17}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Research Design: Sequential Explanatory Mixed-Methods}{18}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Variable Operationalisation}{18}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Data Sources and API Endpoints}{20}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Empirical Models}{21}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}Chow Structural Break Test}{21}{subsubsection.4.5.1}%
+\contentsline {subsubsection}{\numberline {4.5.2}OLS Regression: Manufacturing Value Added}{21}{subsubsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.3}OLS Regression: Economic Complexity}{22}{subsubsection.4.5.3}%
+\contentsline {subsubsection}{\numberline {4.5.4}Scenario Forecasting}{22}{subsubsection.4.5.4}%
+\contentsline {subsection}{\numberline {4.6}Scope, Limitations, and Robustness}{22}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Structural Break Analysis: The 2017 Reform as a Manufacturing Turning Point}{23}{section.5}%
+\contentsline {section}{\numberline {6}Revealed Comparative Advantage: Export Sophistication and Its Limits}{25}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Overall RCA Structure}{25}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Manufacturing-Sector RCA Dynamics}{26}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Northeast Asian Trade and FDI Flows}{28}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Bilateral Trade Dynamics}{28}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Intermediate Goods Composition}{29}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}FDI Origin Structure}{30}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Trade Network Analysis: Value-Chain Positioning}{31}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Value-Chain Positioning Map}{31}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Intermediate Goods Dependence by Partner}{32}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Export Composition: Structural Change 2010--2023}{33}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Re-export Potential Through Central Asian Corridors}{34}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}GVC Positioning: Backward and Forward Integration}{35}{subsection.8.5}%
+\contentsline {section}{\numberline {9}Comparative Trajectory: Uzbekistan and Vietnam}{37}{section.9}%
+\contentsline {section}{\numberline {10}Thailand Comparative Benchmarking: The Eastern Seaboard Model}{39}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Rationale for the Thailand Comparator}{39}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Thailand's Industrialisation Pathway}{39}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Comparative Benchmarking: Thailand, Vietnam, and Uzbekistan}{40}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}The Automotive Sector Parallel}{42}{subsection.10.4}%
+\contentsline {section}{\numberline {11}Institutional Readiness for GVC Integration}{43}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Analytical Framework: Institutions as GVC Entry Conditions}{43}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}World Governance Indicators: Uzbekistan in Comparative Perspective}{44}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Regulatory Quality: Investment Climate Dimensions}{45}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.4}Investment Treaty Architecture}{46}{subsection.11.4}%
+\contentsline {subsection}{\numberline {11.5}Human Capital: The Skill Supply Constraint}{47}{subsection.11.5}%
+\contentsline {subsection}{\numberline {11.6}Synthesis: The Institutional Gap Score}{48}{subsection.11.6}%
+\contentsline {section}{\numberline {12}Special Economic Zone Effectiveness}{50}{section.12}%
+\contentsline {subsection}{\numberline {12.1}The Theoretical Role of SEZs in GVC Embedding}{50}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Uzbekistan's SEZ Landscape}{50}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}SEZ Incentive Structure}{52}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}The Navoiy Model: Aviation Logistics as a Landlocked GVC Solution}{53}{subsection.12.4}%
+\contentsline {subsection}{\numberline {12.5}SEZ Performance Assessment: A Comparative Scorecard}{53}{subsection.12.5}%
+\contentsline {section}{\numberline {13}Structural Constraints on GVC Integration}{55}{section.13}%
+\contentsline {subsection}{\numberline {13.1}A Framework for Constraint Analysis}{55}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Constraint 1: Landlockedness and Transit Costs}{55}{subsection.13.2}%
+\contentsline {subsection}{\numberline {13.3}Constraint 2: Energy and Utility Infrastructure}{57}{subsection.13.3}%
+\contentsline {subsection}{\numberline {13.4}Constraint 3: Financial Sector Depth and Trade Finance}{58}{subsection.13.4}%
+\contentsline {subsection}{\numberline {13.5}Constraint 4: Political Economy of Reform Continuity}{58}{subsection.13.5}%
+\contentsline {subsection}{\numberline {13.6}Constraint Hierarchy and the Binding Constraint}{59}{subsection.13.6}%
+\contentsline {section}{\numberline {14}Regression Analysis}{61}{section.14}%
+\contentsline {section}{\numberline {15}Scenario Forecasts: Manufacturing Value Added through 2030}{63}{section.15}%
+\contentsline {section}{\numberline {16}Mechanisms: Trade Openness, ECI, and the Complexity Trajectory}{64}{section.16}%
+\contentsline {section}{\numberline {17}Discussion: Synthesis, Theory Revisited, and the Road Not Taken}{66}{section.17}%
+\contentsline {subsection}{\numberline {17.1}Revisiting the Central Research Question}{66}{subsection.17.1}%
+\contentsline {subsection}{\numberline {17.2}What the Regression Results Actually Say: The Mechanism Is Intermediate Goods, Not FDI Volume}{67}{subsection.17.2}%
+\contentsline {subsection}{\numberline {17.3}The Flying Geese Mechanism: Operating But Distorted}{68}{subsection.17.3}%
+\contentsline {subsection}{\numberline {17.4}The Vietnam Comparison: What Uzbekistan Has and Has Not Replicated}{69}{subsection.17.4}%
+\contentsline {subsection}{\numberline {17.5}The Thailand Comparison: Sectoral Targeting over Spatial Concentration}{70}{subsection.17.5}%
+\contentsline {subsection}{\numberline {17.6}WTO Accession as Institutional Lock-In: The Vietnam Parallel}{70}{subsection.17.6}%
+\contentsline {subsection}{\numberline {17.7}The Premature Deindustrialisation Counter-Thesis and Why It Does Not Foreclose the Uzbek Case}{71}{subsection.17.7}%
+\contentsline {subsection}{\numberline {17.8}The Limits of This Analysis}{72}{subsection.17.8}%
+\contentsline {section}{\numberline {18}Policy Implications}{73}{section.18}%
+\contentsline {section}{\numberline {19}Conclusion}{74}{section.19}%
+\contentsline {section}{\numberline {A}Additional Figures}{76}{appendix.1.A}%

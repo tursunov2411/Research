@@ -214,4 +214,44 @@ write_csv(scorecard, "output/tables/table_comparison_scorecard.csv")
 write_csv(comparison_data, "data/processed/comparative_reform_trajectory.csv")
 print(scorecard)
 
+# -------------------------------------------------------
+# ROBUSTNESS CHECK: PANEL REGRESSION (N=14 problem resolution)
+# Model: MfgVA_it = α_i + β1 FDI_it + β2 TradeOpen_it + β3 Post2017_it + ε_it
+# -------------------------------------------------------
+
+# Fetch trade openness and comparator data if missing
+panel_countries <- c("UZB", "VNM", "KAZ", "GEO", "RWA")
+panel_wdi <- WDI(
+  country = panel_countries,
+  indicator = c(
+    "NV.IND.MANF.ZS",       # manuf_va_gdp
+    "BX.KLT.DINV.WD.GD.ZS", # fdi_gdp
+    "NE.TRD.GNFS.ZS"        # trade_openness
+  ),
+  start = 2010,
+  end = 2023,
+  extra = TRUE
+) %>%
+  rename(
+    country_code = iso3c,
+    manuf_va_gdp = NV.IND.MANF.ZS,
+    fdi_gdp = BX.KLT.DINV.WD.GD.ZS,
+    trade_openness = NE.TRD.GNFS.ZS
+  ) %>%
+  mutate(post_2017 = ifelse(year >= 2017, 1, 0))
+
+# Fixed effects regression (using LSDV approach with country dummies)
+panel_model <- lm(manuf_va_gdp ~ fdi_gdp + trade_openness + post_2017 + factor(country_code), data = panel_wdi)
+
+# Save the model summary to output
+sink("output/tables/panel_robustness_summary.txt")
+cat("Panel Regression: Robustness Check for N=14 Problem\n")
+cat("Countries: UZB, VNM, KAZ, GEO, RWA\n")
+cat("Period: 2010-2023\n")
+cat("========================================================\n")
+print(summary(panel_model))
+sink()
+
+cat("Panel robustness check complete. Results saved to output/tables/panel_robustness_summary.txt\n")
+
 cat("Comparative analysis complete.\n")
