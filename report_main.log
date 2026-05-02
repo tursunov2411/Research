@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.2)  2 MAY 2026 18:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.2)  2 MAY 2026 19:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1141,27 +1141,37 @@ Underfull \hbox (badness 1048) in paragraph at lines 93--93
 rix: Sever-ity vs. Pol-icy
  []
 
-[55]) (output/tables/ols_regression.tex [56 <./figures/fig21_constraint_heatmap
-.png>]) [57]
-Overfull \hbox (4.35641pt too wide) in paragraph at lines 297--298
-[]\OT1/ptm/m/n/14.4 Lagged FDI (t-1) en-ters neg-a-tively but is sta-tis-ti-cal
-ly in-signif-i-cant ($\OML/ztmcm/m/it/14.4 ^^L \OT1/ztmcm/m/n/14.4 = \OMS/ztmcm
-/m/n/14.4 ^^@\OT1/ztmcm/m/n/14.4 0\OML/ztmcm/m/it/14.4 :\OT1/ztmcm/m/n/14.4 014
-$\OT1/ptm/m/n/14.4 ,
+[55]) (output/tables/ols_regression.tex
+
+LaTeX Warning: Reference `tab:panel_robustness' on page 56 undefined on input l
+ine 45.
+
+
+Overfull \hbox (1460.24138pt too wide) in paragraph at lines 7--47
+ [][] 
  []
+
+[56 <./figures/fig21_constraint_heatmap.png>]) [57]
+
+LaTeX Warning: Reference `fig:intermediate_goods_share' on page 58 undefined on
+ input line 299.
+
+
+LaTeX Warning: Reference `tab:panel_robustness' on page 58 undefined on input l
+ine 301.
 
 <figures/fig5_manufacturing_forecast.png, id=890, 794.97pt x 433.62pt>
 File: figures/fig5_manufacturing_forecast.png Graphic file (type png)
 <use figures/fig5_manufacturing_forecast.png>
 Package pdftex.def Info: figures/fig5_manufacturing_forecast.png  used on input
- line 312.
+ line 310.
 (pdftex.def)             Requested size: 422.52057pt x 230.47253pt.
 [58] [59 <./figures/fig5_manufacturing_forecast.png>]
 <figures/fig10_mechanism_trajectory.png, id=902, 686.565pt x 433.62pt>
 File: figures/fig10_mechanism_trajectory.png Graphic file (type png)
 <use figures/fig10_mechanism_trajectory.png>
 Package pdftex.def Info: figures/fig10_mechanism_trajectory.png  used on input 
-line 332.
+line 330.
 (pdftex.def)             Requested size: 399.05278pt x 252.0291pt.
  [60 <./figures/fig10_mechanism_trajectory.png>] [61] (chapters/ch_discussion.t
 ex
@@ -1205,18 +1215,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--31
  []
 
 
-Underfull \hbox (badness 1418) in paragraph at lines 31--31
-[]\OT1/ptm/m/n/14.4 Upgrading de-pends on
+Underfull \hbox (badness 1092) in paragraph at lines 31--31
+[]\OT1/ptm/m/n/14.4 Time trend sig-nif-i-cant ($\OML/ztmcm/m/it/14.4 ^^L \OT1/z
+tmcm/m/n/14.4 = 0\OML/ztmcm/m/it/14.4 :\OT1/ztmcm/m/n/14.4 72$\OT1/ptm/m/n/14.4
+ ,
+ []
+
+
+Underfull \hbox (badness 1436) in paragraph at lines 31--31
+\OML/ztmcm/m/it/14.4 p < \OT1/ztmcm/m/n/14.4 0\OML/ztmcm/m/it/14.4 :\OT1/ztmcm/
+m/n/14.4 01$\OT1/ptm/m/n/14.4 ); FDI and in-ter-me-di-ate
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 31--31
-\OT1/ptm/m/n/14.4 net-work em-bed-ding
+[]\OT1/ptm/m/n/14.4 Structural growth is
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 31--31
-\OT1/ptm/m/n/14.4 (com-po-nents) rather
+\OT1/ptm/m/n/14.4 trend-driven; causal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+\OT1/ptm/m/n/14.4 iden-ti-fi-ca-tion of NE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+\OT1/ptm/m/n/14.4 Asian mech-a-nisms
  []
 
 
@@ -1280,53 +1308,56 @@ Underfull \hbox (badness 7522) in paragraph at lines 31--31
  []
 
 [62] [63] [64]
-Overfull \hbox (3.53578pt too wide) in paragraph at lines 47--48
-\OT1/ptm/m/n/14.4 in-ter-me-di-ate goods trade re-la-tion-ships --- sup-plier d
-e-vel-op-ment pro-grammes, back-
- []
+
+LaTeX Warning: Reference `tab:panel_robustness' on page 65 undefined on input l
+ine 45.
+
+
+LaTeX Warning: Reference `fig:intermediate_goods_share' on page 65 undefined on
+ input line 47.
 
 [65]
-Overfull \hbox (0.64099pt too wide) in paragraph at lines 53--54
+Overfull \hbox (0.64099pt too wide) in paragraph at lines 55--56
 \OT1/ptm/m/n/14.4 wage ar-bi-trage. In-stead, Uzbek-istan is dis-pro-por-tion-a
 tely ab-sorb-ing infrastructure-
  []
 
 [66] [67]
-Overfull \hbox (3.06268pt too wide) in paragraph at lines 73--73
+Overfull \hbox (3.06268pt too wide) in paragraph at lines 75--75
 |[]\OT1/ptm/b/n/17.28 WTO Ac-ces-sion as In-sti-tu-tional Lock-In: The Viet-nam
  Par-
  []
 
 [68]
-Overfull \hbox (11.5138pt too wide) in paragraph at lines 77--77
+Overfull \hbox (11.5138pt too wide) in paragraph at lines 79--79
 |[]\OT1/ptm/b/n/17.28 The Pre-ma-ture Dein-dus-tri-al-i-sa-tion Counter-Thesis 
 and Why
  []
 
 [69]
-Overfull \hbox (4.18283pt too wide) in paragraph at lines 83--84
+Overfull \hbox (4.18283pt too wide) in paragraph at lines 85--86
 \OT1/ptm/m/n/14.4 sup-ply chain di-ver-si-fi-ca-tion and post-COVID re-silience
  re-con-fig-u-ra-tion --- is seized
  []
 
-) [70] [71] [72] [73]
-<figures/fig0_indicator_trends.png, id=981, 722.7pt x 433.62pt>
+[70]) [71] [72] [73]
+<figures/fig0_indicator_trends.png, id=986, 722.7pt x 433.62pt>
 File: figures/fig0_indicator_trends.png Graphic file (type png)
 <use figures/fig0_indicator_trends.png>
 Package pdftex.def Info: figures/fig0_indicator_trends.png  used on input line 
-386.
+384.
 (pdftex.def)             Requested size: 422.52057pt x 253.51118pt.
-<figures/fig6_scenario_dashboard.png, id=982, 1011.78pt x 397.485pt>
+<figures/fig6_scenario_dashboard.png, id=987, 1011.78pt x 397.485pt>
 File: figures/fig6_scenario_dashboard.png Graphic file (type png)
 <use figures/fig6_scenario_dashboard.png>
 Package pdftex.def Info: figures/fig6_scenario_dashboard.png  used on input lin
-e 392.
+e 390.
 (pdftex.def)             Requested size: 422.52057pt x 165.99033pt.
-<figures/fig11_growth_decomposition.png, id=983, 722.7pt x 433.62pt>
+<figures/fig11_growth_decomposition.png, id=988, 722.7pt x 433.62pt>
 File: figures/fig11_growth_decomposition.png Graphic file (type png)
 <use figures/fig11_growth_decomposition.png>
 Package pdftex.def Info: figures/fig11_growth_decomposition.png  used on input 
-line 399.
+line 397.
 (pdftex.def)             Requested size: 422.52057pt x 253.51118pt.
  [74 <./figures/fig0_indicator_trends.png> <./figures/fig6_scenario_dashboard.p
 ng>] [75 <./figures/fig11_growth_decomposition.png>]
@@ -1341,14 +1372,18 @@ uzbekistan/publication/uzbekistan-
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `report_main.out' has not changed.
-(rerunfilecheck)             Checksum: 84D974C054574FC7AB937DB336410967;22560.
+(rerunfilecheck)             Checksum: 63C4A48C7A0A5071267A1327B81BBCE6;22517.
  ) 
 Here is how much of TeX's memory you used:
- 14162 strings out of 467871
- 231762 string characters out of 5418377
+ 14164 strings out of 467871
+ 231814 string characters out of 5418377
  655769 words of memory out of 5000000
- 42562 multiletter control sequences out of 15000+600000
+ 42564 multiletter control sequences out of 15000+600000
  679352 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,13n,79p,1879b,619s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1363,9 +1398,9 @@ rams/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/nuobe/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/nuobe/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/nuobe/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report_main.pdf (78 pages, 4360006 bytes).
+Output written on report_main.pdf (78 pages, 4361702 bytes).
 PDF statistics:
- 1104 PDF objects out of 1200 (max. 8388607)
+ 1109 PDF objects out of 1200 (max. 8388607)
  238 named destinations out of 1000 (max. 500000)
  735 words of extra memory for PDF output out of 10000 (max. 10000000)
 

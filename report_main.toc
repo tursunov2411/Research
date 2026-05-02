@@ -65,11 +65,11 @@
 \contentsline {subsection}{\numberline {8.9}Mechanisms: Trade Openness, ECI, and the Complexity Trajectory}{60}{subsection.8.9}%
 \contentsline {section}{\numberline {9}Discussion: Synthesis, Theory Revisited, and the Road Not Taken}{62}{section.9}%
 \contentsline {subsection}{\numberline {9.1}Revisiting the Central Research Question}{62}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}What the Regression Results Actually Say: The Mechanism Is Intermediate Goods, Not FDI Volume}{65}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}The Flying Geese Mechanism: Operating But Distorted}{65}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.2}What the Regression Results Actually Say: Trend Growth, Not a Single Causal Mechanism}{65}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}The Flying Geese Mechanism: Operating But Distorted}{66}{subsection.9.3}%
 \contentsline {subsection}{\numberline {9.4}The Vietnam Comparison: What Uzbekistan Has and Has Not Replicated}{67}{subsection.9.4}%
 \contentsline {subsection}{\numberline {9.5}The Thailand Comparison: Sectoral Targeting over Spatial Concentration}{68}{subsection.9.5}%
-\contentsline {subsection}{\numberline {9.6}WTO Accession as Institutional Lock-In: The Vietnam Parallel}{68}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.6}WTO Accession as Institutional Lock-In: The Vietnam Parallel}{69}{subsection.9.6}%
 \contentsline {subsection}{\numberline {9.7}The Premature Deindustrialisation Counter-Thesis and Why It Does Not Foreclose the Uzbek Case}{69}{subsection.9.7}%
 \contentsline {subsection}{\numberline {9.8}The Limits of This Analysis}{70}{subsection.9.8}%
 \contentsline {section}{\numberline {10}Conclusion and Policy Implications}{71}{section.10}%
