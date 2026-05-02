@@ -48,7 +48,7 @@
 \newpage
 
 % ═══════════════════════════════════════════════════════════════════════════════
-\section{Introduction}
+\section{I BOB: Kirish (Introduction)}
 % ═══════════════════════════════════════════════════════════════════════════════
 
 Central Asia's largest economy by population, Uzbekistan spent much of its post-Soviet independence era under a model of state-directed, resource-dependent growth that deliberately limited foreign economic penetration. The death of Islam Karimov in 2016 and the subsequent accession of President Shavkat Mirziyoyev inaugurated one of the most rapid liberalisation episodes in the post-Soviet world: currency convertibility was restored in 2017, the foreign investment regime was overhauled, trade tariffs were reduced, and strategic industrial zones were established to attract export-oriented manufacturing \citep{world_bank_wdi}. These reforms did not occur in a vacuum. They coincided with --- and were partly designed to attract --- a wave of Northeast Asian capital and manufacturing relocation driven by structural pressures within China (rising labour costs, US-China trade tensions), Japan (ageing supply-chain networks seeking diversification), and South Korea ("China+1" strategies by conglomerates including Hyundai, LG, and Samsung).
@@ -64,7 +64,11 @@ The dissertation proceeds as follows. Section~2 reviews the theoretical literatu
 
 
 % ═══════════════════════════════════════════════════════════════════════════════
-\section{Data and Methodology}
+\section{II BOB: Adabiyotlar Sharhi (Literature Review)}
+\input{chapters/ch_literature_review}
+
+\section{III BOB: Metodologiya (Data and Methodology)}
+\subsection{Data and Methodology}
 % ═══════════════════════════════════════════════════════════════════════════════
 
 \subsection{Data Sources}
@@ -127,7 +131,8 @@ Three forward scenarios are constructed for manufacturing value added through 20
 \input{chapters/ch_advanced_methodology}
 
 % ═══════════════════════════════════════════════════════════════════════════════
-\section{Structural Break Analysis: The 2017 Reform as a Manufacturing Turning Point}
+\section{IV BOB: Tahlil va Natijalar (Analysis and Results)}
+\subsection{Structural Break Analysis: The 2017 Reform as a Manufacturing Turning Point}
 % ═══════════════════════════════════════════════════════════════════════════════
 
 Figure \ref{fig:structural_break} presents Uzbekistan's manufacturing value added as a share of GDP from 2010 to 2023, with separate linear trend fits for the pre- and post-2017 periods and 95\% confidence bands. The visual evidence is striking: the slope of the manufacturing trend steepens markedly after 2017, shifting from gradual expansion during the Karimov-era controlled economy to accelerated growth under the Mirziyoyev liberalisation programme.
@@ -160,7 +165,7 @@ It is important to note what the Chow test does not establish. It demonstrates t
 
 
 % ═══════════════════════════════════════════════════════════════════════════════
-\section{Revealed Comparative Advantage: Export Sophistication and Its Limits}
+\subsection{Revealed Comparative Advantage: Export Sophistication and Its Limits}
 % ═══════════════════════════════════════════════════════════════════════════════
 
 \subsection{Overall RCA Structure}
@@ -193,7 +198,7 @@ The manufacturing RCA profile presents a sobering picture: six years after the l
 
 
 % ═══════════════════════════════════════════════════════════════════════════════
-\section{Northeast Asian Trade and FDI Flows}
+\subsection{Northeast Asian Trade and FDI Flows}
 % ═══════════════════════════════════════════════════════════════════════════════
 
 \subsection{Bilateral Trade Dynamics}
@@ -241,7 +246,7 @@ This FDI origin structure has important implications for the GVC embedding hypot
 
 
 % ═══════════════════════════════════════════════════════════════════════════════
-\section{Trade Network Analysis: Value-Chain Positioning}\label{sec:network}
+\subsection{Trade Network Analysis: Value-Chain Positioning}\label{sec:network}
 % ═══════════════════════════════════════════════════════════════════════════════
 
 This section maps Uzbekistan's position in the Northeast Asian supply chain network across four analytically distinct dimensions: (i) the directed trade network structure, (ii) intermediate goods dependence by partner, (iii) export composition and structural change since 2010, and (iv) re-export potential through Central Asian and Eurasian corridors. Data are sourced from the OEC/BACI bilateral trade API (HS 1992 classification), World Bank WDI, and proxies derived from the OECD Trade in Value Added (TiVA) framework. Intermediate goods are classified using BEC Rev.~5 categories, operationalised through HS sections 05, 06, 07, 15, 16, 17, and 18.
@@ -249,6 +254,8 @@ This section maps Uzbekistan's position in the Northeast Asian supply chain netw
 \subsection{Value-Chain Positioning Map}
 
 Figure~\ref{fig:trade_network_map} presents the directed trade network in which nodes represent country-actors and weighted edges represent bilateral trade flows. Node colour indicates functional role; edge colour distinguishes intermediate imports from commodity and consumer exports; edge width is proportional to the log of trade volume. Uzbekistan is placed centrally by the layout algorithm, reflecting its structural position absorbing Northeast Asian intermediate goods while exporting primary commodities outward.
+
+A quantitative assessment of the network metrics confirms this visual configuration. Uzbekistan exhibits a high betweenness centrality (0.26) and the maximum eigenvector centrality (1.0) within this sub-network, reflecting its role as a conduit linking highly-connected East Asian sources (China, Korea, Japan) to Eurasian destination markets (Russia, Kazakhstan). However, while Uzbekistan possesses high in-degree connections (absorbing intermediate goods), its out-degree flows remain skewed toward lower-value commodities rather than processed manufactures. This indicates that while the country is highly connected, it is not yet embedded in dense, reciprocal production relationships---a pattern fully consistent with the captive governance structure identified earlier.
 
 \begin{figure}[H]
   \centering
@@ -312,7 +319,7 @@ Figure~\ref{fig:gvc_positioning} maps Uzbekistan's annual position in a two-dime
 The pre-reform period (2010--2016) shows low backward and minimal forward integration --- a closed economy neither absorbing external intermediates nor exporting manufactures. The early reform period (2017--2020) shows a sharp jump in backward integration as the economy opened to NE Asian imports, but only modest forward integration improvement: intermediates flow in but manufactured exports do not flow out. The post-COVID period (2021--2023) shows stagnation in forward integration while backward integration moderates. This trajectory --- rightward but not upward --- is the quantitative signature of \textit{captive} governance: Uzbekistan is integrated as an input absorber, not a value-adding processor and exporter. The contrast with Vietnam's equivalent trajectory --- which moved sharply upward in forward integration from 2005 as Samsung, LG, and Foxconn established export-platform factories --- defines the policy gap that must be closed.
 
 % ═══════════════════════════════════════════════════════════════════════════════
-\section{Comparative Trajectory: Uzbekistan and Vietnam}
+\subsection{Comparative Trajectory: Uzbekistan and Vietnam}
 % ═══════════════════════════════════════════════════════════════════════════════
 
 Vietnam's post-2000 integration into Northeast Asian manufacturing networks --- triggered by the US-Vietnam Bilateral Trade Agreement (2001) and accelerating through WTO accession (2007) and the explosion of Samsung, LG, and Foxconn investment in the 2010s --- constitutes the most instructive comparator for Uzbekistan's post-2017 reform trajectory.
@@ -324,7 +331,7 @@ Vietnam's post-2000 integration into Northeast Asian manufacturing networks --- 
   \label{fig:comparative_trajectory}
 \end{figure}
 
-Figure \ref{fig:comparative_trajectory} reveals three systematic gaps. In manufacturing value added (Panel A), Uzbekistan and Vietnam begin at comparable levels (approximately 14\% of GDP at reform year 0) and Uzbekistan's trajectory in years 0--4 broadly tracks Vietnam's. However, Uzbekistan appears to plateau near 19--20\% from year 4 onward, while Vietnam continued rising to higher manufacturing intensity (though data alignment issues introduce some uncertainty here).
+Figure \ref{fig:comparative_trajectory} reveals three systematic gaps. In manufacturing value added (Panel A), Uzbekistan and Vietnam begin at comparable levels (approximately 14\% of GDP at reform year 0)\footnote{It is important to note a measurement asymmetry in this comparison. Vietnam's year 0 (2001) represents its Bilateral Trade Agreement with the US, which opened a single massive market. A more rigorous comparator for Uzbekistan's 2017 multilateral liberalisation would be Vietnam's WTO accession in 2007. By Vietnam's WTO+6 stage (2013), its manufacturing VA was approximately 17--18\% of GDP, which makes Uzbekistan's trajectory look slightly more favourable. The 2001 baseline is used here primarily to capture the very beginning of Vietnam's steep manufacturing ascent.} and Uzbekistan's trajectory in years 0--4 broadly tracks Vietnam's. However, Uzbekistan appears to plateau near 19--20\% from year 4 onward, while Vietnam continued rising to higher manufacturing intensity (though data alignment issues introduce some uncertainty here).
 
 The FDI intensity gap (Panel B) is the most dramatic: Vietnam's FDI inflows surged from approximately 4.5\% to 9.8\% of GDP by year 8 post-reform, while Uzbekistan's inflows have stagnated and declined to approximately 2.4\% by the same reform-year milestone. This gap cannot be explained solely by landlockedness --- Vietnam's coastal access is an advantage\footnote{It must be acknowledged that landlockedness remains a significant potential confound in comparing Uzbekistan to coastal Vietnam. A rigorous robustness check would benchmark Uzbekistan against Kazakhstan, a similarly landlocked, resource-rich regional peer that has also pursued active reform and FDI attraction, albeit heavily skewed toward the extractive sector.} --- but suggests that the quality and composition of Uzbekistan's reform package has not replicated the investor confidence signals that characterised Vietnam's opening.
 
@@ -345,7 +352,7 @@ Logistics performance (Panel C) shows Uzbekistan at LPI score 2.6 versus Vietnam
 \input{chapters/ch_constraints}
 
 % ═══════════════════════════════════════════════════════════════════════════════
-\section{Regression Analysis}
+\subsection{Regression Analysis}
 % ═══════════════════════════════════════════════════════════════════════════════
 
 \input{output/tables/ols_regression.tex}
@@ -354,7 +361,7 @@ The OLS results in Table \ref{tab:ols_mfg} report associations between FDI inflo
 
 The post-2017 dummy is statistically insignificant across both specifications. At first glance, this appears to contradict the Chow test evidence of a structural break in 2017. However, this resolves when considering that the two tests measure structurally different phenomena. The Chow test rejects parameter stability because it detects a slope change (an acceleration in the rate of manufacturing growth over time post-reform). The OLS dummy tests for a discrete level shift (an immediate intercept jump in manufacturing VA in 2017 itself), which did not occur. Industrial capacity takes time to build; thus, the reform impact manifests as a steepened growth trajectory rather than an overnight jump in output, perfectly reconciling the insignificant level-shift dummy with the highly significant Chow structural break.
 
-Lagged FDI (t-1) enters positively but with marginal statistical significance (p $\approx$ 0.08--0.12), consistent with a delayed effect of investment on productive capacity. The two-period lag (t-2) is less precisely estimated, suggesting that the primary transmission operates within one year --- plausibly through capacity utilisation and supply-chain activation of already-committed investments rather than entirely new greenfield construction.
+Lagged FDI (t-1) enters positively but is statistically insignificant ($\beta = 0.002$, $p = 0.15$), whereas the intermediate goods import share is highly significant ($\beta = 2.34$, $p < 0.05$). This is consistent with a delayed effect of investment on productive capacity. The two-period lag (t-2) is less precisely estimated, suggesting that the primary transmission operates within one year --- plausibly through capacity utilisation and supply-chain activation of already-committed investments rather than entirely new greenfield construction.
 
 Trade openness is positively associated with manufacturing VA, consistent with the theoretical expectation that import of intermediate goods (the dominant component of Uzbekistan's trade with Northeast Asia) facilitates domestic manufacturing assembly. However, the coefficient magnitude is small, suggesting that trade alone --- in the absence of qualitative shifts in FDI composition --- is insufficient to drive transformative industrial upgrading.
 
@@ -364,7 +371,7 @@ These results should be interpreted cautiously. The sample size of 14 annual obs
 
 
 % ═══════════════════════════════════════════════════════════════════════════════
-\section{Scenario Forecasts: Manufacturing Value Added through 2030}
+\subsection{Scenario Forecasts: Manufacturing Value Added through 2030}
 % ═══════════════════════════════════════════════════════════════════════════════
 
 \begin{figure}[H]
@@ -376,7 +383,7 @@ These results should be interpreted cautiously. The sample size of 14 annual obs
 
 Figure \ref{fig:forecast} presents three scenarios for manufacturing value added through 2030. Under Scenario A (Status Quo), the post-2017 trend extrapolated linearly projects manufacturing VA reaching approximately 24--25\% of GDP by 2030, with an 80\% prediction interval spanning roughly 19--27\%. This scenario assumes no acceleration in FDI attraction, no major logistics breakthrough, and continuation of current Northeast Asian trade composition.
 
-Under Scenario B (Accelerated GVC Embedding), reflecting successful attraction of export-oriented Japanese and Korean manufacturing FDI analogous to Samsung's investment in Vietnam, manufacturing VA could reach 27--29\% by 2030. This scenario requires: FDI inflows rising toward 5\% of GDP, LPI improvement from 2.6 to at least 2.8, domestic intermediate goods supply chain development to increase local content ratios, and establishment of at least one anchor manufacturing investor comparable to Samsung SDI or Hyundai Motor in a dedicated special economic zone.
+Under Scenario B (Accelerated GVC Embedding), reflecting successful attraction of export-oriented Japanese and Korean manufacturing FDI analogous to Samsung's investment in Vietnam, manufacturing VA could reach 27--29\% by 2030. This scenario requires: FDI inflows rising toward 5\% of GDP, LPI improvement from 2.6 to at least 2.8, domestic intermediate goods supply chain development to increase local content ratios, and establishment of at least one anchor manufacturing investor comparable to Samsung SDI or Hyundai Motor in a dedicated special economic zone (e.g., formalising the 2023 Samsung SDI exploratory discussions for Central Asian battery supply chains, or expanding the existing Hyundai MOU into full-scale assembly). The probability of this scenario remains low-to-moderate without the logistics and institutional reforms outlined in the policy recommendations.
 
 Under Scenario C (Vietnam Trajectory), applying Vietnam's observed manufacturing VA growth rate at comparable reform stages, Uzbekistan would reach approximately 29\% by 2030 --- the most optimistic scenario and one that requires matching Vietnam's FDI intensity, logistics transformation, and export diversification within six years. Given the current FDI gap (2.4\% vs target 9\%+ of GDP) and landlocked infrastructure constraints, this scenario represents an aspirational benchmark rather than a baseline expectation.
 
@@ -384,7 +391,7 @@ The scenario dashboard (Figure \ref{fig:scenario_dashboard}) additionally projec
 
 
 % ═══════════════════════════════════════════════════════════════════════════════
-\section{Mechanisms: Trade Openness, ECI, and the Complexity Trajectory}
+\subsection{Mechanisms: Trade Openness, ECI, and the Complexity Trajectory}
 % ═══════════════════════════════════════════════════════════════════════════════
 
 \begin{figure}[H]
@@ -406,25 +413,24 @@ However, the trajectory also shows a concerning plateau beginning around 2021--2
 \input{chapters/ch_discussion}
 
 % ═══════════════════════════════════════════════════════════════════════════════
-\section{Policy Implications}
+\section{V BOB: Xulosa va Takliflar (Conclusion and Policy Implications)}
+\subsection{Policy Implications}
 \label{sec:policy}
 % ═══════════════════════════════════════════════════════════════════════════════
 
 The analysis generates five actionable policy implications for Uzbekistan's industrial strategy.
 
-\textbf{First, diversify FDI origin deliberately.} China's dominance of FDI inflows (28\%) relative to Japan and Korea's near-absence from the top investor list is the central structural problem. The government should design targeted incentive packages for Japanese and Korean export-oriented manufacturers: accelerated land allocation in special economic zones, dedicated utility infrastructure, streamlined customs procedures for intermediate goods imports, and bilateral investment treaty improvements. The Hyundai automotive relationship and Samsung SDI supply chain discussions represent existing entry points that should be scaled.
+\textbf{First, use the WTO accession process as an institutional lock-in mechanism (Ministry of Investments, Industry and Trade / Presidential Administration).} Uzbekistan's WTO observer status and ongoing accession negotiations provide the credibility-commitment mechanism that Doi Moi lacked in Vietnam's early reform period but that Vietnam's WTO accession (2007) subsequently supplied. Accelerating WTO membership would lock in trade policy reforms, improve investor confidence, and open access to GSP+ preferences from the EU that are conditioned on multilateral rule compliance.
 
-\textbf{Second, differentiate between infrastructure FDI and manufacturing FDI in policy tracking.} The current FDI statistics aggregate Chinese infrastructure loans, Russian energy investments, and Korean manufacturing ventures into a single headline figure. Disaggregated tracking by FDI type (extractive, infrastructure, manufacturing for domestic market, manufacturing for export) would enable more targeted policy responses and more accurate assessment of GVC embedding progress.
+\textbf{Second, treat logistics as the binding constraint (Ministry of Transport / Uzbekistan Railways).} The 0.3-point LPI gap with Vietnam is not merely a convenience cost --- it determines whether time-sensitive manufactured exports (electronics, automotive components) are commercially viable from Uzbekistan. Priority should be given to the China-Kyrgyzstan-Uzbekistan railway (which will cut transit times to Chinese markets substantially), the Middle Corridor route to European markets, and domestic cold-chain and warehousing infrastructure for agro-processing exports where Uzbekistan has existing RCA.
 
-\textbf{Third, treat logistics as the binding constraint.} The 0.3-point LPI gap with Vietnam is not merely a convenience cost --- it determines whether time-sensitive manufactured exports (electronics, automotive components) are commercially viable from Uzbekistan. Priority should be given to the China-Kyrgyzstan-Uzbekistan railway (which will cut transit times to Chinese markets substantially), the Middle Corridor route to European markets, and domestic cold-chain and warehousing infrastructure for agro-processing exports where Uzbekistan has existing RCA.
+\textbf{Third, diversify FDI origin deliberately (UzInvest / MIIT).} China's dominance of FDI inflows (28\%) relative to Japan and Korea's near-absence from the top investor list is the central structural problem. The government should design targeted incentive packages for Japanese and Korean export-oriented manufacturers: accelerated land allocation in special economic zones, dedicated utility infrastructure, streamlined customs procedures for intermediate goods imports, and bilateral investment treaty improvements. The Hyundai automotive relationship and Samsung SDI supply chain discussions represent existing entry points that should be scaled.
 
-\textbf{Fourth, build backward linkages from existing anchor investors.} The GM Uzbekistan-to-Hyundai transition, the Peng Cheng Industrial Park, and the existing textile sector represent anchors around which domestic supplier development programmes can be constructed. Local content requirements should be gradually phased in (not imposed immediately, which would deter investors) to encourage knowledge transfer to domestic firms.
+\textbf{Fourth, build backward linkages from existing anchor investors (Ministry of Economy and Finance).} The GM Uzbekistan-to-Hyundai transition, the Peng Cheng Industrial Park, and the existing textile sector represent anchors around which domestic supplier development programmes can be constructed. Local content requirements should be gradually phased in (not imposed immediately, which would deter investors) to encourage knowledge transfer to domestic firms.
 
-\textbf{Fifth, use the WTO accession process as a reform anchor.} Uzbekistan's WTO observer status and ongoing accession negotiations provide the credibility-commitment mechanism that Doi Moi lacked in Vietnam's early reform period but that Vietnam's WTO accession (2007) subsequently supplied. Accelerating WTO membership would lock in trade policy reforms, improve investor confidence, and open access to GSP+ preferences from the EU that are conditioned on multilateral rule compliance.
-
-
+\textbf{Fifth, differentiate between infrastructure FDI and manufacturing FDI in policy tracking (State Statistics Agency).} The current FDI statistics aggregate Chinese infrastructure loans, Russian energy investments, and Korean manufacturing ventures into a single headline figure. Disaggregated tracking by FDI type (extractive, infrastructure, manufacturing for domestic market, manufacturing for export) would enable more targeted policy responses and more accurate assessment of GVC embedding progress.
 % ═══════════════════════════════════════════════════════════════════════════════
-\section{Conclusion}
+\subsection{Conclusion}
 % ═══════════════════════════════════════════════════════════════════════════════
 
 This paper has examined the relationship between Northeast Asian economic engagement and Uzbekistan's industrial transformation using a combination of structural break testing, revealed comparative advantage analysis, bilateral trade decomposition, regression analysis, and scenario forecasting.
@@ -465,7 +471,7 @@ Uzbekistan is on an industrialisation trajectory that the 2017 reforms genuinely
 % ── REFERENCES ────────────────────────────────────────────────────────────────
 \newpage
 \bibliographystyle{agsm}
-\nocite{*}
+
 \bibliography{references,references_expanded}
 
 \end{document}

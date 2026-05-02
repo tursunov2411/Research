@@ -6,62 +6,119 @@ The style file: agsm.bst
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 Reallocating 'name_of_file' (item size: 1) to 20 items.
 Database file #1: references.bib
+Repeated entry---line 493 of file references.bib
+ : @book{bhaskar1975
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 509 of file references.bib
+ : @book{danermark2019
+ :                    ,
+I'm skipping whatever remains of this entry
 Database file #2: references_expanded.bib
-Warning--I didn't find a database entry for "humphrey2002"
-Warning--I didn't find a database entry for "sturgeon2008"
-Warning--I didn't find a database entry for "amsden1989"
-Warning--I didn't find a database entry for "wade1990"
-Warning--I didn't find a database entry for "evans1995"
-Warning--I didn't find a database entry for "arvis2016"
-Warning--I didn't find a database entry for "carrere2004"
-Warning--I didn't find a database entry for "gereffi1994"
-Warning--I didn't find a database entry for "baldwin2016"
-Warning--I didn't find a database entry for "10_1057_s42214_020_00071_9"
-Warning--I didn't find a database entry for "rodrik2016"
-Warning--I didn't find a database entry for "diao2019"
-Warning--I didn't find a database entry for "mcmillan2017"
-Warning--I didn't find a database entry for "dunning1981"
-Warning--I didn't find a database entry for "10_1016_j_respol_2023_104863"
-Warning--I didn't find a database entry for "10_1016_j_techfore_2020_119937"
-You've used 160 entries,
+Repeated entry---line 2627 of file references_expanded.bib
+ : @book{amsden1989
+ :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2643 of file references_expanded.bib
+ : @book{wade1990
+ :               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2659 of file references_expanded.bib
+ : @book{evans1995
+ :                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2675 of file references_expanded.bib
+ : @article{rodrik2016
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2695 of file references_expanded.bib
+ : @article{humphrey2002
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2715 of file references_expanded.bib
+ : @book{dunning1981
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2731 of file references_expanded.bib
+ : @book{baldwin2016
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2747 of file references_expanded.bib
+ : @article{diao2019
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2765 of file references_expanded.bib
+ : @article{mcmillan2017
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2779 of file references_expanded.bib
+ : @article{sturgeon2008
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2799 of file references_expanded.bib
+ : @incollection{gereffi1994
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2821 of file references_expanded.bib
+ : @article{arvis2016
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2837 of file references_expanded.bib
+ : @article{carrere2004
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2857 of file references_expanded.bib
+ : @article{andreoni2023
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2877 of file references_expanded.bib
+ : @book{bhaskar1975
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2893 of file references_expanded.bib
+ : @book{danermark2019
+ :                    ,
+I'm skipping whatever remains of this entry
+Warning--there's a number but no volume in arvis2016
+You've used 26 entries,
             2909 wiz_defined-function locations,
-            1305 strings with 37295 characters,
-and the built_in function-call counts, 971122 in all, are:
-= -- 159456
-> -- 15298
+            804 strings with 8563 characters,
+and the built_in function-call counts, 83589 in all, are:
+= -- 13382
+> -- 1068
 < -- 0
-+ -- 79589
-- -- 4802
-* -- 86677
-:= -- 191360
-add.period$ -- 306
-call.type$ -- 160
-change.case$ -- 2231
-chr.to.int$ -- 159
-cite$ -- 160
-duplicate$ -- 2409
-empty$ -- 4241
-format.name$ -- 5337
-if$ -- 173959
-int.to.chr$ -- 6
++ -- 6204
+- -- 317
+* -- 6994
+:= -- 17221
+add.period$ -- 27
+call.type$ -- 26
+change.case$ -- 354
+chr.to.int$ -- 26
+cite$ -- 27
+duplicate$ -- 425
+empty$ -- 853
+format.name$ -- 403
+if$ -- 14945
+int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 166
-newline$ -- 629
-num.names$ -- 1684
-pop$ -- 587
+missing$ -- 35
+newline$ -- 82
+num.names$ -- 268
+pop$ -- 145
 preamble$ -- 1
-purify$ -- 2398
+purify$ -- 390
 quote$ -- 0
-skip$ -- 2145
+skip$ -- 321
 stack$ -- 0
-substring$ -- 228430
-swap$ -- 316
-text.length$ -- 2236
+substring$ -- 18649
+swap$ -- 64
+text.length$ -- 364
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 626
-warning$ -- 0
-while$ -- 3373
+type$ -- 84
+warning$ -- 1
+while$ -- 574
 width$ -- 0
-write$ -- 2381
-(There were 16 warnings)
+write$ -- 334
+(There were 18 error messages)
