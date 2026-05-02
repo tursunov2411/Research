@@ -112,9 +112,9 @@ stargazer(
   add.lines = list(
     c("Country FE", "No",  "Yes", "Yes"),
     c("Year FE",    "No",  "No",  "Yes"),
-    c("F-test FE p-value", "—",
-      sprintf("%.4f", fe_test$p.value), "—"),
-    c("Hausman p-value (FE vs RE)", "—", hausman_result, "—")
+    c("F-test FE p-value", "--",
+      sprintf("%.4f", fe_test$p.value), "--"),
+    c("Hausman p-value (FE vs RE)", "--", hausman_result, "--")
   ),
   notes = "Cluster-robust SE by country (HC1). UZ-only model uses HC3. Hausman test infeasible when N_groups ≤ k.",
   out   = "output/tables/panel_robustness.tex"
