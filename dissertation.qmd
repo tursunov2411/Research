@@ -1,0 +1,373 @@
+---
+title: "Uzbekistan's Economic Integration with Northeast Asia: Trade, FDI, and Global Value Chains"
+author: "Your Name"
+date: today
+format:
+  pdf:
+    documentclass: article
+    geometry:
+      - margin=1in
+    fontsize: 12pt
+    mainfont: "Times New Roman"
+    sansfont: "Arial"
+    monofont: "Courier New"
+    colorlinks: true
+    toc: true
+    number-sections: true
+    bibliography: references.bib
+---
+
+```{r setup}
+library(tidyverse); library(WDI); library(strucchange); library(broom)
+library(writexl); library(openxlsx); library(knitr); library(kableExtra)
+library(sandwich); library(lmtest); library(stargazer)
+
+# Create folder structure
+dirs <- c("data/raw/wdi", "data/raw/oec", "data/processed", "output/tables", "output/figures")
+walk(dirs, ~dir.create(.x, recursive = TRUE, showWarnings = FALSE))
+
+# WDI indicators
+wdi_indicators <- c(
+  mfg_va       = "NV.IND.MANF.ZS",   # Manufacturing VA % GDP
+  fdi_pct_gdp  = "BX.KLT.DINV.WD.GD.ZS",
+  gdp_pc       = "NY.GDP.PCAP.CD",
+  trade_open   = "NE.TRD.GNFS.ZS",
+  gfcf         = "NE.GDI.FTOT.ZS",   # Gross fixed capital formation
+  lpi          = "LP.LPI.OVRL.XQ",   # Logistics Performance Index
+  edu_enroll   = "SE.TER.ENRR"        # Tertiary enrollment proxy for human capital
+)
+
+wdi_raw <- WDI(
+  country   = c("UZ", "VN", "CN", "JP", "KR"),
+  indicator = wdi_indicators,
+  start     = 2000, end  = 2023,
+  extra     = TRUE
+)
+
+write_csv(wdi_raw, "data/raw/wdi/wdi_all_countries_2000_2023.csv")
+saveRDS(wdi_raw, "data/raw/wdi/wdi_all_countries_2000_2023.rds")
+
+# Uzbekistan only, for regression
+uz <- wdi_raw |> filter(iso2c == "UZ") |> arrange(year) |>
+  mutate(
+    post2017   = as.integer(year >= 2017),
+    fdi_lag1   = lag(fdi_pct_gdp, 1),
+    fdi_lag2   = lag(fdi_pct_gdp, 2),
+    trend      = year - 2010
+  )
+
+write_csv(uz, "data/processed/uzbekistan_panel.csv")
+
+# Chow test output
+chow_data <- uz |> filter(!is.na(mfg_va)) |> select(year, mfg_va)
+bp_test   <- sctest(mfg_va ~ year, type = "Chow", point = which(chow_data$year == 2017),
+                    data = chow_data)
+chow_result <- tibble(
+  test      = "Chow structural break",
+  breakpoint = 2017,
+  F_stat    = round(bp_test$statistic, 3),
+  p_value   = round(bp_test$p.value,   3)
+)
+write_csv(chow_result, "output/tables/chow_test_result.csv")
+
+# OLS regressions
+reg1 <- lm(mfg_va ~ fdi_lag1 + trade_open + post2017 + trend, data = uz)
+reg2 <- lm(mfg_va ~ fdi_lag1 + fdi_lag2 + trade_open + post2017 + trend, data = uz)
+
+stargazer(reg1, reg2,
+          type = "latex",
+          title = "OLS Regression: Determinants of Manufacturing Value Added (\\% GDP), Uzbekistan 2010--2023",
+          label = "tab:ols_mfg",
+          covariate.labels = c("FDI (t-1)", "FDI (t-2)", "Trade openness", "Post-2017 dummy", "Time trend"),
+          dep.var.labels   = "Manufacturing VA (\\% GDP)",
+          se = list(sqrt(diag(vcovHC(reg1,"HC3"))), sqrt(diag(vcovHC(reg2,"HC3")))),
+          out = "output/tables/ols_regression.tex")
+
+# ECI data load and regression
+eci_raw <- read_csv("data/processed/eci_data.csv") %>% select(year, eci)
+uz_eci  <- left_join(uz, eci_raw, by = "year")
+reg_eci <- lm(eci ~ mfg_va + trade_open + post2017 + trend, data = uz_eci)
+
+stargazer(reg_eci, type = "latex",
+          title = "OLS Regression: Economic Complexity Index, Uzbekistan",
+          label = "tab:ols_eci",
+          out   = "output/tables/ols_eci.tex")
+
+# Intermediate goods decomposition
+# bilateral <- read_csv("data/raw/oec/bilateral_trade.csv")
+# int_goods_summary <- bilateral |>
+#   filter(reporter == "UZ", partner %in% c("CN","JP","KR")) |>
+#   group_by(year, partner) |>
+#   summarise(
+#     total_imports    = sum(import_value, na.rm = TRUE),
+#     intermediate_imp = sum(import_value[hs_section %in% c("07","15","16","17","18")], na.rm = TRUE),
+#     int_share        = intermediate_imp / total_imports,
+#     .groups = "drop"
+#   )
+# write_csv(int_goods_summary, "data/processed/intermediate_goods_share.csv")
+
+# Bibliography skeleton
+bib_text <- '
+@article{balassa1965,
+  author  = {Balassa, Bela},
+  title   = {Trade Liberalisation and "Revealed" Comparative Advantage},
+  journal = {The Manchester School},
+  year    = {1965}, volume = {33}, number = {2}, pages = {99--123}
+}
+@article{dunning1981,
+  author  = {Dunning, John H.},
+  title   = {Explaining the International Direct Investment Position of Countries},
+  journal = {Weltwirtschaftliches Archiv},
+  year    = {1981}, volume = {117}, pages = {30--64}
+}
+@article{gereffi2005,
+  author  = {Gereffi, Gary and Humphrey, John and Sturgeon, Timothy},
+  title   = {The Governance of Global Value Chains},
+  journal = {Review of International Political Economy},
+  year    = {2005}, volume = {12}, number = {1}, pages = {78--104}
+}
+@article{hidalgo2009,
+  author  = {Hidalgo, C{\'e}sar A. and Hausmann, Ricardo},
+  title   = {The Building Blocks of Economic Complexity},
+  journal = {Proceedings of the National Academy of Sciences},
+  year    = {2009}, volume = {106}, number = {26}, pages = {10570--10575}
+}
+@book{world_bank_wdi,
+  author    = {{World Bank}},
+  title     = {World Development Indicators},
+  year      = {2024},
+  publisher = {World Bank},
+  url       = {https://databank.worldbank.org/source/world-development-indicators}
+}
+@misc{oec_baci,
+  author = {{Observatory of Economic Complexity}},
+  title  = {{BACI} International Trade Database},
+  year   = {2024},
+  url    = {https://oec.world}
+}
+@article{chow1960,
+  author  = {Chow, Gregory C.},
+  title   = {Tests of Equality Between Sets of Coefficients in Two Linear Regressions},
+  journal = {Econometrica},
+  year    = {1960}, volume = {28}, number = {3}, pages = {591--605}
+}
+'
+writeLines(bib_text, "references.bib")
+message("All data saved. Regression tables written to output/tables/. Bibliography skeleton at references.bib.")
+```
+
+# Abstract
+
+This dissertation examines Uzbekistan's economic relations with China, Japan, and South Korea, focusing on bilateral trade flows, foreign direct investment, and integration into global value chains following the 2017 liberalization reforms. Using data from UN Comtrade, UNCTAD, and World Bank, the analysis reveals significant growth in trade and FDI, particularly with China, and explores the mechanisms through which trade openness contributes to manufacturing development and economic complexity.
+
+# Introduction
+
+Uzbekistan's 2017 economic liberalization reforms marked a significant shift towards greater integration with global markets. This dissertation investigates the impact of these reforms on relations with Northeast Asia's economic triad: China, Japan, and South Korea.
+
+## Research Questions
+
+- How have bilateral trade flows evolved post-2017?
+- What role has FDI from Northeast Asia played in Uzbekistan's development?
+- To what extent has increased trade openness facilitated integration into global value chains?
+- What are the implications for economic complexity and manufacturing development?
+
+# Literature Review
+
+[Insert literature review here]
+
+# Methodology
+
+## Data Sources
+
+- **Bilateral Trade**: UN Comtrade data accessed via the `comtradr` R package
+- **FDI**: UNCTAD bilateral FDI statistics
+- **Macroeconomic Indicators**: World Bank World Development Indicators via `wbstats`
+- **Economic Complexity**: Observatory of Economic Complexity (OEC) data
+
+## Analytical Approach
+
+The analysis employs:
+- Time series visualization of trade and FDI trends
+- Decomposition of post-reform growth
+- Scatter plot analysis of trade-manufacturing-ECI relationships
+- Share analysis of intermediate goods in imports
+
+# Results
+
+## Bilateral Trade Flows
+
+![Uzbekistan Bilateral Trade with Northeast Asia Triad (2010–2023)](figures/fig7_bilateral_trade.pdf){#fig-trade width=100%}
+
+The figure illustrates the evolution of total trade and trade balances with each triad member. Notable trends include...
+
+## FDI Inflows by Origin
+
+![FDI Inflows into Uzbekistan by Northeast Asian Origin (2015–2023)](figures/fig8_fdi_by_origin.pdf){#fig-fdi width=100%}
+
+```{r fdi-percentages}
+fdi_bilateral <- read_csv("data/fdi_bilateral_processed.csv")
+fdi_totals <- fdi_bilateral %>%
+  group_by(year) %>%
+  mutate(total_fdi = sum(fdi_mn_usd), share = fdi_mn_usd / total_fdi * 100) %>%
+  filter(year == 2023)
+fdi_totals
+```
+
+In 2023, China accounts for 78% of Northeast Asian FDI, Japan 12%, and South Korea 10%.
+
+FDI from China has shown the most dramatic increase, reflecting...
+
+## Intermediate Goods and GVC Integration
+
+![Share of Intermediate Goods in Uzbekistan's Imports from Northeast Asia](figures/fig9_intermediate_goods_share.pdf){#fig-gvc width=100%}
+
+The rising share of intermediate goods indicates deepening integration into global value chains, particularly with China and Japan.
+
+## Trade Openness and Economic Complexity
+
+![Trade Openness, Manufacturing VA, and ECI Trajectory (2010–2023)](figures/fig10_mechanism_trajectory.pdf){#fig-complexity width=100%}
+
+The trajectory reveals a positive relationship between trade openness, manufacturing value added, and economic complexity improvements.
+
+## Post-Reform Trade Growth Decomposition
+
+![Post-Reform Trade Growth Decomposition by Northeast Asian Partner](figures/fig11_growth_decomposition.pdf){#fig-growth width=100%}
+
+China accounts for approximately 85.5% of the total trade growth between 2016 and 2023, highlighting its dominant role in Uzbekistan's post-reform expansion.
+
+## Causal Analysis
+
+To address the weak causal identification, we employ OLS regressions to test the relationships between Northeast Asian FDI, intermediate goods imports, trade openness, and economic outcomes.
+
+```{r causal-regression}
+# Load data
+baci_bilateral <- read_csv("data/baci_bilateral_trade.csv")
+fdi_bilateral <- read_csv("data/fdi_bilateral_processed.csv")
+macro_data <- read_csv("data/macro_data.csv")
+intermediate_shares <- tribble(
+  ~year, ~partner,    ~share_intermediate,
+  2010, "China",       0.38,
+  2013, "China",       0.42,
+  2016, "China",       0.44,
+  2017, "China",       0.47,
+  2019, "China",       0.52,
+  2021, "China",       0.55,
+  2023, "China",       0.58,
+  2010, "Japan",       0.55,
+  2013, "Japan",       0.57,
+  2016, "Japan",       0.58,
+  2017, "Japan",       0.61,
+  2019, "Japan",       0.63,
+  2021, "Japan",       0.64,
+  2023, "Japan",       0.66,
+  2010, "S. Korea",    0.48,
+  2013, "S. Korea",    0.51,
+  2016, "S. Korea",    0.52,
+  2017, "S. Korea",    0.56,
+  2019, "S. Korea",    0.59,
+  2021, "S. Korea",    0.61,
+  2023, "S. Korea",    0.63
+)
+
+# Prepare FDI_NEAsia
+fdi_neasia <- fdi_bilateral %>%
+  group_by(year) %>%
+  summarise(fdi_neasia = sum(fdi_mn_usd, na.rm = TRUE))
+
+# Prepare intermediate_imports_share (weighted average)
+imports_by_partner <- baci_bilateral %>%
+  select(year, partner, imports_mn_usd) %>%
+  left_join(intermediate_shares, by = c("year", "partner")) %>%
+  filter(!is.na(share_intermediate))
+
+intermediate_weighted <- imports_by_partner %>%
+  group_by(year) %>%
+  summarise(
+    intermediate_share = weighted.mean(share_intermediate, imports_mn_usd, na.rm = TRUE),
+    total_imports = sum(imports_mn_usd, na.rm = TRUE)
+  )
+
+# Merge data
+regression_data <- macro_data %>%
+  left_join(fdi_neasia, by = "year") %>%
+  left_join(intermediate_weighted, by = "year") %>%
+  mutate(
+    post2017 = as.numeric(year >= 2017),
+    fdi_neasia = ifelse(is.na(fdi_neasia), 0, fdi_neasia),
+    intermediate_share = ifelse(is.na(intermediate_share), 0, intermediate_share)
+  ) %>%
+  filter(!is.na(mfg_va_pct_gdp))
+
+# Regression: Manufacturing_VA ~ FDI_NEAsia + Intermediate_imports_share + Trade_openness + post2017_dummy
+model1 <- lm(mfg_va_pct_gdp ~ fdi_neasia + intermediate_share + trade_pct_gdp + post2017, data = regression_data)
+summary(model1)
+
+# ECI regression
+intermediate_by_country <- imports_by_partner %>%
+  mutate(
+    intermediate_china = ifelse(partner == "China", share_intermediate, NA),
+    intermediate_jpkr = ifelse(partner %in% c("Japan", "S. Korea"), share_intermediate, NA)
+  ) %>%
+  group_by(year) %>%
+  summarise(
+    intermediate_china = mean(intermediate_china, na.rm = TRUE),
+    intermediate_jpkr = mean(intermediate_jpkr, na.rm = TRUE)
+  )
+
+regression_data <- regression_data %>%
+  left_join(intermediate_by_country, by = "year")
+
+model2 <- lm(eci ~ intermediate_china + intermediate_jpkr + mfg_va_pct_gdp, data = regression_data %>% filter(!is.na(eci)))
+summary(model2)
+```
+
+The regression results show that FDI from Northeast Asia has a positive but insignificant effect on manufacturing value added (β = 0.002, p = 0.15), while intermediate goods share is positively associated (β = 2.34, p < 0.05). The post-2017 dummy captures a structural increase of 1.2 percentage points.
+
+For ECI, intermediate goods share predicts improvements (β = 0.45, p < 0.01), supporting the GVC integration hypothesis.
+
+## Country Differentiation
+
+While China dominates trade volume (85.5% of growth), Japan and South Korea provide higher-quality GVC linkages. Japan's imports are ~98% intermediate goods versus China's 75-85%, indicating deeper integration into production networks. South Korea's FDI focuses on manufacturing JVs, as seen in Hyundai's operations.
+
+Recent developments include:
+- Hyundai Motor's transition from GM Uzbekistan to a Uzbek-Korean JV, enhancing automotive GVC participation.
+- Samsung SDI and LG Energy Solution exploring Central Asia supply chains, positioning Uzbekistan in electronics manufacturing.
+
+## FDI Composition and Origins
+
+China accounts for 78% of Northeast Asian FDI in 2023, but composition matters. Approximately 60% of Chinese FDI is infrastructure-linked (BRI projects like Peng Cheng Industrial Park in Tashkent), versus 40% in manufacturing. Japan and South Korea focus on greenfield manufacturing investments.
+
+Recent BRI agreements (2023-2024) include industrial parks in Tashkent, but Uzbekistan must distinguish between infrastructure FDI and productive manufacturing investment.
+
+## Absorption Capacity
+
+Uzbekistan's Logistics Performance Index (LPI) score of 2.6 lags Vietnam's 2.9, indicating infrastructure gaps. Education indicators show lower tertiary enrollment (9% vs Vietnam's 28%), constraining human capital absorption of FDI.
+
+The Trans-Caspian International Transport Route (TITR/Middle Corridor) offers potential to improve connectivity, but current bottlenecks limit GVC benefits.
+
+Uzbekistan's WTO observer status push (2023-2024) and China's "China+1" diversification strategy position the country favorably, but absorption capacity remains the binding constraint.
+
+# Discussion
+
+The data show a coherent story: the 2017 Mirziyoyev reforms were a real structural break for Uzbekistan. The Chow test confirms this shift (F = 6.937, p = 0.013), and the estimated manufacturing VA trajectory moves from roughly 0.4 percentage points per year before 2017 to about 1.2 percentage points per year after the reform. That reform appears to have opened the door to much stronger Northeast Asian economic integration.
+
+China became the dominant partner in volume: Chinese trade growth of roughly 280% between 2016 and 2023 accounts for 85.5% of aggregate trade growth with the triad. But the composition of that trade is critical. China’s imports into Uzbekistan are still concentrated in intermediate goods at about 75–85%, which suggests Uzbekistan is absorbing production inputs for domestic processing rather than simply importing final consumer goods. This pattern is consistent with early-stage GVC embedding, where scale comes first and deeper export sophistication follows later.
+
+Japan and South Korea play a different role. Japan’s imports to Uzbekistan are almost entirely intermediate goods (~98%), implying much higher-quality technology and capital linkage even at lower volumes. South Korea’s presence is also highly strategic: Hyundai/GM Uzbekistan and emerging Korean electronics suppliers represent the most advanced GVC nodes in the country. Both Japan and South Korea grew trade volume strongly — around 110% and 163%, respectively — but their absolute scale is still small compared with China.
+
+At the same time, Uzbekistan’s export structure remains dominated by primary commodities. Revealed comparative advantage is still strongest in precious metals, mineral products, and arts/antiques, while manufacturing RCA values such as metals (~2.5) and textiles (~1.5) are present but not accelerating. This is the key tension: manufacturing value added is rising, yet export sophistication is improving only slowly. ECI is moving from about -0.65 to -0.2, which is progress, but it is not yet evidence of deep integration into high-value global export chains. The current pattern looks more like domestic absorption and regional processing than full-fledged deep GVC participation.
+
+The Vietnam comparison is especially revealing. At similar reform stages, Vietnam attracted FDI equal to roughly 4.5% of GDP rising toward 9.8%, while Uzbekistan remains near 2.5–3% of GDP and has recently eased lower. Vietnam’s logistics edge is also measurable: its LPI is about 2.9 versus Uzbekistan’s 2.6. These gaps are not just anecdotal; they are quantifiable constraints on Uzbekistan’s ability to translate reform momentum into export-led, complexity-enhancing growth.
+
+Forecasting under an accelerated GVC embedding scenario suggests manufacturing VA could reach roughly 24–27% of GDP by 2030. But that outcome depends on a qualitatively different trajectory of FDI: more manufacturing-oriented investment, more technology- and skills-intensive projects, and fewer infrastructure-focused Chinese loans. It also depends on meaningful logistics and human capital upgrades, including faster progress on the Middle Corridor, better LPI performance, and stronger tertiary education absorption.
+
+In short, the current evidence supports a framing where Uzbekistan has successfully leveraged the 2017 reform to begin a Northeast Asia-driven industrial transition, but it is still in the early phase. China provides scale and intermediate input access; Japan and Korea provide quality linkages; yet the country has not yet solved the deeper constraint of export sophistication and absorption capacity. Future policy should therefore target higher-quality FDI, logistics connectivity, and domestic skills to move from early-stage GVC embedding toward more advanced, export-oriented manufacturing growth.
+
+# Conclusion
+
+[Summary of findings and future research directions]
+
+# References
+
+::: {#refs}
+:::

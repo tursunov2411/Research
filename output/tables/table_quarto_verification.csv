@@ -1,0 +1,9 @@
+outcome,term,estimate,std.error,statistic,p.value
+Manufacturing VA (% GDP),(Intercept),9.779,0.5333,18.336,0
+Manufacturing VA (% GDP),time_trend,0.6322,0.1479,4.274,0.0016
+Manufacturing VA (% GDP),post_reform,-0.4747,1.6,-0.297,0.7728
+Manufacturing VA (% GDP),interaction,0.2194,0.2092,1.049,0.319
+FDI inflows (% GDP),(Intercept),2.525,0.5646,4.472,0.0012
+FDI inflows (% GDP),time_trend,-0.2602,0.1566,-1.662,0.1276
+FDI inflows (% GDP),post_reform,-0.6553,1.6938,-0.387,0.707
+FDI inflows (% GDP),interaction,0.3259,0.2215,1.472,0.1719

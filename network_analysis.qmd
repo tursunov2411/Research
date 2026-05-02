@@ -1,0 +1,32 @@
+---
+title: "Further Studies: Trade Network Analysis"
+author: "Research Log"
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+---
+
+# Trade Network Analysis: Uzbekistan's Value-Chain Positioning
+
+This section maps Uzbekistan's intermediate goods dependence, imports from Northeast Asia (China, South Korea, Japan), and its re-export potential using network analysis.
+
+## Methodology
+
+We utilize trade data from the UN Comtrade API, BACI database, and structural proxies from OECD TiVA to construct a directed network graph of trade flows.
+
+- **Nodes:** Uzbekistan (UZB), China (CHN), Japan (JPN), South Korea (KOR), and Rest of World (ROW).
+- **Edges:** Directed trade flows. Edge thickness represents trade volume. Edge color represents the flow type (Intermediate vs. Final/Commodity).
+
+## Value-Chain Positioning Map
+
+The network analysis visualizes how Uzbekistan serves as a destination for intermediate goods from Northeast Asia, while primarily exporting final commodities to China and the Rest of the World.
+
+![Uzbekistan Trade Network](figures/fig12_trade_network.png)
+
+## Findings on Re-export Potential
+
+1. **High Intermediate Dependence:** The thick edges from CHN, JPN, and KOR to UZB highlight the structural dependence on Northeast Asian capital goods. Japan and Korea almost exclusively supply intermediate goods.
+2. **Re-export Bottleneck:** Uzbekistan's exports to ROW remain largely commodity-driven. The structural transformation into a manufacturing re-export hub requires shifting the flow from UZB $\rightarrow$ ROW to contain higher domestic value-added rather than raw materials.
+3. **China's Dual Role:** China acts as both the largest supplier of intermediate/capital goods and the largest consumer of Uzbekistan's primary commodity exports, creating a closed-loop dependency that limits broader GVC embedding compared to a diversified export portfolio.

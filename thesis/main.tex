@@ -1,0 +1,256 @@
+\documentclass[12pt]{article}
+
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{setspace}
+
+\graphicspath{{figures/}{output/figures/}{../output/figures/}}
+\onehalfspacing
+
+\title{FDI-Led Industrialisation and GVC Embedding in Uzbekistan}
+\author{[Your Name]}
+\date{\today}
+
+\newcommand{\missingfilebox}[1]{%
+  \begin{center}
+  \fbox{\parbox{0.9\textwidth}{Missing file: \texttt{\detokenize{#1}}. Run \texttt{source("run\_all.R")} or upload the generated file to the matching project folder.}}
+  \end{center}
+}
+
+\newcommand{\figureinput}[2][]{%
+  \IfFileExists{#2}{%
+    \includegraphics[#1]{#2}%
+  }{%
+    \IfFileExists{figures/#2}{%
+      \includegraphics[#1]{figures/#2}%
+    }{%
+      \IfFileExists{output/figures/#2}{%
+        \includegraphics[#1]{output/figures/#2}%
+      }{%
+        \IfFileExists{../output/figures/#2}{%
+          \includegraphics[#1]{../output/figures/#2}%
+        }{%
+          \missingfilebox{figures/#2}%
+        }%
+      }%
+    }%
+  }%
+}
+
+\newcommand{\fixedfigure}[4][]{%
+  \begin{center}
+  \figureinput[#1]{#2}
+  \captionof{figure}{#3}
+  \label{#4}
+  \end{center}
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This manuscript examines whether Uzbekistan's post-2017 reform period is associated with measurable changes in manufacturing value added, foreign direct investment, revealed comparative advantage, and global value chain readiness. The statistical results are produced by the reproducible project workflow and then typeset directly in LaTeX.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+Uzbekistan's reform period after 2017 provides a useful setting for assessing whether investment liberalisation and institutional reform are associated with industrial upgrading. The thesis focuses on three empirical questions. First, did the manufacturing trajectory change after the reform breakpoint? Second, did export specialisation diversify into more manufacturing-related sections? Third, how does Uzbekistan's reform-stage trajectory compare with Vietnam's earlier industrialisation path?
+
+\section{Data and Methodology}
+
+The analysis uses public institutional data from the World Bank World Development Indicators, Uzbekistan official statistics, OEC/BACI export data, and OEC economic complexity indicators. The processed data cover the core 2010-2023 thesis period, with Vietnam's earlier reform-stage comparison retained where available.
+
+The main statistical specification uses a reform dummy and trend interaction:
+
+\begin{equation}
+Y_t = \beta_0 + \beta_1 Trend_t + \beta_2 Post2017_t + \beta_3(Trend_t \times Post2017_t) + \varepsilon_t.
+\end{equation}
+
+For the structural break test, the null hypothesis is no break in Uzbekistan's manufacturing value-added trend at 2017. Revealed comparative advantage is calculated using the Balassa index:
+
+\begin{equation}
+RCA_{ij} = \frac{X_{ij} / X_i}{X_{wj} / X_w},
+\end{equation}
+
+where values above one indicate revealed comparative advantage.
+
+\section{Descriptive Statistics}
+
+\begin{table}[H]
+\centering
+\caption{Country-level descriptive statistics, 2010--2023}
+\label{tab:descriptive-country}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lllrrrr}
+\toprule
+country\_code & country & years & mean\_manuf\_va\_gdp & mean\_fdi\_gdp & mean\_gdp\_per\_capita & mean\_lpi\_score \\
+\midrule
+CHN & China & 2010--2023 & 28.24 & 2.05 & 9067.24 & 3.59 \\
+KAZ & Kazakhstan & 2010--2023 & 11.62 & 4.18 & 10460.67 & 2.75 \\
+KOR & Korea, Rep. & 2010--2023 & 27.46 & 0.79 & 31508.28 & 3.69 \\
+UZB & Uzbekistan & 2010--2023 & 14.75 & 2.14 & 2327.25 & 2.54 \\
+VNM & Viet Nam & 2010--2023 & 21.91 & 4.59 & 2954.74 & 3.11 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Uzbekistan pre- and post-reform summary}
+\label{tab:uzbekistan-pre-post}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrr}
+\toprule
+period & years & mean\_manuf\_va\_gdp & mean\_fdi\_gdp & mean\_gdp\_per\_capita & mean\_unemployment \\
+\midrule
+Post-2017 & 2017--2023 & 17.82 & 2.53 & 2248.50 & 5.10 \\
+Pre-2017 & 2010--2016 & 11.68 & 1.74 & 2405.99 & 5.06 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\fixedfigure[width=\textwidth]{fig0_indicator_trends.png}{Key macroeconomic indicator trends for Uzbekistan and Vietnam.}{fig:indicator-trends}
+
+\section{Trend Regression Results}
+
+Table~\ref{tab:trend-regressions} reports the reform-period trend regressions with robust standard errors. The interaction coefficient captures the post-2017 change in slope relative to the pre-reform trend.
+
+\begin{table}[H]
+\centering
+\caption{Trend regressions with robust standard errors}
+\label{tab:trend-regressions}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrr}
+\toprule
+outcome & term & estimate & robust\_se & statistic & p\_value \\
+\midrule
+Manufacturing VA (\% GDP) & (Intercept) & 9.7790 & 0.2777 & 35.219 & 0.0000 \\
+Manufacturing VA (\% GDP) & time\_trend & 0.6322 & 0.0612 & 10.329 & 0.0000 \\
+Manufacturing VA (\% GDP) & post\_reform & -0.4747 & 2.2140 & -0.214 & 0.8345 \\
+Manufacturing VA (\% GDP) & interaction & 0.2194 & 0.2213 & 0.991 & 0.3449 \\
+FDI inflows (\% GDP) & (Intercept) & 2.5250 & 0.6033 & 4.185 & 0.0019 \\
+FDI inflows (\% GDP) & time\_trend & -0.2602 & 0.1699 & -1.532 & 0.1565 \\
+FDI inflows (\% GDP) & post\_reform & -0.6553 & 1.7799 & -0.368 & 0.7204 \\
+FDI inflows (\% GDP) & interaction & 0.3259 & 0.2265 & 1.439 & 0.1807 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\section{Structural Break Test}
+
+The Chow test evaluates whether Uzbekistan's manufacturing value-added trend has a statistically detectable break at 2017. The current result rejects the null at conventional levels, suggesting a statistically significant break in the manufacturing trend around the reform breakpoint.
+
+\begin{table}[H]
+\centering
+\caption{Chow structural break test at the 2017 reform breakpoint}
+\label{tab:chow-test}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrl}
+\toprule
+test & breakpoint\_year & statistic & p\_value & interpretation \\
+\midrule
+Chow structural break test & 2017 & 6.9367 & 0.0129 & Reject H0: statistically significant break \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\fixedfigure[width=0.9\textwidth]{fig1_structural_break.png}{Manufacturing value added in Uzbekistan with the 2017 reform breakpoint.}{fig:structural-break}
+
+\section{Revealed Comparative Advantage}
+
+The RCA results track whether Uzbekistan's export basket shows signs of diversification into manufacturing-related sections. The number of sections with RCA above one rises in some post-reform years, although the mean manufacturing-related RCA remains uneven.
+
+\begin{table}[H]
+\centering
+\caption{Uzbekistan RCA diversification indicators}
+\label{tab:rca-diversification}
+\resizebox{0.65\textwidth}{!}{%
+\begin{tabular}{rrr}
+\toprule
+year & sectors\_with\_rca & mean\_rca\_manuf \\
+\midrule
+2010 & 7 & 1.504 \\
+2011 & 8 & 1.674 \\
+2012 & 7 & 2.259 \\
+2013 & 8 & 1.753 \\
+2014 & 8 & 1.647 \\
+2015 & 8 & 1.349 \\
+2016 & 9 & 1.008 \\
+2017 & 10 & 1.112 \\
+2018 & 8 & 0.982 \\
+2019 & 8 & 0.903 \\
+2020 & 9 & 0.901 \\
+2021 & 10 & 1.197 \\
+2022 & 12 & 1.068 \\
+2023 & 9 & 0.967 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\fixedfigure[width=\textwidth]{fig2_rca_heatmap.png}{Uzbekistan top export sections by revealed comparative advantage.}{fig:rca-heatmap}
+
+\fixedfigure[width=\textwidth]{fig3_rca_manufacturing.png}{Manufacturing-related RCA trends in Uzbekistan.}{fig:rca-manufacturing}
+
+\section{Comparative Reform Trajectory}
+
+Uzbekistan's post-2017 period is compared with Vietnam's post-2000 reform-stage trajectory where comparable data are available. The scorecard highlights that Vietnam's early reform-stage FDI intensity and logistics score were higher, while Uzbekistan's post-2017 manufacturing value-added share rose strongly within the observed window.
+
+\begin{table}[H]
+\centering
+\caption{Comparative reform-stage scorecard}
+\label{tab:comparison-scorecard}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+country\_label & Avg Manufacturing VA (\% GDP) & Avg FDI (\% GDP) & Avg LPI Score & Avg Doing Business Score & Peak FDI (\% GDP) & Avg ECI \\
+\midrule
+Uzbekistan (post-2017) & 17.82 & 2.53 & 2.59 & 68.08 & 3.44 & -0.354 \\
+Vietnam (post-2000) & 19.04 & 4.96 & 2.89 & -- & 9.66 & -- \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\fixedfigure[width=\textwidth]{fig4_comparative_trajectory.png}{Uzbekistan and Vietnam reform-stage trajectory comparison.}{fig:comparative-trajectory}
+
+\section{Empirical Observations}
+
+The empirical results support five main observations. First, Uzbekistan's average manufacturing value added increased substantially after the 2017 reform breakpoint, rising from 11.68 percent of GDP in 2010--2016 to 17.82 percent in 2017--2023. This descriptive shift is consistent with the visual trend in Figure~\ref{fig:structural-break} and suggests that the reform period coincided with stronger industrial-output momentum.
+
+Second, the Chow test identifies a statistically significant structural break in the manufacturing value-added trend at 2017. The test statistic is 6.9367 with a p-value of 0.0129, allowing rejection of the null hypothesis of no break at conventional significance levels. This result provides the clearest statistical evidence that the post-2017 period differs from the pre-reform trend.
+
+Third, the segmented trend regression points in the same direction but should be interpreted cautiously. The post-reform interaction coefficient for manufacturing value added is positive, at 0.2194, but is not statistically significant at conventional levels. This means that the regression does not independently confirm a precise post-2017 slope acceleration once the level shift and time trend are included, even though the broader structural-break result remains statistically significant.
+
+Fourth, FDI inflows improved descriptively but remain less conclusive as an econometric mechanism. Average FDI inflows increased from 1.74 percent of GDP before 2017 to 2.53 percent after 2017. However, the FDI trend-regression interaction coefficient is positive but statistically insignificant. The evidence therefore supports a cautious interpretation: FDI conditions improved during the reform period, but the available annual data do not prove that FDI was the sole or dominant driver of manufacturing growth.
+
+Fifth, export-specialisation evidence is mixed. Uzbekistan's number of export sections with RCA above one increased from 10 in 2017 to 12 in 2022 before falling to 9 in 2023, while the mean manufacturing-related RCA fluctuated around the comparative-advantage threshold. This indicates some diversification capacity, but not yet a stable transition toward broad manufacturing-based export competitiveness.
+
+The Vietnam comparison reinforces this interpretation. Uzbekistan's post-2017 average manufacturing value-added share is close to Vietnam's early reform-stage average, but Vietnam records higher average FDI inflows and a higher logistics score. Uzbekistan therefore shows meaningful manufacturing momentum, while its weaker FDI depth, logistics performance, and export complexity point to the remaining constraints on deeper global value chain embedding.
+
+\section{Reproducibility and Improvement Tracking}
+
+The statistical workflow is refreshed from the project root with \texttt{source("run\_all.R")}. The Quarto report remains available for executable statistical review, while this document provides the direct LaTeX manuscript layer. All major manuscript and workflow improvements are recorded in \texttt{thesis/IMPROVEMENTS.md}.
+
+\section{Conclusion}
+
+The results provide evidence of a statistically significant manufacturing trend break around 2017 and a post-reform rise in Uzbekistan's manufacturing share of GDP. However, the export-composition evidence is more mixed, with manufacturing-related RCA fluctuating rather than moving uniformly upward. The comparison with Vietnam indicates that Uzbekistan's reform trajectory has promising manufacturing momentum but still faces constraints in FDI depth, logistics performance, and export complexity.
+
+\end{document}

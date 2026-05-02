@@ -1,0 +1,6 @@
+country_code,country,years,observations,mean_manuf_va_gdp,sd_manuf_va_gdp,mean_fdi_gdp,sd_fdi_gdp,mean_gdp_per_capita,mean_lpi_score,mean_doing_business_score
+CHN,China,2010-2023,14,28.24,2.1,2.05,1.02,9067.24,3.59,NA
+KAZ,Kazakhstan,2010-2023,14,11.62,1.08,4.18,3.03,10460.67,2.75,NA
+KOR,"Korea, Rep.",2010-2023,14,27.46,1.19,0.79,0.29,31508.28,3.69,NA
+UZB,Uzbekistan,2010-2023,14,14.75,3.61,2.14,0.92,2327.25,2.54,66.58
+VNM,Viet Nam,2010-2023,14,21.91,2.34,4.59,0.43,2954.74,3.11,67.65

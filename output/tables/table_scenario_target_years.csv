@@ -1,0 +1,7 @@
+scenario,target_metric,target_value,target_year,projected_value
+A: Status Quo,ECI,-0.26465482918081484,2024,-0.0832856044808548
+B: Accelerated GVC Embedding,ECI,-0.26465482918081484,2024,-0.0582856044808548
+C: Vietnam Trajectory,ECI,-0.26465482918081484,2024,-0.036842075427168455
+A: Status Quo,Manufacturing VA (% GDP),17.1305705708367,2024,20.07004991097058
+B: Accelerated GVC Embedding,Manufacturing VA (% GDP),17.1305705708367,2024,20.420049910970583
+C: Vietnam Trajectory,Manufacturing VA (% GDP),17.1305705708367,2024,20.796330349198364

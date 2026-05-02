@@ -6,3 +6,6 @@
 
 output/logs/*.tmp
 verification.log
+
+/.quarto/
+**/*.quarto_ipynb

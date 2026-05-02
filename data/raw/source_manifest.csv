@@ -1,9 +1,10 @@
-file,status,source,note
-gdp_worldbank.csv,fetched,World Bank API,"GDP current US dollars and manufacturing value added share for UZB and VNM, 2010-2023."
-lpi_worldbank.csv,fetched,World Bank API,LPI score for available survey years in 2010-2023.
-doing_business_worldbank.csv,fetched,World Bank API / Doing Business archive indicators,Doing Business rank and DB17-20 methodology score where available; series discontinued after 2020.
-fdi_unctad.csv,fetched_proxy,World Bank API indicator BX.KLT.DINV.CD.WD,"Aggregate FDI net inflows, not source-country breakdown. World Bank metadata cites IMF, UNCTAD, and official sources."
-fdi_uzbekstat.csv,fetched_partial,Uzbekistan SIAT/stat.uz API,"Official available table is foreign investments and loans share by territory, not sector inflows in USD."
-exports_comtrade.csv,fetched_proxy,OEC/BACI public API,Uzbekistan exports by HS section in USD. UN Comtrade direct API returned 401 without an API key.
-eci_mit.csv,fetched,OEC Economic Complexity Indicators,"ECI for UZB and VNM, HS4 REV. 1992, 2010-2023."
-vietnam_comparison.csv,fetched,Same APIs as above,Vietnam comparison extract for indicators and exports.
+file,status,source,note,fetch_date,rows
+gdp_worldbank.csv,fetched,World Bank API,"GDP current US dollars and manufacturing value added share for UZB and VNM, 2010-2023.",NA,NA
+lpi_worldbank.csv,fetched,World Bank API,LPI score for available survey years in 2010-2023.,NA,NA
+doing_business_worldbank.csv,fetched,World Bank API / Doing Business archive indicators,Doing Business rank and DB17-20 methodology score where available; series discontinued after 2020.,NA,NA
+fdi_unctad.csv,fetched_proxy,World Bank API indicator BX.KLT.DINV.CD.WD,"Aggregate FDI net inflows, not source-country breakdown. World Bank metadata cites IMF, UNCTAD, and official sources.",NA,NA
+fdi_uzbekstat.csv,fetched_partial,Uzbekistan SIAT/stat.uz API,"Official available table is foreign investments and loans share by territory, not sector inflows in USD.",NA,NA
+exports_comtrade.csv,fetched_proxy,OEC/BACI public API,Uzbekistan exports by HS section in USD. UN Comtrade direct API returned 401 without an API key.,NA,NA
+eci_mit.csv,fetched,OEC Economic Complexity Indicators,"ECI for UZB and VNM, HS4 REV. 1992, 2010-2023.",NA,NA
+vietnam_comparison.csv,fetched,Same APIs as above,Vietnam comparison extract for indicators and exports.,NA,NA
+network_tiva_placeholder.csv,fetched,OECD TiVA 2023 — N/A for UZB,UZB not covered. Proxy constructed from WB data in process_network_data.R.,2026-05-02,1

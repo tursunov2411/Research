@@ -1,0 +1,11 @@
+project:
+  type: default
+  render:
+    - analysis.qmd
+  output-dir: output/report
+
+execute:
+  freeze: false
+  echo: true
+  warning: false
+  message: false

@@ -1,0 +1,27 @@
+SCENARIO FORECASTING LOG
+Date: 2026-05-01 20:22:37 
+
+Forecast horizon: 2024 - 2030 
+Manufacturing model: ARIMA - 0,1,0 
+FDI model: ARIMA - 0,0,0 
+ECI model: ARIMA - 1,1,0 
+
+Vietnam benchmark table:
+# A tibble: 3 × 3
+  metric                   vietnam_2010 vietnam_avg_annual_change
+  <chr>                           <dbl>                     <dbl>
+1 Manufacturing VA (% GDP)       17.1                      0.726 
+2 FDI inflows (% GDP)             5.43                    -0.0890
+3 ECI                            -0.265                    0.0464
+
+Scenario target years:
+# A tibble: 6 × 5
+# Groups:   scenario [3]
+  scenario                target_metric target_value target_year projected_value
+  <chr>                   <chr>                <dbl>       <int>           <dbl>
+1 A: Status Quo           ECI                 -0.265        2024         -0.0833
+2 B: Accelerated GVC Emb… ECI                 -0.265        2024         -0.0583
+3 C: Vietnam Trajectory   ECI                 -0.265        2024         -0.0368
+4 A: Status Quo           Manufacturin…       17.1          2024         20.1   
+5 B: Accelerated GVC Emb… Manufacturin…       17.1          2024         20.4   
+6 C: Vietnam Trajectory   Manufacturin…       17.1          2024         20.8   

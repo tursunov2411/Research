@@ -1,0 +1,256 @@
+
+[1] Fetching bilateral imports (OEC BACI) CHN/JPN/KOR → UZB by HS Section ...
+  Fetching: China→UZB
+    WARNING: Failed CHN -> UZB 2010
+    WARNING: Failed CHN -> UZB 2011
+    WARNING: Failed CHN -> UZB 2012
+    WARNING: Failed CHN -> UZB 2013
+    WARNING: Failed CHN -> UZB 2014
+    WARNING: Failed CHN -> UZB 2015
+    WARNING: Failed CHN -> UZB 2016
+    WARNING: Failed CHN -> UZB 2017
+    WARNING: Failed CHN -> UZB 2018
+    WARNING: Failed CHN -> UZB 2019
+    WARNING: Failed CHN -> UZB 2020
+    WARNING: Failed CHN -> UZB 2021
+    WARNING: Failed CHN -> UZB 2022
+    WARNING: Failed CHN -> UZB 2023
+  Fetching: Japan→UZB
+    WARNING: Failed JPN -> UZB 2010
+    WARNING: Failed JPN -> UZB 2011
+    WARNING: Failed JPN -> UZB 2012
+    WARNING: Failed JPN -> UZB 2013
+    WARNING: Failed JPN -> UZB 2014
+    WARNING: Failed JPN -> UZB 2015
+    WARNING: Failed JPN -> UZB 2016
+    WARNING: Failed JPN -> UZB 2017
+    WARNING: Failed JPN -> UZB 2018
+    WARNING: Failed JPN -> UZB 2019
+    WARNING: Failed JPN -> UZB 2020
+    WARNING: Failed JPN -> UZB 2021
+    WARNING: Failed JPN -> UZB 2022
+    WARNING: Failed JPN -> UZB 2023
+  Fetching: SKorea→UZB
+    WARNING: Failed KOR -> UZB 2010
+    WARNING: Failed KOR -> UZB 2011
+    WARNING: Failed KOR -> UZB 2012
+    WARNING: Failed KOR -> UZB 2013
+    WARNING: Failed KOR -> UZB 2014
+    WARNING: Failed KOR -> UZB 2015
+    WARNING: Failed KOR -> UZB 2016
+    WARNING: Failed KOR -> UZB 2017
+    WARNING: Failed KOR -> UZB 2018
+    WARNING: Failed KOR -> UZB 2019
+    WARNING: Failed KOR -> UZB 2020
+    WARNING: Failed KOR -> UZB 2021
+    WARNING: Failed KOR -> UZB 2022
+    WARNING: Failed KOR -> UZB 2023
+  Fetching: UZB→China
+    WARNING: Failed UZB -> CHN 2010
+    WARNING: Failed UZB -> CHN 2011
+    WARNING: Failed UZB -> CHN 2012
+    WARNING: Failed UZB -> CHN 2013
+    WARNING: Failed UZB -> CHN 2014
+    WARNING: Failed UZB -> CHN 2015
+    WARNING: Failed UZB -> CHN 2016
+    WARNING: Failed UZB -> CHN 2017
+    WARNING: Failed UZB -> CHN 2018
+    WARNING: Failed UZB -> CHN 2019
+    WARNING: Failed UZB -> CHN 2020
+    WARNING: Failed UZB -> CHN 2021
+    WARNING: Failed UZB -> CHN 2022
+    WARNING: Failed UZB -> CHN 2023
+  Fetching: UZB→Japan
+    WARNING: Failed UZB -> JPN 2010
+    WARNING: Failed UZB -> JPN 2011
+    WARNING: Failed UZB -> JPN 2012
+    WARNING: Failed UZB -> JPN 2013
+    WARNING: Failed UZB -> JPN 2014
+    WARNING: Failed UZB -> JPN 2015
+    WARNING: Failed UZB -> JPN 2016
+    WARNING: Failed UZB -> JPN 2017
+    WARNING: Failed UZB -> JPN 2018
+    WARNING: Failed UZB -> JPN 2019
+    WARNING: Failed UZB -> JPN 2020
+    WARNING: Failed UZB -> JPN 2021
+    WARNING: Failed UZB -> JPN 2022
+    WARNING: Failed UZB -> JPN 2023
+  Fetching: UZB→SKorea
+    WARNING: Failed UZB -> KOR 2010
+    WARNING: Failed UZB -> KOR 2011
+    WARNING: Failed UZB -> KOR 2012
+    WARNING: Failed UZB -> KOR 2013
+    WARNING: Failed UZB -> KOR 2014
+    WARNING: Failed UZB -> KOR 2015
+    WARNING: Failed UZB -> KOR 2016
+    WARNING: Failed UZB -> KOR 2017
+    WARNING: Failed UZB -> KOR 2018
+    WARNING: Failed UZB -> KOR 2019
+    WARNING: Failed UZB -> KOR 2020
+    WARNING: Failed UZB -> KOR 2021
+    WARNING: Failed UZB -> KOR 2022
+    WARNING: Failed UZB -> KOR 2023
+  Fetching: UZB→Kazakhstan
+    WARNING: Failed UZB -> KAZ 2010
+    WARNING: Failed UZB -> KAZ 2011
+    WARNING: Failed UZB -> KAZ 2012
+    WARNING: Failed UZB -> KAZ 2013
+    WARNING: Failed UZB -> KAZ 2014
+    WARNING: Failed UZB -> KAZ 2015
+    WARNING: Failed UZB -> KAZ 2016
+    WARNING: Failed UZB -> KAZ 2017
+    WARNING: Failed UZB -> KAZ 2018
+    WARNING: Failed UZB -> KAZ 2019
+    WARNING: Failed UZB -> KAZ 2020
+    WARNING: Failed UZB -> KAZ 2021
+    WARNING: Failed UZB -> KAZ 2022
+    WARNING: Failed UZB -> KAZ 2023
+  Fetching: UZB→Russia
+    WARNING: Failed UZB -> RUS 2010
+    WARNING: Failed UZB -> RUS 2011
+    WARNING: Failed UZB -> RUS 2012
+    WARNING: Failed UZB -> RUS 2013
+    WARNING: Failed UZB -> RUS 2014
+    WARNING: Failed UZB -> RUS 2015
+    WARNING: Failed UZB -> RUS 2016
+    WARNING: Failed UZB -> RUS 2017
+    WARNING: Failed UZB -> RUS 2018
+    WARNING: Failed UZB -> RUS 2019
+    WARNING: Failed UZB -> RUS 2020
+    WARNING: Failed UZB -> RUS 2021
+    WARNING: Failed UZB -> RUS 2022
+    WARNING: Failed UZB -> RUS 2023
+  Fetching: UZB→Turkey
+    WARNING: Failed UZB -> TUR 2010
+    WARNING: Failed UZB -> TUR 2011
+    WARNING: Failed UZB -> TUR 2012
+    WARNING: Failed UZB -> TUR 2013
+    WARNING: Failed UZB -> TUR 2014
+    WARNING: Failed UZB -> TUR 2015
+    WARNING: Failed UZB -> TUR 2016
+    WARNING: Failed UZB -> TUR 2017
+    WARNING: Failed UZB -> TUR 2018
+    WARNING: Failed UZB -> TUR 2019
+    WARNING: Failed UZB -> TUR 2020
+    WARNING: Failed UZB -> TUR 2021
+    WARNING: Failed UZB -> TUR 2022
+    WARNING: Failed UZB -> TUR 2023
+  WARNING: OEC API returned no data. Check connectivity / API availability.
+
+[2] Fetching World Bank WDI indicators (extended set) ...
+  WARNING wbstats: World Bank API request failed for indicator SL.MNF.EMPL.ZS The following message was returned from the server
+id: 120
+key: Invalid value
+value: The provided parameter value is not valid
+
+failed request:
+https://api.worldbank.org/v2/en/country/chn;jpn;kaz;kgz;kor;tjk;tkm;uzb;vnm/indicator/SL.MNF.EMPL.ZS?date=2005%3A2024&footnote=y&cntrycode=y&per_page=20000&format=json
+  WARNING: WB WDI fetch failed.
+
+[3] Fetching OECD TiVA data (SDMX-JSON endpoint, no auth required for C1 table)...
+    TiVA miss: UZB EXGR_FVASH HTTP 404
+    TiVA miss: UZB EXGR_DVASH HTTP 404
+    TiVA miss: UZB IMGR_FVASH HTTP 404
+    TiVA miss: VNM EXGR_FVASH HTTP 404
+    TiVA miss: VNM EXGR_DVASH HTTP 404
+    TiVA miss: VNM IMGR_FVASH HTTP 404
+    TiVA miss: KAZ EXGR_FVASH HTTP 404
+    TiVA miss: KAZ EXGR_DVASH HTTP 404
+    TiVA miss: KAZ IMGR_FVASH HTTP 404
+    TiVA miss: KGZ EXGR_FVASH HTTP 404
+    TiVA miss: KGZ EXGR_DVASH HTTP 404
+    TiVA miss: KGZ IMGR_FVASH HTTP 404
+    TiVA miss: BGD EXGR_FVASH HTTP 404
+    TiVA miss: BGD EXGR_DVASH HTTP 404
+    TiVA miss: BGD IMGR_FVASH HTTP 404
+    TiVA miss: PAK EXGR_FVASH HTTP 404
+    TiVA miss: PAK EXGR_DVASH HTTP 404
+    TiVA miss: PAK IMGR_FVASH HTTP 404
+  NOTE: OECD TiVA API returned no data (may not cover UZB). Fallback: WB proxy will be used in processing step.
+  Saved: data/raw/network_tiva_placeholder.csv ( 1 rows )
+
+[4] Fetching UZB export composition by destination (re-export map)...
+  Fetching UZB→ KAZ
+    WARNING: Failed UZB -> KAZ 2015
+    WARNING: Failed UZB -> KAZ 2016
+    WARNING: Failed UZB -> KAZ 2017
+    WARNING: Failed UZB -> KAZ 2018
+    WARNING: Failed UZB -> KAZ 2019
+    WARNING: Failed UZB -> KAZ 2020
+    WARNING: Failed UZB -> KAZ 2021
+    WARNING: Failed UZB -> KAZ 2022
+    WARNING: Failed UZB -> KAZ 2023
+  Fetching UZB→ RUS
+    WARNING: Failed UZB -> RUS 2015
+    WARNING: Failed UZB -> RUS 2016
+    WARNING: Failed UZB -> RUS 2017
+    WARNING: Failed UZB -> RUS 2018
+    WARNING: Failed UZB -> RUS 2019
+    WARNING: Failed UZB -> RUS 2020
+    WARNING: Failed UZB -> RUS 2021
+    WARNING: Failed UZB -> RUS 2022
+    WARNING: Failed UZB -> RUS 2023
+  Fetching UZB→ TUR
+    WARNING: Failed UZB -> TUR 2015
+    WARNING: Failed UZB -> TUR 2016
+    WARNING: Failed UZB -> TUR 2017
+    WARNING: Failed UZB -> TUR 2018
+    WARNING: Failed UZB -> TUR 2019
+    WARNING: Failed UZB -> TUR 2020
+    WARNING: Failed UZB -> TUR 2021
+    WARNING: Failed UZB -> TUR 2022
+    WARNING: Failed UZB -> TUR 2023
+  Fetching UZB→ DEU
+    WARNING: Failed UZB -> DEU 2015
+    WARNING: Failed UZB -> DEU 2016
+    WARNING: Failed UZB -> DEU 2017
+    WARNING: Failed UZB -> DEU 2018
+    WARNING: Failed UZB -> DEU 2019
+    WARNING: Failed UZB -> DEU 2020
+    WARNING: Failed UZB -> DEU 2021
+    WARNING: Failed UZB -> DEU 2022
+    WARNING: Failed UZB -> DEU 2023
+  Fetching UZB→ GBR
+    WARNING: Failed UZB -> GBR 2015
+    WARNING: Failed UZB -> GBR 2016
+    WARNING: Failed UZB -> GBR 2017
+    WARNING: Failed UZB -> GBR 2018
+    WARNING: Failed UZB -> GBR 2019
+    WARNING: Failed UZB -> GBR 2020
+    WARNING: Failed UZB -> GBR 2021
+    WARNING: Failed UZB -> GBR 2022
+    WARNING: Failed UZB -> GBR 2023
+  Fetching UZB→ CHN
+    WARNING: Failed UZB -> CHN 2015
+    WARNING: Failed UZB -> CHN 2016
+    WARNING: Failed UZB -> CHN 2017
+    WARNING: Failed UZB -> CHN 2018
+    WARNING: Failed UZB -> CHN 2019
+    WARNING: Failed UZB -> CHN 2020
+    WARNING: Failed UZB -> CHN 2021
+    WARNING: Failed UZB -> CHN 2022
+    WARNING: Failed UZB -> CHN 2023
+  Fetching UZB→ AFG
+    WARNING: Failed UZB -> AFG 2015
+    WARNING: Failed UZB -> AFG 2016
+    WARNING: Failed UZB -> AFG 2017
+    WARNING: Failed UZB -> AFG 2018
+    WARNING: Failed UZB -> AFG 2019
+    WARNING: Failed UZB -> AFG 2020
+    WARNING: Failed UZB -> AFG 2021
+    WARNING: Failed UZB -> AFG 2022
+    WARNING: Failed UZB -> AFG 2023
+  Fetching UZB→ TJK
+    WARNING: Failed UZB -> TJK 2015
+    WARNING: Failed UZB -> TJK 2016
+    WARNING: Failed UZB -> TJK 2017
+    WARNING: Failed UZB -> TJK 2018
+    WARNING: Failed UZB -> TJK 2019
+    WARNING: Failed UZB -> TJK 2020
+    WARNING: Failed UZB -> TJK 2021
+    WARNING: Failed UZB -> TJK 2022
+    WARNING: Failed UZB -> TJK 2023
+  WARNING: Re-export data fetch failed.
+
+[5] Updating source_manifest.csv ...
+  Manifest updated: 9 entries.

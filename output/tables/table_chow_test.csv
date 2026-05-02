@@ -1,0 +1,2 @@
+test,breakpoint_year,statistic,p_value,interpretation
+Chow structural break test,2017,6.9367,0.0129,Reject H0: statistically significant break

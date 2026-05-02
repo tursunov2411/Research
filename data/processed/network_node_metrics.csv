@@ -1,0 +1,9 @@
+name,in_strength,out_strength,betweenness,eigen_cent,net_position,region,role
+UZB,3,4,0.2619047619047619,1,1,Central Asia,Hub/Target
+CHN,1,1,0,0.6666666666666666,0,Northeast Asia,Source
+JPN,0,1,0,0.33333333333333337,1,Northeast Asia,Source
+KOR,0,1,0,0.3333333333333333,1,Northeast Asia,Source
+KAZ,1,0,0,0.3333333333333334,-1,Central Asia,Re-export Market
+RUS,1,0,0,0.3333333333333333,-1,Eurasia,Re-export Market
+TUR,0,0,0,3.0665868333667474e-19,0,Eurasia,Re-export Market
+ROW,1,0,0,0.33333333333333337,-1,Global,Commodity Market

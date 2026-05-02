@@ -1,0 +1,9 @@
+name,region,role
+UZB,Central Asia,Hub/Target
+CHN,Northeast Asia,Source
+JPN,Northeast Asia,Source
+KOR,Northeast Asia,Source
+KAZ,Central Asia,Re-export Market
+RUS,Eurasia,Re-export Market
+TUR,Eurasia,Re-export Market
+ROW,Global,Commodity Market

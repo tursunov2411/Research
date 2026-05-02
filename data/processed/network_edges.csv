@@ -1,0 +1,8 @@
+from,to,weight_bn,flow_type,intermediate_share,year
+CHN,UZB,11.92679934,Intermediate Import,0.75,2023
+JPN,UZB,0.3149242,Intermediate Import,0.97,2023
+KOR,UZB,2.394985434,Intermediate Import,0.9,2023
+UZB,CHN,13.865396959,Primary Commodity Export,0,2023
+UZB,ROW,4.065710358,Textile/Consumer Export,0.1,2023
+UZB,KAZ,1.9485854952000001,Re-export Potential,0.4,2023
+UZB,RUS,1.95411138408,Mixed Exports,0.2,2023

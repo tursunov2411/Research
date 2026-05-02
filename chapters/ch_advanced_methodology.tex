@@ -1,0 +1,151 @@
+% ═══════════════════════════════════════════════════════════════════════════════
+\section{Research Design and Methodology}
+\label{sec:methodology}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\subsection{Research Philosophy and Ontological Position}
+
+This dissertation adopts a \textit{critical realist} ontological position \citep{bhaskar1975}. Critical realism holds that social phenomena are produced by underlying causal mechanisms operating within stratified structures, and that observed empirical regularities are surface manifestations of these deeper generative processes. For the purposes of this study, the structural mechanisms of interest are: (i) global value chain governance, which allocates productive tasks across national boundaries through firm-level coordination decisions; (ii) the political economy of developmental states, which shapes domestic institutional configurations that make countries more or less receptive to GVC embedding; and (iii) the geography of landlocked developing countries, which imposes structural trade cost penalties that condition the ceiling on achievable integration.
+
+This ontological position has methodological consequences. It motivates a mixed-method research design that combines quantitative empirical analysis --- to detect regularities and test hypotheses --- with qualitative-comparative analysis --- to trace mechanisms and interpret regularities in their structural context. A purely econometric approach would identify correlations but could not answer \textit{why} Uzbekistan's reform trajectory has diverged from Vietnam's, or \textit{through which mechanisms} Northeast Asian FDI translates (or fails to translate) into domestic capability accumulation. A purely case-study approach would identify mechanisms but could not assess their magnitude or generalisability.
+
+Epistemologically, this dissertation follows a \textit{retroductive} inference strategy: it begins with observed empirical anomalies (e.g., the gap between Uzbekistan's rapidly rising intermediate goods import share and its stagnant export sophistication), identifies candidate causal mechanisms (captive GVC governance, logistics constraints, FDI quality gaps), and evaluates the plausibility of those mechanisms against systematic empirical evidence \citep{danermark2019}. This approach is well-suited to development economics research where controlled experimentation is impossible and causal identification is inherently partial.
+
+\subsection{Research Design: Sequential Explanatory Mixed-Methods}
+
+The empirical strategy follows a sequential explanatory design, proceeding through four stages:
+
+\begin{enumerate}
+  \item \textbf{Trend Identification:} Descriptive time-series analysis of manufacturing value added, FDI inflows, trade openness, and economic complexity for Uzbekistan and comparator countries, 2000--2023.
+  \item \textbf{Structural Break Detection:} Chow test applied to the manufacturing VA series to formally identify 2017 as a statistical turning point, converting a qualitative reform claim into a quantitatively testable hypothesis.
+  \item \textbf{Association Analysis:} OLS regressions relating FDI inflows, trade openness, and reform-period dummies to manufacturing upgrading indicators, with HC3-robust standard errors.
+  \item \textbf{Comparative Benchmarking:} Alignment of Uzbekistan's reform trajectory against Vietnam (post-2001) and Thailand (post-Eastern Seaboard Programme, 1981) using reform-year normalisation to control for initial conditions.
+\end{enumerate}
+
+Alongside this quantitative sequence, qualitative-comparative analysis of institutional conditions, SEZ policy design, and structural constraints provides the mechanistic layer that the regressions cannot supply.
+
+\subsection{Variable Operationalisation}
+
+Table~\ref{tab:variables} presents the full set of indicators used in this dissertation, their operationalisation, sources, and expected directional relationships with the outcome variables.
+
+\begin{longtable}{@{}p{3.0cm}p{4.5cm}p{3.0cm}p{2.0cm}@{}}
+  \caption{Variable Operationalisation, Sources, and Expected Signs}
+  \label{tab:variables} \\
+  \toprule
+  Variable & Operationalisation & Source & Sign \\
+  \midrule
+  \endfirsthead
+  \multicolumn{4}{c}{\small\textit{(continued from previous page)}} \\
+  \toprule
+  Variable & Operationalisation & Source & Sign \\
+  \midrule
+  \endhead
+  \midrule
+  \multicolumn{4}{r}{\small\textit{(continues on next page)}} \\
+  \endfoot
+  \bottomrule
+  \endlastfoot
+  Mfg VA (\% GDP) & NV.IND.MANF.ZS: manufacturing value added as share of GDP, annual & World Bank WDI & Outcome \\[4pt]
+  ECI & Economic Complexity Index, method of reflections; standardised $\mu=0, \sigma=1$ & OEC & Outcome \\[4pt]
+  FDI (\% GDP) & BX.KLT.DINV.WD.GD.ZS: net FDI inflows as share of GDP & World Bank WDI & $+$ \\[4pt]
+  Trade Openness & (Exports + Imports) / GDP, index; NE.TRD.GNFS.ZS & World Bank WDI & $+$ \\[4pt]
+  LPI Score & Logistics Performance Index composite (0--5); LP.LPI.OVRL.XQ & World Bank WDI & $+$ \\[4pt]
+  Post2017 & Binary: 1 if year $\geq$ 2017, else 0 & Author & $+$ \\[4pt]
+  Trend & Linear year index: $t - t_0$ where $t_0 = 2010$ & Author & $+$ \\[4pt]
+  Interm. Share & Share of HS-section 05, 06, 07, 15, 16, 17, 18 imports in total bilateral imports; proxy for GVC backward integration & OEC/BACI & $+$ \\[4pt]
+  RCA$_k$ & Balassa (1965) index for sector $k$; threshold = 1 & OEC/BACI & Context \\[4pt]
+  WGI: RQ & Regulatory Quality percentile rank & World Bank WGI & $+$ \\[4pt]
+  WGI: RL & Rule of Law percentile rank & World Bank WGI & $+$ \\[4pt]
+  WGI: GE & Government Effectiveness percentile rank & World Bank WGI & $+$ \\[4pt]
+  BIT Count & Number of bilateral investment treaties in force & UNCTAD IPFSD & $+$ \\[4pt]
+  SEZ FDI & FDI attracted to Uzbekistan SEZs (USD m, cumulative) & Uzinfoinvest & Context \\[4pt]
+  GDP per capita & NY.GDP.PCAP.CD: current USD & World Bank WDI & Context \\[4pt]
+\end{longtable}
+
+\subsection{Data Sources and API Endpoints}
+
+All quantitative data are sourced from publicly accessible databases. Table~\ref{tab:datasources} maps each dataset to its access method and the relevant dissertation sections.
+
+\begin{table}[H]
+  \centering
+  \caption{Data Sources, Access Methods, and Coverage}
+  \label{tab:datasources}
+  \small
+  \begin{tabular}{@{}p{3.5cm}p{4.5cm}p{2.5cm}p{1.5cm}@{}}
+    \toprule
+    Dataset & API / URL & Coverage & Sections \\
+    \midrule
+    World Bank WDI & \texttt{api.worldbank.org/v2/} & 2000--2023 & 3--9 \\
+    World Bank WGI & \texttt{api.worldbank.org/v2/} & 2000--2022 & 9 \\
+    OEC / BACI & \texttt{oec.world/api/} & 2010--2022 & 5--8 \\
+    UNCTAD FDIstat & \texttt{unctadstat.unctad.org/} & 2000--2023 & 9 \\
+    OECD TiVA & \texttt{stats.oecd.org/} & 2005--2020 & 6--7 \\
+    Uzbekstat & \texttt{stat.uz} & 2015--2024 & 10 \\
+    UNIDO INDSTAT & \texttt{stat.unido.org/} & 2010--2021 & 5, 9 \\
+    ADB Key Indicators & \texttt{kidb.adb.org/} & 2000--2023 & 10--11 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Empirical Models}
+
+\subsubsection{Chow Structural Break Test}
+
+The Chow (1960) test is applied to the linear trend specification:
+\begin{equation}
+  MfgVA_t = \alpha + \beta \cdot \text{Trend}_t + \varepsilon_t, \quad t = 2010, \ldots, 2023
+  \label{eq:chow_base}
+\end{equation}
+with sub-period regressions for $t < 2017$ and $t \geq 2017$. The F-statistic:
+\begin{equation}
+  F = \frac{(RSS_R - RSS_U)/k}{RSS_U/(n-2k)}
+  \label{eq:chow_f}
+\end{equation}
+where $RSS_R$ is the residual sum of squares from the restricted pooled regression, $RSS_U = RSS_{pre} + RSS_{post}$, and $k=2$ parameters are tested. The null hypothesis $H_0: \alpha_{pre} = \alpha_{post}, \beta_{pre} = \beta_{post}$ is tested against an unrestricted alternative.
+
+\subsubsection{OLS Regression: Manufacturing Value Added}
+
+\begin{equation}
+  MfgVA_t = \alpha_0 + \beta_1 \cdot FDI_{t-1} + \beta_2 \cdot TradeOpen_t + \beta_3 \cdot Post2017_t + \beta_4 \cdot \text{Trend}_t + \varepsilon_t
+  \label{eq:ols_mfg}
+\end{equation}
+
+A second specification includes $FDI_{t-2}$ to test for delayed capital-stock effects:
+\begin{equation}
+  MfgVA_t = \alpha_0 + \beta_1 \cdot FDI_{t-2} + \beta_2 \cdot TradeOpen_t + \beta_3 \cdot Post2017_t + \beta_4 \cdot \text{Trend}_t + \varepsilon_t
+  \label{eq:ols_mfg2}
+\end{equation}
+
+\subsubsection{OLS Regression: Economic Complexity}
+
+\begin{equation}
+  ECI_t = \alpha_0 + \beta_1 \cdot MfgVA_t + \beta_2 \cdot TradeOpen_t + \beta_3 \cdot Post2017_t + \beta_4 \cdot \text{Trend}_t + \varepsilon_t
+  \label{eq:ols_eci}
+\end{equation}
+
+All regressions use HC3 heteroskedasticity-consistent standard errors \citep{mackinnon1985}. Given the short annual time series ($N = 14$), these are interpreted as descriptive associations with appropriate caution regarding statistical power. No causal language is used for OLS coefficients.
+
+\subsubsection{Scenario Forecasting}
+
+Manufacturing VA forecasts are generated from a linear trend model fitted to the post-2017 sub-period:
+\begin{equation}
+  \widehat{MfgVA}_t = \hat{\alpha}_{post} + \hat{\beta}_{post} \cdot \text{Trend}_t, \quad t = 2024, \ldots, 2030
+  \label{eq:forecast_base}
+\end{equation}
+
+Scenario B departs from (\ref{eq:forecast_base}) by adding an annual increment $\delta_B$ calibrated to the FDI-to-manufacturing-VA multiplier estimated from the OLS regression:
+\begin{equation}
+  \widehat{MfgVA}^B_t = \widehat{MfgVA}_t + \delta_B \cdot (FDI^*_t - FDI_{2023})
+  \label{eq:forecast_b}
+\end{equation}
+where $FDI^*_t$ is the FDI trajectory implied by a 5\%-of-GDP target by 2030. Scenario C applies Vietnam's observed $\hat{\beta}_{VNM}$ from the analogous post-reform regression.
+
+\subsection{Scope, Limitations, and Robustness}
+
+This dissertation faces three principal limitations that should be acknowledged at the outset. First, the primary Uzbekistan time series spans only 2010--2023 ($N=14$), constraining statistical power in OLS models. The Chow test requires a minimum of four observations per sub-period for stable F-statistics, which is marginally satisfied but leaves limited degrees of freedom. Robustness checks using alternative breakpoints (2016, 2018) are reported in the Appendix.
+
+Second, the trade data rely on reported mirror statistics from OEC/BACI, which are known to contain measurement error from misclassification, informal trade, and gold transit flows. Uzbekistan's large informal gold trade is partially recorded as ``arts and antiques'' in official statistics, which affects RCA calculations for this sector. All RCA values for HS section 14 should be interpreted with this caveat.
+
+Third, the comparative analysis normalises reform trajectories to a common ``year zero,'' abstracting from differences in initial conditions (coastal access, population size, institutional heritage) that may independently explain divergent outcomes. The comparative benchmarking is therefore illustrative rather than causal.
+
+Despite these limitations, the combination of structural break testing, bilateral trade decomposition, comparative benchmarking, and institutional analysis provides a methodologically coherent basis for the policy conclusions advanced in Section~\ref{sec:policy}.
