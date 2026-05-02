@@ -167,7 +167,6 @@ p7a <- bilateral_trade %>%
   scale_colour_manual(values = partner_palette) +
   scale_y_continuous(labels = scales::label_dollar(suffix = "B")) +
   labs(
-    title = "A. Total Bilateral Trade (Exports + Imports)",
     x = NULL,
     y = "USD Billion",
     colour = NULL
@@ -188,7 +187,6 @@ p7b <- bilateral_trade %>%
   scale_colour_manual(values = partner_palette) +
   scale_y_continuous(labels = scales::label_dollar(suffix = "B")) +
   labs(
-    title = "B. Trade Balance (Exports minus Imports)",
     x = "Year",
     y = "USD Billion",
     colour = NULL
@@ -197,8 +195,6 @@ p7b <- bilateral_trade %>%
 
 fig7 <- (p7a / p7b) +
   patchwork::plot_annotation(
-    title = "Figure 7. Uzbekistan Bilateral Trade with China, Japan, and South Korea (2010-2023)",
-    subtitle = "OEC/BACI bilateral merchandise trade flows; vertical dashed line marks the 2017 reform break.",
     caption = paste(
       "Source: OEC/BACI public API, bilateral merchandise trade values in current USD.",
       "Trade totals and balances are author calculations from exporter-importer flows."
@@ -240,8 +236,6 @@ fig8 <- fdi_country_shares_2024 %>%
   scale_fill_manual(values = c("TRUE" = CLR_CHINA, "FALSE" = CLR_NEUTRAL)) +
   scale_y_continuous(labels = scales::label_percent(scale = 1), expand = expansion(mult = c(0, 0.05))) +
   labs(
-    title = "Figure 8. Top Investor-Country Shares in Uzbekistan's Foreign Investment and Loans (2024)",
-    subtitle = "Latest official country-share snapshot in fixed-capital foreign investment and loans.",
     x = NULL,
     y = "Share of Total (%)",
     caption = paste(
@@ -316,8 +310,6 @@ fig9 <- intermediate_shares %>%
   scale_colour_manual(values = partner_palette) +
   scale_y_continuous(labels = scales::label_percent(), limits = c(0, 1)) +
   labs(
-    title = "Figure 9. Share of Intermediate Goods in Uzbekistan's Imports from China, Japan, and South Korea",
-    subtitle = "Intermediate-goods proxy uses OEC/BACI import sections for plastics, metals, machines, transportation, and instruments.",
     x = "Year",
     y = "Intermediate Goods Share of Imports (%)",
     colour = NULL,
@@ -415,8 +407,6 @@ fig10 <- ggplot(
   ) +
   scale_size_continuous(range = c(3, 8), guide = "none") +
   labs(
-    title = "Figure 10. Trade Openness, Manufacturing VA, and ECI Trajectory (2010-2023)",
-    subtitle = "Dot size and colour reflect ECI level; the path traces Uzbekistan's annual movement through the reform period.",
     x = "Trade Openness Index (2010 = 100)",
     y = "Manufacturing VA (% of GDP)",
     caption = paste(
@@ -461,8 +451,6 @@ fig11 <- growth_decomp %>%
   facet_wrap(~metric, scales = "free_y") +
   scale_fill_manual(values = partner_palette, guide = "none") +
   labs(
-    title = "Figure 11. Post-Reform Trade Growth Decomposition by Northeast Asian Partner",
-    subtitle = "Comparing 2016 (pre-reform) with 2023 (latest available in the bilateral OEC/BACI series).",
     x = NULL,
     y = NULL,
     caption = "Source: OEC/BACI public API. Growth shares are author calculations."

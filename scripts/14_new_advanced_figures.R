@@ -120,26 +120,21 @@ p17a <- ggplot(benchmark_mfg, aes(reform_year, mfg_va, colour = country)) +
   geom_line(linewidth = 1.1) +
   geom_point(size = 2) +
   scale_colour_manual(values = pal) +
-  labs(title = "A: Manufacturing VA (% GDP)",
-       x = "Years since major liberalisation", y = "% GDP",
-       colour = NULL) +
+  labs(x=NULL, y=NULL) +
   theme_thesis
 
 p17b <- ggplot(benchmark_fdi, aes(reform_year, fdi_pct, colour = country)) +
   geom_line(linewidth = 1.1) +
   geom_point(size = 2) +
   scale_colour_manual(values = pal) +
-  labs(title = "B: FDI Inflows (% GDP)",
-       x = "Years since liberalisation", y = "% GDP",
-       colour = NULL) +
+  labs(x=NULL, y=NULL) +
   theme_thesis
 
 p17c <- ggplot(benchmark_lpi, aes(reform_year, lpi, colour = country)) +
   geom_line(linewidth = 1.1) +
   geom_point(size = 2) +
   scale_colour_manual(values = pal) +
-  labs(title = "C: Logistics Performance Index",
-       x = "Years since liberalisation", y = "LPI (0–5)",
+  labs(x=NULL, y=NULL)",
        colour = NULL) +
   theme_thesis
 
@@ -190,8 +185,6 @@ fig18 <- ggplot(wgi_data, aes(x = dimension, y = score, fill = country)) +
   scale_fill_manual(values = wgi_pal) +
   scale_y_continuous(limits = c(0, 80), breaks = seq(0, 80, 20)) +
   labs(
-    title    = "World Governance Indicators: Uzbekistan vs Comparators at Reform Year +6",
-    subtitle = "Percentile ranks (0–100); higher = better governance",
     x = NULL, y = "Percentile rank",
     fill = NULL,
     caption = "Source: World Bank WGI; ICRG (Thailand pre-WGI interpolation); author calculations."
@@ -237,7 +230,6 @@ fmsb::radarchart(
   plwd  = 2,
   cglcol = "grey70", cglty = 1, axislabcol = "grey50",
   vlcex = 0.8,
-  title = "Institutional Readiness: Uzbekistan vs Vietnam (reform yr +6)\nNormalised 0–10; 10 = best in comparator set"
 )
 legend("bottomleft", legend = c("Uzbekistan (2023)", "Vietnam (2007)"),
        col = c("#E63946", "#2A9D8F"), lwd = 2, bty = "n", cex = 0.85)
@@ -286,8 +278,6 @@ fig20 <- ggplot(sez_data, aes(x = dimension, y = score, fill = zone_group)) +
   scale_fill_manual(values = sez_pal) +
   scale_y_continuous(limits = c(0, 100), breaks = seq(0, 100, 20)) +
   labs(
-    title    = "SEZ Effectiveness Scorecard: Uzbekistan FEZs vs Comparators",
-    subtitle = "Normalised performance scores (0–100; 100 = best practice benchmark)",
     x = NULL, y = "Score (0–100)",
     fill = NULL,
     caption = "Source: Farole (2011) framework; Uzinfoinvest; Vietnam EPZ Authority;\nThailand BOI Annual Reports 2022; author calculations."
@@ -339,8 +329,6 @@ fig21 <- ggplot(constraint_data,
   annotate("text", x = 8.5, y = 1.5, label = "Monitor\n(mild + tractable)",
            size = 3, colour = "grey40", fontface = "italic") +
   labs(
-    title    = "Structural Constraint Prioritisation Matrix",
-    subtitle = "Bubble size = overall policy importance; dashed lines = median threshold",
     x = "Policy Tractability (within 5-year horizon, 1–10)",
     y = "Constraint Severity for GVC Integration (1–10)",
     caption = "Source: Author assessment based on World Bank, IFC, ADB indicators."

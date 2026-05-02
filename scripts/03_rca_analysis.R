@@ -148,8 +148,6 @@ fig_rca_heatmap <- ggplot(
     name = "RCA Index"
   ) +
   labs(
-    title = "Figure 2. Revealed Comparative Advantage - Uzbekistan",
-    subtitle = "Top export sections by RCA index, selected years",
     x = "Year",
     y = "Export Section",
     caption = paste0(
@@ -189,8 +187,6 @@ fig_rca_manuf <- ggplot(
     color = "red"
   ) +
   labs(
-    title = "Figure 3. Manufacturing-Related RCA Trends - Uzbekistan",
-    subtitle = "Textiles, metals, machines, transportation, and instruments",
     x = "Year",
     y = "RCA Index",
     color = "Section",

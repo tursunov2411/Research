@@ -1,5 +1,5 @@
 % ═══════════════════════════════════════════════════════════════════════════════
-\section{Research Design and Methodology}
+\section{Data, Research Design, and Methodology}
 \label{sec:methodology}
 % ═══════════════════════════════════════════════════════════════════════════════
 
@@ -87,58 +87,71 @@ All quantitative data are sourced from publicly accessible databases. Table~\ref
  \end{tabular}
 \end{table}
 
+This study draws on four principal data sources. First, the World Bank World Development Indicators (WDI) database \citep{world_bank_wdi} provides annual macroeconomic indicators for Uzbekistan and comparator countries, including manufacturing value added as a share of GDP, FDI net inflows as a share of GDP, GDP per capita, trade openness, and the Logistics Performance Index. Data span 2010--2026, with 2024--2026 supplemented by IMF WEO April 2025 projections where WDI data are unavailable. The primary analytical window for historical analysis is 2010--2023.
+
+Second, the Observatory of Economic Complexity (OEC) BACI international trade database provides bilateral merchandise trade flows at the HS-2 section level. Intermediate goods are proxied using HS sections 07 (plastics and rubbers), 15 (base metals), 16 (machinery), 17 (transportation equipment), and 18 (instruments) --- sections representing capital goods and inputs rather than final consumption. Revealed comparative advantage indices are computed using the Balassa (1965) formula:
+\begin{equation}
+RCA_{ik} = \frac{X_{ik}/X_i}{X_{wk}/X_w}
+\label{eq:rca}
+\end{equation}
+where an RCA value exceeding 1 indicates a comparative advantage \citep{balassa1965}.
+
+Third, the Economic Complexity Index is sourced from the OEC, which computes annual ECI scores using the method of reflections algorithm of \citet{hidalgo2009}. Fourth, FDI origin data are sourced from the National Statistics Committee of the Republic of Uzbekistan's 2024 report on foreign investment.
+
 \subsection{Empirical Models}
 
-\subsubsection{Chow Structural Break Test}
+\subsubsection{Structural Break Analysis}
 
-The Chow (1960) test is applied to the linear trend specification:
+To formally test whether the 2017 reform package constituted a statistically significant structural break in Uzbekistan's manufacturing trajectory, the Chow (1960) test is applied to the linear trend specification:
 \begin{equation}
  MfgVA_t = \alpha + \beta \cdot \text{Trend}_t + \varepsilon_t, \quad t = 2010, \ldots, 2023
  \label{eq:chow_base}
 \end{equation}
-with sub-period regressions for $t < 2017$ and $t \geq 2017$. The F-statistic:
+where $MfgVA_t$ is manufacturing value added as a share of GDP in year $t$. The test decomposes equation (\ref{eq:chow_base}) into sub-period regressions for $t < 2017$ and $t \geq 2017$. The F-statistic:
 \begin{equation}
  F = \frac{(RSS_R - RSS_U)/k}{RSS_U/(n-2k)}
  \label{eq:chow_f}
 \end{equation}
-where $RSS_R$ is the residual sum of squares from the restricted pooled regression, $RSS_U = RSS_{pre} + RSS_{post}$, and $k=2$ parameters are tested. The null hypothesis $H_0: \alpha_{pre} = \alpha_{post}, \beta_{pre} = \beta_{post}$ is tested against an unrestricted alternative.
+where $RSS_R$ is the residual sum of squares from the restricted pooled regression, $RSS_U = RSS_{pre} + RSS_{post}$, and $k=2$ parameters are tested. A rejection of the null hypothesis $H_0: \alpha_{pre} = \alpha_{post}, \beta_{pre} = \beta_{post}$ constitutes evidence that the 2017 reforms generated a structurally distinct growth regime for manufacturing.
 
-\subsubsection{OLS Regression: Manufacturing Value Added}
+\subsubsection{OLS Regression: Manufacturing Value Added and Economic Complexity}
 
+To estimate the association between Northeast Asian economic engagement and manufacturing upgrading, the following OLS specifications are estimated:
 \begin{equation}
- MfgVA_t = \alpha_0 + \beta_1 \cdot FDI_{t-1} + \beta_2 \cdot TradeOpen_t + \beta_3 \cdot Post2017_t + \beta_4 \cdot \text{Trend}_t + \varepsilon_t
+ MfgVA_t = \alpha_0 + \beta_1 \cdot FDI_{t-1} + \beta_2 \cdot IntermShare_t + \beta_3 \cdot TradeOpen_t + \beta_4 \cdot Post2017_t + \beta_5 \cdot \text{Trend}_t + \varepsilon_t
  \label{eq:ols_mfg}
 \end{equation}
 
-A second specification includes $FDI_{t-2}$ to test for delayed capital-stock effects:
+A second specification tests for delayed capital-stock effects, accounting for the time between investment commitments and productive capacity coming online:
 \begin{equation}
- MfgVA_t = \alpha_0 + \beta_1 \cdot FDI_{t-2} + \beta_2 \cdot TradeOpen_t + \beta_3 \cdot Post2017_t + \beta_4 \cdot \text{Trend}_t + \varepsilon_t
+ MfgVA_t = \alpha_0 + \beta_1 \cdot FDI_{t-2} + \beta_2 \cdot IntermShare_t + \beta_3 \cdot TradeOpen_t + \beta_4 \cdot Post2017_t + \beta_5 \cdot \text{Trend}_t + \varepsilon_t
  \label{eq:ols_mfg2}
 \end{equation}
 
-\subsubsection{OLS Regression: Economic Complexity}
-
+For economic complexity, the specification is:
 \begin{equation}
  ECI_t = \alpha_0 + \beta_1 \cdot MfgVA_t + \beta_2 \cdot TradeOpen_t + \beta_3 \cdot Post2017_t + \beta_4 \cdot \text{Trend}_t + \varepsilon_t
  \label{eq:ols_eci}
 \end{equation}
 
-All regressions use HC3 heteroskedasticity-consistent standard errors \citep{mackinnon1985}. Given the short annual time series ($N = 14$), these are interpreted as descriptive associations with appropriate caution regarding statistical power. No causal language is used for OLS coefficients.
+All regressions use HC3 heteroskedasticity-consistent standard errors \citep{mackinnon1985}. Given the short annual time series ($N = 14$), these models are underpowered for precise coefficient estimation and are interpreted as descriptive associations rather than causal estimates.
 
 \subsubsection{Scenario Forecasting}
 
-Manufacturing VA forecasts are generated from a linear trend model fitted to the post-2017 sub-period:
+Three forward scenarios are constructed for manufacturing value added through 2030. Scenario A (Status Quo) extrapolates the post-2017 linear trend with a 95\% prediction interval:
 \begin{equation}
  \widehat{MfgVA}_t = \hat{\alpha}_{post} + \hat{\beta}_{post} \cdot \text{Trend}_t, \quad t = 2024, \ldots, 2030
  \label{eq:forecast_base}
 \end{equation}
 
-Scenario B departs from (\ref{eq:forecast_base}) by adding an annual increment $\delta_B$ calibrated to the FDI-to-manufacturing-VA multiplier estimated from the OLS regression:
+Scenario B (Accelerated GVC Embedding) departs from (\ref{eq:forecast_base}) by adding an annual increment calibrated to the intermediate goods import share coefficient ($\beta_{interm} = 2.34$) estimated from the OLS regression:
 \begin{equation}
- \widehat{MfgVA}^B_t = \widehat{MfgVA}_t + \delta_B \cdot (FDI^*_t - FDI_{2023})
+ \widehat{MfgVA}^B_t = \widehat{MfgVA}_t + \beta_{interm} \cdot (IntermShare^*_t - IntermShare_{2023})
  \label{eq:forecast_b}
 \end{equation}
-where $FDI^*_t$ is the FDI trajectory implied by a 5\%-of-GDP target by 2030. Scenario C applies Vietnam's observed $\hat{\beta}_{VNM}$ from the analogous post-reform regression.
+where $IntermShare^*_t$ is the target trajectory implied by reaching Vietnam's equivalent intermediate goods share.
+
+Scenario C (Vietnam Trajectory) applies Vietnam's observed annual percentage-point change ($\hat{\beta}_{VNM}$) in manufacturing VA at the comparable post-reform stage (years 1--8 after Doi Moi deepening).
 
 \subsection{Scope, Limitations, and Robustness}
 

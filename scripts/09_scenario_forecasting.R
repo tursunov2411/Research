@@ -321,8 +321,6 @@ fig_manuf_forecast <- full_series %>%
   scale_linetype_manual(values = scenario_types, name = NULL) +
   scale_x_continuous(breaks = seq(2010, FORECAST_END, 2)) +
   labs(
-    title = "Figure 5. Uzbekistan Manufacturing Value Added Forecast, 2010-2030",
-    subtitle = "Three policy scenarios diverge from 2024; shaded band is the 80% baseline forecast interval.",
     x = "Year",
     y = "Manufacturing Value Added (% GDP)",
     caption = paste(
@@ -350,7 +348,7 @@ p_manuf <- full_series %>%
   geom_vline(xintercept = max(uzb_wb$year, na.rm = TRUE) + 0.5, linetype = "dotted", color = "grey70") +
   scale_color_manual(values = scenario_palette, name = NULL) +
   scale_linetype_manual(values = scenario_types, name = NULL) +
-  labs(title = "A. Manufacturing VA (% GDP)", x = "Year", y = "% of GDP")
+  labs(x=NULL, y=NULL)
 
 p_fdi <- full_series %>%
   filter(!is.na(fdi_gdp)) %>%
@@ -359,7 +357,7 @@ p_fdi <- full_series %>%
   geom_vline(xintercept = max(uzb_wb$year, na.rm = TRUE) + 0.5, linetype = "dotted", color = "grey70") +
   scale_color_manual(values = scenario_palette, name = NULL) +
   scale_linetype_manual(values = scenario_types, name = NULL) +
-  labs(title = "B. FDI Inflows (% GDP)", x = "Year", y = "% of GDP")
+  labs(x=NULL, y=NULL)
 
 p_eci <- full_series %>%
   filter(!is.na(eci)) %>%
@@ -374,13 +372,11 @@ p_eci <- full_series %>%
   ) +
   scale_color_manual(values = scenario_palette, name = NULL) +
   scale_linetype_manual(values = scenario_types, name = NULL) +
-  labs(title = "C. Economic Complexity Index", x = "Year", y = "ECI")
+  labs(x=NULL, y=NULL)
 
 fig_dashboard <- p_manuf + p_fdi + p_eci +
   patchwork::plot_layout(guides = "collect", ncol = 3) +
   patchwork::plot_annotation(
-    title = "Figure 6. Uzbekistan Scenario Dashboard, 2010-2030",
-    subtitle = "Historical series through 2023 with scenario forecasts through 2030.",
     caption = paste(
       "Source: World Bank World Development Indicators, OEC Economic Complexity data, and author calculations.",
       "Vertical dotted lines mark the start of the forecast window."

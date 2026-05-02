@@ -5,6 +5,11 @@ Akamatsu, K.  \harvardyearleft 1962\harvardyearright , `A historical pattern of
   economic growth in developing countries', {\em Journal of Developing
   Economies} {\bf 1}(1),~3--25.
 
+\harvarditem{Akramov \harvardand\ Tilekeyev}{2024}{akramov2024}
+Akramov, K. \harvardand\ Tilekeyev, K.  \harvardyearleft 2024\harvardyearright
+  , Agricultural value chains in central asia, IFPRI Discussion Paper 02238,
+  International Food Policy Research Institute.
+
 \harvarditem{Amsden}{1989}{amsden1989}
 Amsden, A.~H.  \harvardyearleft 1989\harvardyearright , {\em Asia's Next Giant:
   South Korea and Late Industrialization}, Oxford University Press, New York.
@@ -92,6 +97,10 @@ Humphrey, J. \harvardand\ Schmitz, H.  \harvardyearleft 2002\harvardyearright ,
   `How does insertion in global value chains affect upgrading in industrial
   clusters?', {\em Regional Studies} {\bf 36}(9),~1017--1027.
 
+\harvarditem{Kaplinsky \harvardand\ Morris}{2001}{kaplinsky2001}
+Kaplinsky, R. \harvardand\ Morris, M.  \harvardyearleft 2001\harvardyearright ,
+  {\em A Handbook for Value Chain Research}, IDRC, Ottawa.
+
 \harvarditem{Lim{\~a}o \harvardand\ Venables}{2001}{limao2001}
 Lim{\~a}o, N. \harvardand\ Venables, A.~J.  \harvardyearleft
   2001\harvardyearright , `Infrastructure, geographical disadvantage, transport
@@ -115,6 +124,17 @@ Milberg, W. \harvardand\ Winkler, D.  \harvardyearleft 2013\harvardyearright ,
   {\em Outsourcing economics: global value chains in capitalist development},
   Cambridge University Press.
 
+\harvarditem{Pomfret}{2019}{pomfret2019}
+Pomfret, R.  \harvardyearleft 2019\harvardyearright , {\em The Central Asian
+  Economies in the Twenty-First Century}, Princeton University Press,
+  Princeton.
+
+\harvarditem[Rakhmatullayev et~al.]{Rakhmatullayev, Yusupov \harvardand\
+  Tashkentov}{2023}{rakhmatullayev2023}
+Rakhmatullayev, S., Yusupov, N. \harvardand\ Tashkentov, A.  \harvardyearleft
+  2023\harvardyearright , `Institutional constraints on fdi in uzbekistan',
+  {\em Eurasian Geography and Economics} {\bf 64}(4),~412--436.
+
 \harvarditem{Rodrik}{2016}{rodrik2016}
 Rodrik, D.  \harvardyearleft 2016\harvardyearright , `Premature
   deindustrialization', {\em Journal of Economic Growth} {\bf 21}(1),~1--33.
@@ -126,6 +146,11 @@ Sturgeon, T., Van~Biesebroeck, J. \harvardand\ Gereffi, G.  \harvardyearleft
   global automotive industry', {\em Journal of Economic Geography} {\bf
   8}(3),~297--321.
 
+\harvarditem{Usmanov}{2024}{usmanov2024}
+Usmanov, B.  \harvardyearleft 2024\harvardyearright , `Gvc integration and
+  industrial policy in central asia', {\em Post-Communist Economies} {\bf
+  36}(2),~145--168.
+
 \harvarditem{Wade}{1990}{wade1990}
 Wade, R.  \harvardyearleft 1990\harvardyearright , {\em Governing the Market:
   Economic Theory and the Role of Government in East Asian Industrialization},
@@ -135,5 +160,10 @@ Wade, R.  \harvardyearleft 1990\harvardyearright , {\em Governing the Market:
 {World Bank}  \harvardyearleft 2024\harvardyearright , `World development
   indicators', Washington, DC: The World Bank.
 \newline\harvardurl{https://databank.worldbank.org/source/world-development-indicators}
+
+\harvarditem{{World Bank}}{2025}{worldbank2025}
+{World Bank}  \harvardyearleft 2025\harvardyearright , Uzbekistan economic
+  update: Sustaining growth, Technical report, World Bank, Washington, DC.
+\newline\harvardurl{https://www.worldbank.org/en/country/uzbekistan/publication/uzbekistan-economic-update}
 
 \end{thebibliography}

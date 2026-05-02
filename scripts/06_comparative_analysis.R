@@ -120,7 +120,6 @@ p_manuf <- ggplot(
   geom_point(size = 3, na.rm = TRUE) +
   scale_color_manual(values = comparison_colours) +
   labs(
-    title = "A. Manufacturing Value Added (% GDP)",
     x = "Years Since Reform",
     y = "% of GDP",
     color = NULL
@@ -139,7 +138,6 @@ p_fdi <- ggplot(
   geom_point(size = 3, na.rm = TRUE) +
   scale_color_manual(values = comparison_colours) +
   labs(
-    title = "B. FDI Inflows (% of GDP)",
     x = "Years Since Reform",
     y = "% of GDP",
     color = NULL
@@ -158,7 +156,6 @@ p_lpi <- ggplot(
   geom_point(size = 3, na.rm = TRUE) +
   scale_color_manual(values = comparison_colours) +
   labs(
-    title = "C. Logistics Performance Index",
     x = "Years Since Reform",
     y = "LPI Score (1-5)",
     color = NULL
@@ -167,8 +164,6 @@ p_lpi <- ggplot(
 fig_comparison <- p_manuf + p_fdi + p_lpi +
   plot_layout(guides = "collect") +
   plot_annotation(
-    title = "Figure 4. Uzbekistan vs Vietnam: Comparative Reform Trajectory",
-    subtitle = "Indicators aligned to comparable reform stages (Vietnam t=2000, Uzbekistan t=2017)",
     caption = paste0(
       "Source: World Bank World Development Indicators.\n",
       "Note: Vietnam years represent 2000-2008; Uzbekistan years represent 2017-2023."

@@ -115,8 +115,6 @@ fig_structural_break <- ggplot(uzb_ts, aes(x = year, y = manuf_va_gdp)) +
     color = thesis_colours["highlight"]
   ) +
   labs(
-    title = "Figure 1. Manufacturing Value Added in Uzbekistan",
-    subtitle = "Structural break test at 2017 reform breakpoint",
     x = "Year",
     y = "Manufacturing VA (% of GDP)",
     caption = paste0(
@@ -156,7 +154,6 @@ stargazer(
   model_post,
   model_full,
   type = "text",
-  title = "Table A1: Structural Break Regression Results",
   column.labels = c("Pre-2017", "Post-2017", "Full"),
   out = "output/tables/table_a1_chow_regression.txt"
 )

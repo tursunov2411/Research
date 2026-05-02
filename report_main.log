@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.2)  2 MAY 2026 15:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.2)  2 MAY 2026 18:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -479,24 +479,24 @@ File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 ) (report_main.aux)
 \openout1 = `report_main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -532,7 +532,7 @@ LaTeX Font Info:    ... okay on input line 36.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 36.
+Package hyperref Info: Link coloring OFF on input line 32.
 (report_main.out) (report_main.out)
 \@outlinefile=\write3
 \openout3 = `report_main.out'.
@@ -567,39 +567,35 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 38.
+ 39.
  (C:\Users\nuobe\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 38.
+ 39.
  (C:\Users\nuobe\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 38.
+ 39.
 
 (C:\Users\nuobe\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 38.
+ 39.
 
 (C:\Users\nuobe\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
 
-Overfull \hbox (2.97682pt too wide) in paragraph at lines 42--44
+Overfull \hbox (2.97682pt too wide) in paragraph at lines 39--41
 \OT1/ptm/m/n/12 asym-me-try: Uzbek-istan has achieved sig-nif-i-cant back-ward 
 global value chain (GVC)
  []
@@ -607,42 +603,42 @@ global value chain (GVC)
 [1
 
 {C:/Users/nuobe/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/nuob
-e/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}] [2]
+e/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
 (report_main.toc
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
- [3] [4]
-Overfull \hbox (7.89983pt too wide) in paragraph at lines 80--80
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+ [2] [3]
+Overfull \hbox (7.89983pt too wide) in paragraph at lines 73--73
  [][] [][]\OT1/ptm/m/n/14.4 The Pre-ma-ture Dein-dus-tri-al-i-sa-tion Counter-T
 hesis and Why It Does 
  []
 
-[5])
+)
 \tf@toc=\write4
 \openout4 = `report_main.toc'.
 
- [6]
-Overfull \hbox (10.2035pt too wide) in paragraph at lines 54--55
+ [4]
+Overfull \hbox (10.2035pt too wide) in paragraph at lines 51--52
 \OT1/ptm/m/n/14.4 Soviet in-de-pen-dence era un-der a model of state-directed, 
 resource-dependent growth
  []
 
-[7] (chapters/ch_literature_review.tex
+[5] (chapters/ch_literature_review.tex
 Overfull \hbox (6.17711pt too wide) in paragraph at lines 2--2
 |[]\OT1/ptm/b/n/20.74 Literature Re-view: Re-evaluating GVCs, the State,
  []
 
-[8] [9]
+[6] [7]
 Overfull \hbox (11.38397pt too wide) in paragraph at lines 22--23
 \OT1/ptm/m/n/14.4 man-u-fac-tur-ing tasks glob-ally, com-press-ing the em-ploy-
 ment pay-off that made labour-
  []
 
-[10] [11]
+[8] [9]
 Overfull \hbox (10.25311pt too wide) in paragraph at lines 42--42
 |[]\OT1/ptm/b/n/17.28 Comparative De-vel-op-ment Bench-marks: Viet-nam and Thai
 -
@@ -654,31 +650,13 @@ Overfull \hbox (0.80006pt too wide) in paragraph at lines 48--48
 e-
  []
 
-[12] [13])
-Overfull \hbox (0.64157pt too wide) in paragraph at lines 72--73
-\OT1/ptm/m/n/14.4 vel-op-ment In-di-ca-tors (WDI) database ([]World Bank[] []20
-24[]) pro-vides an-nual macroe-
- []
-
-[14] [15]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-19.
-
-(C:\Users\nuobe\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-Overfull \hbox (2.25238pt too wide) in paragraph at lines 121--122
-\OT1/ptm/m/n/14.4 percentage-point change in man-u-fac-tur-ing VA at the com-pa
--ra-ble post-reform
- []
-
-[16] [17] (chapters/ch_advanced_methodology.tex
+[10] [11]) (chapters/ch_advanced_methodology.tex [12]
 Overfull \hbox (2.84492pt too wide) in paragraph at lines 16--17
 \OT1/ptm/m/n/14.4 The em-pir-i-cal strat-egy fol-lows a se-quen-tial ex-plana-t
 ory de-sign, pro-ceed-ing through
  []
 
-[18]
+[13]
 Underfull \hbox (badness 6910) in paragraph at lines 48--48
 []|\OT1/ptm/m/n/14.4 Mfg VA (%
  []
@@ -833,8 +811,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--62
 []|\OT1/ptm/m/n/14.4 World Bank
  []
 
-[19]
-ignored error: Infinite glue shrinkage found in box being split [20]
+ignored error: Infinite glue shrinkage found in box being split [14]
+ignored error: Infinite glue shrinkage found in box being split [15]
 Overfull \hbox (1.63766pt too wide) in paragraph at lines 78--78
 []\OT1/cmtt/m/n/12 api.worldbank.org/v2/| 
  []
@@ -849,133 +827,173 @@ Overfull \hbox (7.81267pt too wide) in paragraph at lines 81--81
 []\OT1/cmtt/m/n/12 unctadstat.unctad.org/| 
  []
 
-[21] [22] [23])
-Overfull \hbox (1.94397pt too wide) in paragraph at lines 130--130
-|[]\OT1/ptm/b/n/20.74 IV BOB: Tahlil va Nati-jalar (Anal-y-sis and Re-sults)| 
+
+Overfull \hbox (17.07182pt too wide) in paragraph at lines 90--91
+\OT1/ptm/m/n/14.4 De-vel-op-ment In-di-ca-tors (WDI) database ([]World Bank[] [
+]2024[]) pro-vides an-nual macroe-
  []
 
-<figures/fig1_structural_break.png, id=677, 578.16pt x 361.35pt>
+[16]
+Overfull \hbox (93.49028pt too wide) detected at line 123
+[][][]\OML/ztmcm/m/it/14.4 MfgVA[] \OT1/ztmcm/m/n/14.4 = \OML/ztmcm/m/it/14.4 
+[] \OT1/ztmcm/m/n/14.4 + \OML/ztmcm/m/it/14.4 ^^L[] \OMS/ztmcm/m/n/14.4 ^^A \OM
+L/ztmcm/m/it/14.4 FDI[] \OT1/ztmcm/m/n/14.4 + \OML/ztmcm/m/it/14.4 ^^L[] \OMS/z
+tmcm/m/n/14.4 ^^A \OML/ztmcm/m/it/14.4 IntermShare[] \OT1/ztmcm/m/n/14.4 + \OML
+/ztmcm/m/it/14.4 ^^L[] \OMS/ztmcm/m/n/14.4 ^^A \OML/ztmcm/m/it/14.4 TradeOpen[]
+ \OT1/ztmcm/m/n/14.4 + \OML/ztmcm/m/it/14.4 ^^L[] \OMS/ztmcm/m/n/14.4 ^^A \OML/
+ztmcm/m/it/14.4 Post\OT1/ztmcm/m/n/14.4 2017[] + \OML/ztmcm/m/it/14.4 ^^L[] \OM
+S/ztmcm/m/n/14.4 ^^A [][] \OT1/ztmcm/m/n/14.4 + \OML/ztmcm/m/it/14.4 "[]
+ []
+
+[17]
+Overfull \hbox (93.49028pt too wide) detected at line 129
+[][][]\OML/ztmcm/m/it/14.4 MfgVA[] \OT1/ztmcm/m/n/14.4 = \OML/ztmcm/m/it/14.4 
+[] \OT1/ztmcm/m/n/14.4 + \OML/ztmcm/m/it/14.4 ^^L[] \OMS/ztmcm/m/n/14.4 ^^A \OM
+L/ztmcm/m/it/14.4 FDI[] \OT1/ztmcm/m/n/14.4 + \OML/ztmcm/m/it/14.4 ^^L[] \OMS/z
+tmcm/m/n/14.4 ^^A \OML/ztmcm/m/it/14.4 IntermShare[] \OT1/ztmcm/m/n/14.4 + \OML
+/ztmcm/m/it/14.4 ^^L[] \OMS/ztmcm/m/n/14.4 ^^A \OML/ztmcm/m/it/14.4 TradeOpen[]
+ \OT1/ztmcm/m/n/14.4 + \OML/ztmcm/m/it/14.4 ^^L[] \OMS/ztmcm/m/n/14.4 ^^A \OML/
+ztmcm/m/it/14.4 Post\OT1/ztmcm/m/n/14.4 2017[] + \OML/ztmcm/m/it/14.4 ^^L[] \OM
+S/ztmcm/m/n/14.4 ^^A [][] \OT1/ztmcm/m/n/14.4 + \OML/ztmcm/m/it/14.4 "[]
+ []
+
+[18]
+Overfull \hbox (7.7936pt too wide) in paragraph at lines 154--155
+[]\OT1/ptm/m/n/14.4 Scenario C (Viet-nam Tra-jec-tory) ap-plies Viet-nam's ob-s
+erved an-nual percentage-
+ []
+
+) [19]
+<figures/fig1_structural_break.png, id=643, 578.16pt x 361.35pt>
 File: figures/fig1_structural_break.png Graphic file (type png)
 <use figures/fig1_structural_break.png>
 Package pdftex.def Info: figures/fig1_structural_break.png  used on input line 
-138.
+75.
 (pdftex.def)             Requested size: 399.05278pt x 249.40897pt.
-[24] [25 <./figures/fig1_structural_break.png>]
-<figures/fig2_rca_heatmap.png, id=691, 722.7pt x 505.89pt>
+ [20 <./figures/fig1_structural_break.png>]
+<figures/fig2_rca_heatmap.png, id=652, 722.7pt x 505.89pt>
 File: figures/fig2_rca_heatmap.png Graphic file (type png)
 <use figures/fig2_rca_heatmap.png>
-Package pdftex.def Info: figures/fig2_rca_heatmap.png  used on input line 173.
+Package pdftex.def Info: figures/fig2_rca_heatmap.png  used on input line 110.
 (pdftex.def)             Requested size: 422.52057pt x 295.76305pt.
- [26]
-<figures/fig3_rca_manufacturing.png, id=698, 650.43pt x 397.485pt>
+ [21]
+<figures/fig3_rca_manufacturing.png, id=659, 650.43pt x 397.485pt>
 File: figures/fig3_rca_manufacturing.png Graphic file (type png)
 <use figures/fig3_rca_manufacturing.png>
 Package pdftex.def Info: figures/fig3_rca_manufacturing.png  used on input line
- 184.
+ 121.
 (pdftex.def)             Requested size: 399.05278pt x 243.8726pt.
- [27 <./figures/fig2_rca_heatmap.png>] [28 <./figures/fig3_rca_manufacturing.pn
+ [22 <./figures/fig2_rca_heatmap.png>] [23 <./figures/fig3_rca_manufacturing.pn
 g>]
-<figures/fig7_bilateral_trade.png, id=709, 722.7pt x 505.89pt>
+<figures/fig7_bilateral_trade.png, id=670, 722.7pt x 505.89pt>
 File: figures/fig7_bilateral_trade.png Graphic file (type png)
 <use figures/fig7_bilateral_trade.png>
-Package pdftex.def Info: figures/fig7_bilateral_trade.png  used on input line 2
-06.
+Package pdftex.def Info: figures/fig7_bilateral_trade.png  used on input line 1
+43.
 (pdftex.def)             Requested size: 422.52057pt x 295.76305pt.
- [29 <./figures/fig7_bilateral_trade.png>]
-<figures/fig9_intermediate_goods_share.png, id=717, 722.7pt x 433.62pt>
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
+48.
+
+(C:\Users\nuobe\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+[24 <./figures/fig7_bilateral_trade.png>]
+<figures/fig9_intermediate_goods_share.png, id=678, 722.7pt x 433.62pt>
 File: figures/fig9_intermediate_goods_share.png Graphic file (type png)
 <use figures/fig9_intermediate_goods_share.png>
 Package pdftex.def Info: figures/fig9_intermediate_goods_share.png  used on inp
-ut line 221.
+ut line 158.
 (pdftex.def)             Requested size: 399.05278pt x 239.43127pt.
- [30 <./figures/fig9_intermediate_goods_share.png>]
-<figures/fig8_fdi_by_origin.png, id=724, 650.43pt x 397.485pt>
+ [25 <./figures/fig9_intermediate_goods_share.png>]
+<figures/fig8_fdi_by_origin.png, id=686, 650.43pt x 397.485pt>
 File: figures/fig8_fdi_by_origin.png Graphic file (type png)
 <use figures/fig8_fdi_by_origin.png>
-Package pdftex.def Info: figures/fig8_fdi_by_origin.png  used on input line 234
+Package pdftex.def Info: figures/fig8_fdi_by_origin.png  used on input line 171
 .
 (pdftex.def)             Requested size: 399.05278pt x 243.8726pt.
- [31 <./figures/fig8_fdi_by_origin.png>] [32]
-<figures/fig12_trade_network_map.png, id=737, 867.24pt x 578.16pt>
+ [26 <./figures/fig8_fdi_by_origin.png>] [27]
+<figures/fig12_trade_network_map.png, id=698, 867.24pt x 578.16pt>
 File: figures/fig12_trade_network_map.png Graphic file (type png)
 <use figures/fig12_trade_network_map.png>
 Package pdftex.def Info: figures/fig12_trade_network_map.png  used on input lin
-e 258.
+e 195.
 (pdftex.def)             Requested size: 431.91199pt x 287.94125pt.
 
-Underfull \hbox (badness 4846) in paragraph at lines 259--259
+Underfull \hbox (badness 4846) in paragraph at lines 196--196
 []\OT1/ptm/m/n/14.4 Figure 7: |Uzbek-istan's Di-rected Trade Net-work and Value
 -Chain Po-
  []
 
 
-Underfull \hbox (badness 5189) in paragraph at lines 259--259
+Underfull \hbox (badness 5189) in paragraph at lines 196--196
 \OT1/ptm/m/n/14.4 si-tion-ing. Nodes: UZB (hub), CHN/JPN/KOR (NE Asian sources)
 ,
  []
 
-[33 <./figures/fig12_trade_network_map.png>]
-<figures/fig13_intermediate_dependence.png, id=744, 794.97pt x 578.16pt>
+[28 <./figures/fig12_trade_network_map.png>]
+<figures/fig13_intermediate_dependence.png, id=705, 794.97pt x 578.16pt>
 File: figures/fig13_intermediate_dependence.png Graphic file (type png)
 <use figures/fig13_intermediate_dependence.png>
 Package pdftex.def Info: figures/fig13_intermediate_dependence.png  used on inp
-ut line 271.
+ut line 208.
 (pdftex.def)             Requested size: 422.52057pt x 307.2967pt.
-<figures/fig14_export_composition.png, id=746, 867.24pt x 650.43pt>
+<figures/fig14_export_composition.png, id=707, 867.24pt x 650.43pt>
 File: figures/fig14_export_composition.png Graphic file (type png)
 <use figures/fig14_export_composition.png>
 Package pdftex.def Info: figures/fig14_export_composition.png  used on input li
-ne 284.
+ne 221.
 (pdftex.def)             Requested size: 431.91199pt x 323.9339pt.
- [34 <./figures/fig13_intermediate_dependence.png>]
-<figures/fig15_reexport_potential.png, id=753, 722.7pt x 361.35pt>
+ [29 <./figures/fig13_intermediate_dependence.png>]
+<figures/fig15_reexport_potential.png, id=714, 722.7pt x 361.35pt>
 File: figures/fig15_reexport_potential.png Graphic file (type png)
 <use figures/fig15_reexport_potential.png>
 Package pdftex.def Info: figures/fig15_reexport_potential.png  used on input li
-ne 297.
+ne 234.
 (pdftex.def)             Requested size: 413.13632pt x 206.56712pt.
- [35 <./figures/fig14_export_composition.png>]
-<figures/fig16_gvc_positioning.png, id=760, 794.97pt x 505.89pt>
+ [30 <./figures/fig14_export_composition.png>]
+<figures/fig16_gvc_positioning.png, id=721, 794.97pt x 505.89pt>
 File: figures/fig16_gvc_positioning.png Graphic file (type png)
 <use figures/fig16_gvc_positioning.png>
 Package pdftex.def Info: figures/fig16_gvc_positioning.png  used on input line 
-310.
+247.
 (pdftex.def)             Requested size: 422.52057pt x 268.88461pt.
- [36 <./figures/fig15_reexport_potential.png>] [37 <./figures/fig16_gvc_positio
+ [31 <./figures/fig15_reexport_potential.png>] [32 <./figures/fig16_gvc_positio
 ning.png>]
-<figures/fig4_comparative_trajectory.png, id=772, 1011.78pt x 361.35pt>
+<figures/fig4_comparative_trajectory.png, id=733, 1011.78pt x 361.35pt>
 File: figures/fig4_comparative_trajectory.png Graphic file (type png)
 <use figures/fig4_comparative_trajectory.png>
 Package pdftex.def Info: figures/fig4_comparative_trajectory.png  used on input
- line 325.
+ line 262.
 (pdftex.def)             Requested size: 431.91199pt x 154.25818pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 267.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 330.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 267.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 330.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 267.
 
-[38 <./figures/fig4_comparative_trajectory.png>] [39]
-(chapters/ch_thailand_benchmarking.tex [40]
+[33 <./figures/fig4_comparative_trajectory.png>] [34]
+(chapters/ch_thailand_benchmarking.tex [35]
 Overfull \hbox (18.82375pt too wide) in paragraph at lines 16--16
 |[]\OT1/ptm/b/n/17.28 Comparative Bench-mark-ing: Thai-land, Viet-nam, and Uzbe
 k-
  []
 
-<figures/fig17_thailand_benchmark.png, id=792, 867.24pt x 325.215pt>
+<figures/fig17_thailand_benchmark.png, id=753, 867.24pt x 325.215pt>
 File: figures/fig17_thailand_benchmark.png Graphic file (type png)
 <use figures/fig17_thailand_benchmark.png>
 Package pdftex.def Info: figures/fig17_thailand_benchmark.png  used on input li
 ne 22.
 (pdftex.def)             Requested size: 431.91199pt x 161.96695pt.
-[41 <./figures/fig17_thailand_benchmark.png>] [42]) [43]
+[36 <./figures/fig17_thailand_benchmark.png>] [37]) [38]
 (chapters/ch_institutional_readiness.tex
 Overfull \hbox (3.92331pt too wide) in paragraph at lines 8--9
 \OT1/ptm/m/n/14.4 FDI trans-lates into do-mes-tic ca-pa-bil-ity ac-cu-mu-la-tio
 n. Kaplin-sky and Mor-ris (2001)
  []
 
-[44]
-<figures/fig18_wgi_comparison.png, id=816, 722.7pt x 397.485pt>
+[39]
+<figures/fig18_wgi_comparison.png, id=780, 722.7pt x 397.485pt>
 File: figures/fig18_wgi_comparison.png Graphic file (type png)
 <use figures/fig18_wgi_comparison.png>
 Package pdftex.def Info: figures/fig18_wgi_comparison.png  used on input line 2
@@ -986,7 +1004,7 @@ Overfull \hbox (1.59819pt too wide) in paragraph at lines 30--44
  [][] 
  []
 
-[45 <./figures/fig18_wgi_comparison.png>] [46]
+[40 <./figures/fig18_wgi_comparison.png>] [41]
 Overfull \hbox (2.74478pt too wide) in paragraph at lines 90--91
 \OT1/ptm/m/n/14.4 tech-nol-ogy trans-fer and up-grad-ing --- re-quires not mere
 ly abun-dant low-cost labour
@@ -998,14 +1016,14 @@ Overfull \hbox (1.34782pt too wide) in paragraph at lines 90--91
 pro-cess im-prove-ment. These
  []
 
-[47] [48]
-<figures/fig19_institutional_radar.png, id=841, 505.89pt x 505.89pt>
+[42] [43]
+<figures/fig19_institutional_radar.png, id=806, 505.89pt x 505.89pt>
 File: figures/fig19_institutional_radar.png Graphic file (type png)
 <use figures/fig19_institutional_radar.png>
 Package pdftex.def Info: figures/fig19_institutional_radar.png  used on input l
 ine 123.
 (pdftex.def)             Requested size: 328.6279pt x 328.6316pt.
-) [49 <./figures/fig19_institutional_radar.png (PNG copy)>] [50]
+) [44 <./figures/fig19_institutional_radar.png (PNG copy)>] [45]
 (chapters/ch_sez_analysis.tex
 Underfull \hbox (badness 10000) in paragraph at lines 23--23
 []\OT1/ptm/m/n/12 Primary Sec-
@@ -1091,27 +1109,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--32
 []\OT1/ptm/m/n/12 Textiles, ce-
  []
 
-[51] [52]
+[46] [47]
 Overfull \hbox (6.58943pt too wide) in paragraph at lines 71--71
 |[]\OT1/ptm/b/n/17.28 The Navoiy Model: Avi-a-tion Lo-gis-tics as a Land-locked
  GVC
  []
 
-[53]
-<figures/fig20_sez_performance.png, id=874, 722.7pt x 397.485pt>
+[48]
+<figures/fig20_sez_performance.png, id=838, 722.7pt x 397.485pt>
 File: figures/fig20_sez_performance.png Graphic file (type png)
 <use figures/fig20_sez_performance.png>
 Package pdftex.def Info: figures/fig20_sez_performance.png  used on input line 
 85.
 (pdftex.def)             Requested size: 422.52057pt x 232.38525pt.
- [54]) [55 <./figures/fig20_sez_performance.png>]
+ [49]) [50 <./figures/fig20_sez_performance.png>]
 (chapters/ch_constraints.tex
 Overfull \hbox (14.60515pt too wide) in paragraph at lines 23--34
  [][] 
  []
 
-[56] [57] [58] [59]
-<figures/fig21_constraint_heatmap.png, id=909, 650.43pt x 505.89pt>
+[51] [52] [53] [54]
+<figures/fig21_constraint_heatmap.png, id=873, 650.43pt x 505.89pt>
 File: figures/fig21_constraint_heatmap.png Graphic file (type png)
 <use figures/fig21_constraint_heatmap.png>
 Package pdftex.def Info: figures/fig21_constraint_heatmap.png  used on input li
@@ -1123,22 +1141,29 @@ Underfull \hbox (badness 1048) in paragraph at lines 93--93
 rix: Sever-ity vs. Pol-icy
  []
 
-[60]) (output/tables/ols_regression.tex [61 <./figures/fig21_constraint_heatmap
-.png>]) [62]
-<figures/fig5_manufacturing_forecast.png, id=926, 794.97pt x 433.62pt>
+[55]) (output/tables/ols_regression.tex [56 <./figures/fig21_constraint_heatmap
+.png>]) [57]
+Overfull \hbox (4.35641pt too wide) in paragraph at lines 297--298
+[]\OT1/ptm/m/n/14.4 Lagged FDI (t-1) en-ters neg-a-tively but is sta-tis-ti-cal
+ly in-signif-i-cant ($\OML/ztmcm/m/it/14.4 ^^L \OT1/ztmcm/m/n/14.4 = \OMS/ztmcm
+/m/n/14.4 ^^@\OT1/ztmcm/m/n/14.4 0\OML/ztmcm/m/it/14.4 :\OT1/ztmcm/m/n/14.4 014
+$\OT1/ptm/m/n/14.4 ,
+ []
+
+<figures/fig5_manufacturing_forecast.png, id=890, 794.97pt x 433.62pt>
 File: figures/fig5_manufacturing_forecast.png Graphic file (type png)
 <use figures/fig5_manufacturing_forecast.png>
 Package pdftex.def Info: figures/fig5_manufacturing_forecast.png  used on input
- line 375.
+ line 312.
 (pdftex.def)             Requested size: 422.52057pt x 230.47253pt.
- [63] [64 <./figures/fig5_manufacturing_forecast.png>]
-<figures/fig10_mechanism_trajectory.png, id=938, 686.565pt x 433.62pt>
+[58] [59 <./figures/fig5_manufacturing_forecast.png>]
+<figures/fig10_mechanism_trajectory.png, id=902, 686.565pt x 433.62pt>
 File: figures/fig10_mechanism_trajectory.png Graphic file (type png)
 <use figures/fig10_mechanism_trajectory.png>
 Package pdftex.def Info: figures/fig10_mechanism_trajectory.png  used on input 
-line 395.
+line 332.
 (pdftex.def)             Requested size: 399.05278pt x 252.0291pt.
- [65 <./figures/fig10_mechanism_trajectory.png>] [66] (chapters/ch_discussion.t
+ [60 <./figures/fig10_mechanism_trajectory.png>] [61] (chapters/ch_discussion.t
 ex
 Underfull \hbox (badness 10000) in paragraph at lines 31--31
 []\OT1/ptm/b/n/14.4 Evidence Base /
@@ -1254,72 +1279,79 @@ Underfull \hbox (badness 7522) in paragraph at lines 31--31
 \OT1/ptm/m/n/14.4 'cap-tive' as-sem-bly to
  []
 
-[67] [68] [69]
+[62] [63] [64]
 Overfull \hbox (3.53578pt too wide) in paragraph at lines 47--48
 \OT1/ptm/m/n/14.4 in-ter-me-di-ate goods trade re-la-tion-ships --- sup-plier d
 e-vel-op-ment pro-grammes, back-
  []
 
-[70]
+[65]
 Overfull \hbox (0.64099pt too wide) in paragraph at lines 53--54
 \OT1/ptm/m/n/14.4 wage ar-bi-trage. In-stead, Uzbek-istan is dis-pro-por-tion-a
 tely ab-sorb-ing infrastructure-
  []
 
-[71]
-Overfull \hbox (0.36884pt too wide) in paragraph at lines 59--59
-|[]\OT1/ptm/b/n/17.28 The Viet-nam Com-par-i-son: What Uzbek-istan Has and Has
+[66] [67]
+Overfull \hbox (3.06268pt too wide) in paragraph at lines 73--73
+|[]\OT1/ptm/b/n/17.28 WTO Ac-ces-sion as In-sti-tu-tional Lock-In: The Viet-nam
+ Par-
  []
 
-[72] [73]
-Overfull \hbox (20.1538pt too wide) in paragraph at lines 77--77
+[68]
+Overfull \hbox (11.5138pt too wide) in paragraph at lines 77--77
 |[]\OT1/ptm/b/n/17.28 The Pre-ma-ture Dein-dus-tri-al-i-sa-tion Counter-Thesis 
 and Why
  []
 
-[74]
+[69]
 Overfull \hbox (4.18283pt too wide) in paragraph at lines 83--84
 \OT1/ptm/m/n/14.4 sup-ply chain di-ver-si-fi-ca-tion and post-COVID re-silience
  re-con-fig-u-ra-tion --- is seized
  []
 
-) [75] [76] [77] [78]
-<figures/fig0_indicator_trends.png, id=1014, 722.7pt x 433.62pt>
+) [70] [71] [72] [73]
+<figures/fig0_indicator_trends.png, id=981, 722.7pt x 433.62pt>
 File: figures/fig0_indicator_trends.png Graphic file (type png)
 <use figures/fig0_indicator_trends.png>
 Package pdftex.def Info: figures/fig0_indicator_trends.png  used on input line 
-449.
+386.
 (pdftex.def)             Requested size: 422.52057pt x 253.51118pt.
-<figures/fig6_scenario_dashboard.png, id=1015, 1011.78pt x 397.485pt>
+<figures/fig6_scenario_dashboard.png, id=982, 1011.78pt x 397.485pt>
 File: figures/fig6_scenario_dashboard.png Graphic file (type png)
 <use figures/fig6_scenario_dashboard.png>
 Package pdftex.def Info: figures/fig6_scenario_dashboard.png  used on input lin
-e 455.
+e 392.
 (pdftex.def)             Requested size: 422.52057pt x 165.99033pt.
-<figures/fig11_growth_decomposition.png, id=1016, 722.7pt x 433.62pt>
+<figures/fig11_growth_decomposition.png, id=983, 722.7pt x 433.62pt>
 File: figures/fig11_growth_decomposition.png Graphic file (type png)
 <use figures/fig11_growth_decomposition.png>
 Package pdftex.def Info: figures/fig11_growth_decomposition.png  used on input 
-line 462.
+line 399.
 (pdftex.def)             Requested size: 422.52057pt x 253.51118pt.
- [79 <./figures/fig0_indicator_trends.png> <./figures/fig6_scenario_dashboard.p
-ng>] [80 <./figures/fig11_growth_decomposition.png>]
-(report_main.bbl [81] [82]) [83] (report_main.aux)
+ [74 <./figures/fig0_indicator_trends.png> <./figures/fig6_scenario_dashboard.p
+ng>] [75 <./figures/fig11_growth_decomposition.png>]
+(report_main.bbl [76] [77]
+Overfull \hbox (9.2805pt too wide) in paragraph at lines 165--168
+\OT1/ptm/b/n/14.4 URL: \OT1/ptm/m/it/14.4 https://www.worldbank.org/en/country/
+uzbekistan/publication/uzbekistan-
+ []
+
+) [78] (report_main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `report_main.out' has not changed.
-(rerunfilecheck)             Checksum: 51135D5AE6D93EF83F2F9B93125ED0B4;24328.
+(rerunfilecheck)             Checksum: 84D974C054574FC7AB937DB336410967;22560.
  ) 
 Here is how much of TeX's memory you used:
- 14177 strings out of 467871
- 231855 string characters out of 5418377
- 656863 words of memory out of 5000000
- 42565 multiletter control sequences out of 15000+600000
- 684754 words of font info for 153 fonts, out of 8000000 for 9000
+ 14162 strings out of 467871
+ 231762 string characters out of 5418377
+ 655769 words of memory out of 5000000
+ 42562 multiletter control sequences out of 15000+600000
+ 679352 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,1764b,619s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,79p,1879b,619s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/nuobe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmex10.pfb><C:/Users/nuobe/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmmi10.pfb><C:/Users/nuobe/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -1331,9 +1363,9 @@ rams/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/nuobe/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/nuobe/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/nuobe/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report_main.pdf (83 pages, 4367445 bytes).
+Output written on report_main.pdf (78 pages, 4360006 bytes).
 PDF statistics:
- 1140 PDF objects out of 1200 (max. 8388607)
- 248 named destinations out of 1000 (max. 500000)
- 791 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1104 PDF objects out of 1200 (max. 8388607)
+ 238 named destinations out of 1000 (max. 500000)
+ 735 words of extra memory for PDF output out of 10000 (max. 10000000)
 
