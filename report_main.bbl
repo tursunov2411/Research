@@ -1,5 +1,10 @@
 \begin{thebibliography}{xx}
 
+\harvarditem{Akamatsu}{1962}{akamatsu1962}
+Akamatsu, K.  \harvardyearleft 1962\harvardyearright , `A historical pattern of
+  economic growth in developing countries', {\em Journal of Developing
+  Economies} {\bf 1}(1),~3--25.
+
 \harvarditem{Amsden}{1989}{amsden1989}
 Amsden, A.~H.  \harvardyearleft 1989\harvardyearright , {\em Asia's Next Giant:
   South Korea and Late Industrialization}, Oxford University Press, New York.
@@ -17,6 +22,11 @@ Arvis, J.-F., Raballand, G. \harvardand\ Marteau, J.-F.  \harvardyearleft
   supply chain reliability', {\em World Bank Policy Research Working Paper}
   (4258).
 
+\harvarditem{Balassa}{1965}{balassa1965}
+Balassa, B.  \harvardyearleft 1965\harvardyearright , `Trade liberalisation and
+  ``revealed'' comparative advantage', {\em The manchester school} {\bf
+  33}(2),~99--123.
+
 \harvarditem{Baldwin}{2016}{baldwin2016}
 Baldwin, R.  \harvardyearleft 2016\harvardyearright , {\em The Great
   Convergence: Information Technology and the New Globalization}, Harvard
@@ -30,6 +40,10 @@ Bhaskar, R.  \harvardyearleft 1975\harvardyearright , {\em A Realist Theory of
 Carrère, C. \harvardand\ Schiff, M.  \harvardyearleft 2004\harvardyearright ,
   `On the geography of trade: Distance is alive and well', {\em Revue
   économique} {\bf 55}(6),~1249--1274.
+
+\harvarditem{Chang}{2002}{chang2002}
+Chang, H.-J.  \harvardyearleft 2002\harvardyearright , {\em Kicking away the
+  ladder: development strategy in historical perspective}, Anthem Press.
 
 \harvarditem[Danermark et~al.]{Danermark, Ekström \harvardand\
   Jakobsen}{2019}{danermark2019}
@@ -51,16 +65,43 @@ Dunning, J.~H.  \harvardyearleft 1981\harvardyearright , {\em International
 Evans, P.  \harvardyearleft 1995\harvardyearright , {\em Embedded Autonomy:
   States and Industrial Transformation}, Princeton University Press, Princeton.
 
+\harvarditem{Farole}{2011}{farole2011}
+Farole, T.  \harvardyearleft 2011\harvardyearright , {\em Special economic
+  zones in Africa: comparing performance and learning from global experience},
+  World Bank Publications.
+
 \harvarditem{Gereffi}{1994}{gereffi1994}
 Gereffi, G.  \harvardyearleft 1994\harvardyearright , The organization of
   buyer-driven global commodity chains, {\em in} G.~Gereffi \harvardand\
   M.~Korzeniewicz, eds, `Commodity Chains and Global Capitalism', Praeger,
   Westport, CT, pp.~95--122.
 
+\harvarditem[Gereffi et~al.]{Gereffi, Humphrey \harvardand\
+  Sturgeon}{2005}{gereffi2005}
+Gereffi, G., Humphrey, J. \harvardand\ Sturgeon, T.  \harvardyearleft
+  2005\harvardyearright , `The governance of global value chains', {\em Review
+  of international political economy} {\bf 12}(1),~78--104.
+
+\harvarditem{Hidalgo \harvardand\ Hausmann}{2009}{hidalgo2009}
+Hidalgo, C.~A. \harvardand\ Hausmann, R.  \harvardyearleft
+  2009\harvardyearright , `The building blocks of economic complexity', {\em
+  Proceedings of the national academy of sciences} {\bf 106}(26),~10570--10575.
+
 \harvarditem{Humphrey \harvardand\ Schmitz}{2002}{humphrey2002}
 Humphrey, J. \harvardand\ Schmitz, H.  \harvardyearleft 2002\harvardyearright ,
   `How does insertion in global value chains affect upgrading in industrial
   clusters?', {\em Regional Studies} {\bf 36}(9),~1017--1027.
+
+\harvarditem{Lim{\~a}o \harvardand\ Venables}{2001}{limao2001}
+Lim{\~a}o, N. \harvardand\ Venables, A.~J.  \harvardyearleft
+  2001\harvardyearright , `Infrastructure, geographical disadvantage, transport
+  costs, and trade', {\em The World Bank Economic Review} {\bf
+  15}(3),~451--479.
+
+\harvarditem{MacKinnon \harvardand\ White}{1985}{mackinnon1985}
+MacKinnon, J.~G. \harvardand\ White, H.  \harvardyearleft 1985\harvardyearright
+  , `Asymptotic covariance matrices for maximum likelihood and quasi-maximum
+  likelihood estimators', {\em Journal of econometrics} {\bf 29}(3),~305--325.
 
 \harvarditem[McMillan et~al.]{McMillan, Rodrik \harvardand\
   Sepúlveda}{2017}{mcmillan2017}
@@ -68,6 +109,11 @@ McMillan, M., Rodrik, D. \harvardand\ Sepúlveda, C.  \harvardyearleft
   2017\harvardyearright , `Structural change, fundamentals, and growth: A
   framework and case studies'.
 \newblock NBER Working Paper No. 23378.
+
+\harvarditem{Milberg \harvardand\ Winkler}{2013}{milberg2013}
+Milberg, W. \harvardand\ Winkler, D.  \harvardyearleft 2013\harvardyearright ,
+  {\em Outsourcing economics: global value chains in capitalist development},
+  Cambridge University Press.
 
 \harvarditem{Rodrik}{2016}{rodrik2016}
 Rodrik, D.  \harvardyearleft 2016\harvardyearright , `Premature

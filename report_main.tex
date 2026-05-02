@@ -208,7 +208,7 @@ Figure \ref{fig:bilateral_trade} presents Uzbekistan's bilateral merchandise tra
   \label{fig:bilateral_trade}
 \end{figure}
 
-The China relationship dominates in both scale and growth rate. Total bilateral trade with China surged from approximately \$4 billion in 2017 to over \$12 billion by 2023 --- a 280.3\% increase --- while the trade balance deteriorated sharply to a deficit exceeding \$10 billion by 2023 (Figure \ref{fig:growth_decomposition}). This trajectory is consistent with a pattern in which Uzbekistan is importing Chinese capital goods, machinery, and intermediate inputs at scale, while exporting primary commodities (gold, cotton, copper) to China. The growing deficit is not per se a sign of harm --- if Chinese machinery imports are being absorbed into Uzbekistan's domestic manufacturing capacity, the deficit reflects investment in productive capability. However, as the intermediate goods analysis below shows, much of the Chinese import composition represents capital goods for infrastructure projects (roads, railways, power plants) financed by Chinese loans rather than export-oriented manufacturing facilities.
+The China relationship dominates in both scale and growth rate. Total bilateral trade with China surged from approximately \$4 billion in 2017 to over \$12 billion by 2023 --- a 280.3\% increase --- while the trade balance deteriorated sharply to a deficit exceeding \$10 billion by 2023 (Figure \ref{fig:bilateral_trade}). This trajectory is consistent with a pattern in which Uzbekistan is importing Chinese capital goods, machinery, and intermediate inputs at scale, while exporting primary commodities (gold, cotton, copper) to China. The growing deficit is not per se a sign of harm --- if Chinese machinery imports are being absorbed into Uzbekistan's domestic manufacturing capacity, the deficit reflects investment in productive capability. However, as the intermediate goods analysis below shows, much of the Chinese import composition represents capital goods for infrastructure projects (roads, railways, power plants) financed by Chinese loans rather than export-oriented manufacturing facilities.
 
 Japan's bilateral trade grew 110.8\% over the same period but remains small in absolute terms (well below \$1 billion), and the trade balance is near-zero. South Korea's 163\% trade growth and persistent deficit of approximately \$2.2 billion reflects imports of South Korean industrial equipment and consumer electronics rather than GVC-linked intermediate inputs.
 
@@ -348,7 +348,7 @@ Logistics performance (Panel C) shows Uzbekistan at LPI score 2.6 versus Vietnam
 \input{chapters/ch_constraints}
 
 % ═══════════════════════════════════════════════════════════════════════════════
-\subsection{Regression Analysis}
+\subsection{Regression Analysis}\label{sec:regression}
 % ═══════════════════════════════════════════════════════════════════════════════
 
 \input{output/tables/ols_regression.tex}
@@ -361,7 +361,7 @@ Lagged FDI (t-1) enters positively but is statistically insignificant ($\beta = 
 
 Trade openness is positively associated with manufacturing VA, consistent with the theoretical expectation that import of intermediate goods (the dominant component of Uzbekistan's trade with Northeast Asia) facilitates domestic manufacturing assembly. However, the coefficient magnitude is small, suggesting that trade alone --- in the absence of qualitative shifts in FDI composition --- is insufficient to drive transformative industrial upgrading.
 
-The ECI regression (Table \ref{tab:ols_eci}) shows that manufacturing VA growth is positively associated with ECI improvement, and the post-2017 dummy is significant, but the R-squared is modest, confirming that much of the ECI improvement (from $-0.65$ to $-0.2$) is explained by time trend rather than by the specific mechanisms tested here.
+The ECI regression results show that manufacturing VA growth is positively associated with ECI improvement, and the post-2017 dummy is significant, but the R-squared is modest, confirming that much of the ECI improvement (from $-0.65$ to $-0.2$) is explained by time trend rather than by the specific mechanisms tested here.
 
 These results should be interpreted cautiously. The sample size of 14 annual observations is small, leaving the models underpowered for precise coefficient estimation. Future work with quarterly data or a panel of Central Asian and comparable reforming economies would strengthen causal inference.
 
@@ -454,6 +454,7 @@ Uzbekistan is on an industrialisation trajectory that the 2017 reforms genuinely
   \centering
   \includegraphics[width=0.90\textwidth]{figures/fig6_scenario_dashboard.png}
   \caption{Uzbekistan Scenario Dashboard, 2010--2030: Manufacturing VA, FDI, and Economic Complexity Index under three policy scenarios. Source: World Bank WDI, OEC, and author calculations.}
+  \label{fig:scenario_dashboard}
 \end{figure}
 
 \begin{figure}[H]

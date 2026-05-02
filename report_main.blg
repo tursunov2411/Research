@@ -5,55 +5,46 @@ Reallocating 'name_of_file' (item size: 1) to 5 items.
 The style file: agsm.bst
 Reallocating 'name_of_file' (item size: 1) to 19 items.
 Database file #1: references_cleaned.bib
-Warning--I didn't find a database entry for "gereffi2005"
-Warning--I didn't find a database entry for "milberg2013"
-Warning--I didn't find a database entry for "chang2002"
-Warning--I didn't find a database entry for "limao2001"
-Warning--I didn't find a database entry for "akamatsu1962"
-Warning--I didn't find a database entry for "hidalgo2009"
-Warning--I didn't find a database entry for "balassa1965"
-Warning--I didn't find a database entry for "mackinnon1985"
-Warning--I didn't find a database entry for "farole2011"
 Warning--there's a number but no volume in arvis2016
-You've used 17 entries,
+You've used 26 entries,
             2909 wiz_defined-function locations,
-            754 strings with 7360 characters,
-and the built_in function-call counts, 54502 in all, are:
-= -- 8710
-> -- 714
+            806 strings with 8642 characters,
+and the built_in function-call counts, 83084 in all, are:
+= -- 13291
+> -- 1068
 < -- 0
-+ -- 4046
-- -- 212
-* -- 4543
-:= -- 11249
-add.period$ -- 18
-call.type$ -- 17
-change.case$ -- 232
-chr.to.int$ -- 17
-cite$ -- 18
-duplicate$ -- 281
-empty$ -- 551
-format.name$ -- 263
-if$ -- 9748
++ -- 6156
+- -- 317
+* -- 6953
+:= -- 17129
+add.period$ -- 27
+call.type$ -- 26
+change.case$ -- 355
+chr.to.int$ -- 26
+cite$ -- 27
+duplicate$ -- 425
+empty$ -- 853
+format.name$ -- 403
+if$ -- 14854
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 23
-newline$ -- 56
-num.names$ -- 177
-pop$ -- 97
+missing$ -- 35
+newline$ -- 83
+num.names$ -- 268
+pop$ -- 141
 preamble$ -- 1
-purify$ -- 255
+purify$ -- 390
 quote$ -- 0
-skip$ -- 214
+skip$ -- 320
 stack$ -- 0
-substring$ -- 12117
-swap$ -- 43
-text.length$ -- 238
+substring$ -- 18505
+swap$ -- 64
+text.length$ -- 364
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 54
+type$ -- 84
 warning$ -- 1
-while$ -- 373
+while$ -- 574
 width$ -- 0
-write$ -- 229
-(There were 10 warnings)
+write$ -- 339
+(There was 1 warning)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.2)  2 MAY 2026 15:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.2)  2 MAY 2026 15:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -636,47 +636,13 @@ Overfull \hbox (6.17711pt too wide) in paragraph at lines 2--2
 |[]\OT1/ptm/b/n/20.74 Literature Re-view: Re-evaluating GVCs, the State,
  []
 
-
-Package natbib Warning: Citation `gereffi2005' on page 8 undefined on input lin
-e 6.
-
-
-Package natbib Warning: Citation `milberg2013' on page 8 undefined on input lin
-e 6.
-
-
-Package natbib Warning: Citation `chang2002' on page 8 undefined on input line 
-6.
-
-
-Package natbib Warning: Citation `limao2001' on page 8 undefined on input line 
-6.
-
-[8]
-
-Package natbib Warning: Citation `gereffi2005' on page 9 undefined on input lin
-e 12.
-
-
-Package natbib Warning: Citation `milberg2013' on page 9 undefined on input lin
-e 12.
-
-
-Package natbib Warning: Citation `gereffi2005' on page 9 undefined on input lin
-e 14.
-
-[9]
+[8] [9]
 Overfull \hbox (11.38397pt too wide) in paragraph at lines 22--23
 \OT1/ptm/m/n/14.4 man-u-fac-tur-ing tasks glob-ally, com-press-ing the em-ploy-
 ment pay-off that made labour-
  []
 
-[10]
-
-Package natbib Warning: Citation `akamatsu1962' on page 11 undefined on input l
-ine 38.
-
-[11]
+[10] [11]
 Overfull \hbox (10.25311pt too wide) in paragraph at lines 42--42
 |[]\OT1/ptm/b/n/17.28 Comparative De-vel-op-ment Bench-marks: Viet-nam and Thai
 -
@@ -688,34 +654,17 @@ Overfull \hbox (0.80006pt too wide) in paragraph at lines 48--48
 e-
  []
 
-
-Package natbib Warning: Citation `limao2001' on page 12 undefined on input line
- 50.
-
-[12]
-
-Package natbib Warning: Citation `hidalgo2009' on page 13 undefined on input li
-ne 62.
-
-[13])
+[12] [13])
 Overfull \hbox (0.64157pt too wide) in paragraph at lines 72--73
 \OT1/ptm/m/n/14.4 vel-op-ment In-di-ca-tors (WDI) database ([]World Bank[] []20
 24[]) pro-vides an-nual macroe-
  []
 
-[14]
-
-Package natbib Warning: Citation `balassa1965' on page 15 undefined on input li
-ne 81.
-
-
-Package natbib Warning: Citation `hidalgo2009' on page 15 undefined on input li
-ne 84.
-
-[15]
+[14] [15]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
 19.
- (C:\Users\nuobe\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+
+(C:\Users\nuobe\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 Overfull \hbox (2.25238pt too wide) in paragraph at lines 121--122
@@ -900,36 +849,25 @@ Overfull \hbox (7.81267pt too wide) in paragraph at lines 81--81
 []\OT1/cmtt/m/n/12 unctadstat.unctad.org/| 
  []
 
-[21] [22]
-
-Package natbib Warning: Citation `mackinnon1985' on page 23 undefined on input 
-line 126.
-
-
-Overfull \hbox (7.98123pt too wide) in paragraph at lines 126--127
-[]\OT1/ptm/m/n/14.4 All re-gres-sions use HC3 heteroskedasticity-consistent sta
-n-dard er-rors (\OT1/ptm/b/n/14.4 ?\OT1/ptm/m/n/14.4 ). Given
- []
-
-[23])
+[21] [22] [23])
 Overfull \hbox (1.94397pt too wide) in paragraph at lines 130--130
 |[]\OT1/ptm/b/n/20.74 IV BOB: Tahlil va Nati-jalar (Anal-y-sis and Re-sults)| 
  []
 
-<figures/fig1_structural_break.png, id=641, 578.16pt x 361.35pt>
+<figures/fig1_structural_break.png, id=677, 578.16pt x 361.35pt>
 File: figures/fig1_structural_break.png Graphic file (type png)
 <use figures/fig1_structural_break.png>
 Package pdftex.def Info: figures/fig1_structural_break.png  used on input line 
 138.
 (pdftex.def)             Requested size: 399.05278pt x 249.40897pt.
 [24] [25 <./figures/fig1_structural_break.png>]
-<figures/fig2_rca_heatmap.png, id=655, 722.7pt x 505.89pt>
+<figures/fig2_rca_heatmap.png, id=691, 722.7pt x 505.89pt>
 File: figures/fig2_rca_heatmap.png Graphic file (type png)
 <use figures/fig2_rca_heatmap.png>
 Package pdftex.def Info: figures/fig2_rca_heatmap.png  used on input line 173.
 (pdftex.def)             Requested size: 422.52057pt x 295.76305pt.
  [26]
-<figures/fig3_rca_manufacturing.png, id=662, 650.43pt x 397.485pt>
+<figures/fig3_rca_manufacturing.png, id=698, 650.43pt x 397.485pt>
 File: figures/fig3_rca_manufacturing.png Graphic file (type png)
 <use figures/fig3_rca_manufacturing.png>
 Package pdftex.def Info: figures/fig3_rca_manufacturing.png  used on input line
@@ -937,33 +875,28 @@ Package pdftex.def Info: figures/fig3_rca_manufacturing.png  used on input line
 (pdftex.def)             Requested size: 399.05278pt x 243.8726pt.
  [27 <./figures/fig2_rca_heatmap.png>] [28 <./figures/fig3_rca_manufacturing.pn
 g>]
-<figures/fig7_bilateral_trade.png, id=673, 722.7pt x 505.89pt>
+<figures/fig7_bilateral_trade.png, id=709, 722.7pt x 505.89pt>
 File: figures/fig7_bilateral_trade.png Graphic file (type png)
 <use figures/fig7_bilateral_trade.png>
 Package pdftex.def Info: figures/fig7_bilateral_trade.png  used on input line 2
 06.
 (pdftex.def)             Requested size: 422.52057pt x 295.76305pt.
-
-
-LaTeX Warning: Reference `fig:growth_decomposition' on page 29 undefined on inp
-ut line 211.
-
-[29 <./figures/fig7_bilateral_trade.png>]
-<figures/fig9_intermediate_goods_share.png, id=680, 722.7pt x 433.62pt>
+ [29 <./figures/fig7_bilateral_trade.png>]
+<figures/fig9_intermediate_goods_share.png, id=717, 722.7pt x 433.62pt>
 File: figures/fig9_intermediate_goods_share.png Graphic file (type png)
 <use figures/fig9_intermediate_goods_share.png>
 Package pdftex.def Info: figures/fig9_intermediate_goods_share.png  used on inp
 ut line 221.
 (pdftex.def)             Requested size: 399.05278pt x 239.43127pt.
  [30 <./figures/fig9_intermediate_goods_share.png>]
-<figures/fig8_fdi_by_origin.png, id=687, 650.43pt x 397.485pt>
+<figures/fig8_fdi_by_origin.png, id=724, 650.43pt x 397.485pt>
 File: figures/fig8_fdi_by_origin.png Graphic file (type png)
 <use figures/fig8_fdi_by_origin.png>
 Package pdftex.def Info: figures/fig8_fdi_by_origin.png  used on input line 234
 .
 (pdftex.def)             Requested size: 399.05278pt x 243.8726pt.
  [31 <./figures/fig8_fdi_by_origin.png>] [32]
-<figures/fig12_trade_network_map.png, id=700, 867.24pt x 578.16pt>
+<figures/fig12_trade_network_map.png, id=737, 867.24pt x 578.16pt>
 File: figures/fig12_trade_network_map.png Graphic file (type png)
 <use figures/fig12_trade_network_map.png>
 Package pdftex.def Info: figures/fig12_trade_network_map.png  used on input lin
@@ -982,27 +915,27 @@ Underfull \hbox (badness 5189) in paragraph at lines 259--259
  []
 
 [33 <./figures/fig12_trade_network_map.png>]
-<figures/fig13_intermediate_dependence.png, id=707, 794.97pt x 578.16pt>
+<figures/fig13_intermediate_dependence.png, id=744, 794.97pt x 578.16pt>
 File: figures/fig13_intermediate_dependence.png Graphic file (type png)
 <use figures/fig13_intermediate_dependence.png>
 Package pdftex.def Info: figures/fig13_intermediate_dependence.png  used on inp
 ut line 271.
 (pdftex.def)             Requested size: 422.52057pt x 307.2967pt.
-<figures/fig14_export_composition.png, id=709, 867.24pt x 650.43pt>
+<figures/fig14_export_composition.png, id=746, 867.24pt x 650.43pt>
 File: figures/fig14_export_composition.png Graphic file (type png)
 <use figures/fig14_export_composition.png>
 Package pdftex.def Info: figures/fig14_export_composition.png  used on input li
 ne 284.
 (pdftex.def)             Requested size: 431.91199pt x 323.9339pt.
  [34 <./figures/fig13_intermediate_dependence.png>]
-<figures/fig15_reexport_potential.png, id=716, 722.7pt x 361.35pt>
+<figures/fig15_reexport_potential.png, id=753, 722.7pt x 361.35pt>
 File: figures/fig15_reexport_potential.png Graphic file (type png)
 <use figures/fig15_reexport_potential.png>
 Package pdftex.def Info: figures/fig15_reexport_potential.png  used on input li
 ne 297.
 (pdftex.def)             Requested size: 413.13632pt x 206.56712pt.
  [35 <./figures/fig14_export_composition.png>]
-<figures/fig16_gvc_positioning.png, id=723, 794.97pt x 505.89pt>
+<figures/fig16_gvc_positioning.png, id=760, 794.97pt x 505.89pt>
 File: figures/fig16_gvc_positioning.png Graphic file (type png)
 <use figures/fig16_gvc_positioning.png>
 Package pdftex.def Info: figures/fig16_gvc_positioning.png  used on input line 
@@ -1010,7 +943,7 @@ Package pdftex.def Info: figures/fig16_gvc_positioning.png  used on input line
 (pdftex.def)             Requested size: 422.52057pt x 268.88461pt.
  [36 <./figures/fig15_reexport_potential.png>] [37 <./figures/fig16_gvc_positio
 ning.png>]
-<figures/fig4_comparative_trajectory.png, id=735, 1011.78pt x 361.35pt>
+<figures/fig4_comparative_trajectory.png, id=772, 1011.78pt x 361.35pt>
 File: figures/fig4_comparative_trajectory.png Graphic file (type png)
 <use figures/fig4_comparative_trajectory.png>
 Package pdftex.def Info: figures/fig4_comparative_trajectory.png  used on input
@@ -1028,7 +961,7 @@ Overfull \hbox (18.82375pt too wide) in paragraph at lines 16--16
 k-
  []
 
-<figures/fig17_thailand_benchmark.png, id=755, 867.24pt x 325.215pt>
+<figures/fig17_thailand_benchmark.png, id=792, 867.24pt x 325.215pt>
 File: figures/fig17_thailand_benchmark.png Graphic file (type png)
 <use figures/fig17_thailand_benchmark.png>
 Package pdftex.def Info: figures/fig17_thailand_benchmark.png  used on input li
@@ -1042,7 +975,7 @@ n. Kaplin-sky and Mor-ris (2001)
  []
 
 [44]
-<figures/fig18_wgi_comparison.png, id=779, 722.7pt x 397.485pt>
+<figures/fig18_wgi_comparison.png, id=816, 722.7pt x 397.485pt>
 File: figures/fig18_wgi_comparison.png Graphic file (type png)
 <use figures/fig18_wgi_comparison.png>
 Package pdftex.def Info: figures/fig18_wgi_comparison.png  used on input line 2
@@ -1066,7 +999,7 @@ pro-cess im-prove-ment. These
  []
 
 [47] [48]
-<figures/fig19_institutional_radar.png, id=804, 505.89pt x 505.89pt>
+<figures/fig19_institutional_radar.png, id=841, 505.89pt x 505.89pt>
 File: figures/fig19_institutional_radar.png Graphic file (type png)
 <use figures/fig19_institutional_radar.png>
 Package pdftex.def Info: figures/fig19_institutional_radar.png  used on input l
@@ -1074,11 +1007,6 @@ ine 123.
 (pdftex.def)             Requested size: 328.6279pt x 328.6316pt.
 ) [49 <./figures/fig19_institutional_radar.png (PNG copy)>] [50]
 (chapters/ch_sez_analysis.tex
-
-Package natbib Warning: Citation `farole2011' on page 51 undefined on input lin
-e 8.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 23--23
 []\OT1/ptm/m/n/12 Primary Sec-
  []
@@ -1170,28 +1098,20 @@ Overfull \hbox (6.58943pt too wide) in paragraph at lines 71--71
  []
 
 [53]
-
-Package natbib Warning: Citation `farole2011' on page 54 undefined on input lin
-e 81.
-
-<figures/fig20_sez_performance.png, id=832, 722.7pt x 397.485pt>
+<figures/fig20_sez_performance.png, id=874, 722.7pt x 397.485pt>
 File: figures/fig20_sez_performance.png Graphic file (type png)
 <use figures/fig20_sez_performance.png>
 Package pdftex.def Info: figures/fig20_sez_performance.png  used on input line 
 85.
 (pdftex.def)             Requested size: 422.52057pt x 232.38525pt.
-[54]) [55 <./figures/fig20_sez_performance.png>] (chapters/ch_constraints.tex
-
-Package natbib Warning: Citation `limao2001' on page 56 undefined on input line
- 14.
-
-
+ [54]) [55 <./figures/fig20_sez_performance.png>]
+(chapters/ch_constraints.tex
 Overfull \hbox (14.60515pt too wide) in paragraph at lines 23--34
  [][] 
  []
 
 [56] [57] [58] [59]
-<figures/fig21_constraint_heatmap.png, id=865, 650.43pt x 505.89pt>
+<figures/fig21_constraint_heatmap.png, id=909, 650.43pt x 505.89pt>
 File: figures/fig21_constraint_heatmap.png Graphic file (type png)
 <use figures/fig21_constraint_heatmap.png>
 Package pdftex.def Info: figures/fig21_constraint_heatmap.png  used on input li
@@ -1205,28 +1125,21 @@ rix: Sever-ity vs. Pol-icy
 
 [60]) (output/tables/ols_regression.tex [61 <./figures/fig21_constraint_heatmap
 .png>]) [62]
-
-LaTeX Warning: Reference `tab:ols_eci' on page 63 undefined on input line 364.
-
-<figures/fig5_manufacturing_forecast.png, id=882, 794.97pt x 433.62pt>
+<figures/fig5_manufacturing_forecast.png, id=926, 794.97pt x 433.62pt>
 File: figures/fig5_manufacturing_forecast.png Graphic file (type png)
 <use figures/fig5_manufacturing_forecast.png>
 Package pdftex.def Info: figures/fig5_manufacturing_forecast.png  used on input
  line 375.
 (pdftex.def)             Requested size: 422.52057pt x 230.47253pt.
-[63] [64 <./figures/fig5_manufacturing_forecast.png>]
-
-LaTeX Warning: Reference `fig:scenario_dashboard' on page 65 undefined on input
- line 386.
-
-<figures/fig10_mechanism_trajectory.png, id=893, 686.565pt x 433.62pt>
+ [63] [64 <./figures/fig5_manufacturing_forecast.png>]
+<figures/fig10_mechanism_trajectory.png, id=938, 686.565pt x 433.62pt>
 File: figures/fig10_mechanism_trajectory.png Graphic file (type png)
 <use figures/fig10_mechanism_trajectory.png>
 Package pdftex.def Info: figures/fig10_mechanism_trajectory.png  used on input 
 line 395.
 (pdftex.def)             Requested size: 399.05278pt x 252.0291pt.
-[65 <./figures/fig10_mechanism_trajectory.png>] [66]
-(chapters/ch_discussion.tex
+ [65 <./figures/fig10_mechanism_trajectory.png>] [66] (chapters/ch_discussion.t
+ex
 Underfull \hbox (badness 10000) in paragraph at lines 31--31
 []\OT1/ptm/b/n/14.4 Evidence Base /
  []
@@ -1341,30 +1254,17 @@ Underfull \hbox (badness 7522) in paragraph at lines 31--31
 \OT1/ptm/m/n/14.4 'cap-tive' as-sem-bly to
  []
 
-[67] [68]
-
-LaTeX Warning: Reference `sec:regression' on page 69 undefined on input line 43
-.
-
-[69]
+[67] [68] [69]
 Overfull \hbox (3.53578pt too wide) in paragraph at lines 47--48
 \OT1/ptm/m/n/14.4 in-ter-me-di-ate goods trade re-la-tion-ships --- sup-plier d
 e-vel-op-ment pro-grammes, back-
  []
-
-
-Package natbib Warning: Citation `akamatsu1962' on page 70 undefined on input l
-ine 51.
 
 [70]
 Overfull \hbox (0.64099pt too wide) in paragraph at lines 53--54
 \OT1/ptm/m/n/14.4 wage ar-bi-trage. In-stead, Uzbek-istan is dis-pro-por-tion-a
 tely ab-sorb-ing infrastructure-
  []
-
-
-Package natbib Warning: Citation `milberg2013' on page 71 undefined on input li
-ne 57.
 
 [71]
 Overfull \hbox (0.36884pt too wide) in paragraph at lines 59--59
@@ -1383,52 +1283,40 @@ Overfull \hbox (4.18283pt too wide) in paragraph at lines 83--84
  re-con-fig-u-ra-tion --- is seized
  []
 
-
-Package natbib Warning: Citation `gereffi2005' on page 75 undefined on input li
-ne 91.
-
 ) [75] [76] [77] [78]
-<figures/fig0_indicator_trends.png, id=961, 722.7pt x 433.62pt>
+<figures/fig0_indicator_trends.png, id=1014, 722.7pt x 433.62pt>
 File: figures/fig0_indicator_trends.png Graphic file (type png)
 <use figures/fig0_indicator_trends.png>
 Package pdftex.def Info: figures/fig0_indicator_trends.png  used on input line 
 449.
 (pdftex.def)             Requested size: 422.52057pt x 253.51118pt.
-<figures/fig6_scenario_dashboard.png, id=962, 1011.78pt x 397.485pt>
+<figures/fig6_scenario_dashboard.png, id=1015, 1011.78pt x 397.485pt>
 File: figures/fig6_scenario_dashboard.png Graphic file (type png)
 <use figures/fig6_scenario_dashboard.png>
 Package pdftex.def Info: figures/fig6_scenario_dashboard.png  used on input lin
 e 455.
 (pdftex.def)             Requested size: 422.52057pt x 165.99033pt.
-<figures/fig11_growth_decomposition.png, id=963, 722.7pt x 433.62pt>
+<figures/fig11_growth_decomposition.png, id=1016, 722.7pt x 433.62pt>
 File: figures/fig11_growth_decomposition.png Graphic file (type png)
 <use figures/fig11_growth_decomposition.png>
 Package pdftex.def Info: figures/fig11_growth_decomposition.png  used on input 
-line 461.
+line 462.
 (pdftex.def)             Requested size: 422.52057pt x 253.51118pt.
  [79 <./figures/fig0_indicator_trends.png> <./figures/fig6_scenario_dashboard.p
 ng>] [80 <./figures/fig11_growth_decomposition.png>]
-(report_main.bbl [81])
-
-Package natbib Warning: There were undefined citations.
-
-[82] (report_main.aux)
+(report_main.bbl [81] [82]) [83] (report_main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `report_main.out' has not changed.
 (rerunfilecheck)             Checksum: 51135D5AE6D93EF83F2F9B93125ED0B4;24328.
  ) 
 Here is how much of TeX's memory you used:
- 14142 strings out of 467871
- 231238 string characters out of 5418377
- 656281 words of memory out of 5000000
- 42540 multiletter control sequences out of 15000+600000
+ 14177 strings out of 467871
+ 231855 string characters out of 5418377
+ 656863 words of memory out of 5000000
+ 42565 multiletter control sequences out of 15000+600000
  684754 words of font info for 153 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,13n,79p,1764b,619s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1443,9 +1331,9 @@ rams/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/nuobe/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/nuobe/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/nuobe/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report_main.pdf (82 pages, 4356099 bytes).
+Output written on report_main.pdf (83 pages, 4367445 bytes).
 PDF statistics:
- 1082 PDF objects out of 1200 (max. 8388607)
- 238 named destinations out of 1000 (max. 500000)
+ 1140 PDF objects out of 1200 (max. 8388607)
+ 248 named destinations out of 1000 (max. 500000)
  791 words of extra memory for PDF output out of 10000 (max. 10000000)
 
