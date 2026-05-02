@@ -75,8 +75,8 @@ if (file.exists(baci_file)) {
 
   baci_bilateral <- read_csv(baci_file, show_col_types = FALSE) %>%
     mutate(
-      trade_balance   = exports_mn_usd - imports_mn_usd,
-      total_trade     = exports_mn_usd + imports_mn_usd,
+      trade_balance   = trade_balance_usd / 1e6,
+      total_trade     = total_trade_usd / 1e6,
       post_reform     = year >= REFORM_YEAR
     )
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.2)  2 MAY 2026 19:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.2)  2 MAY 2026 19:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -891,12 +891,12 @@ Package pdftex.def Info: figures/fig3_rca_manufacturing.png  used on input line
 (pdftex.def)             Requested size: 399.05278pt x 243.8726pt.
  [23 <./figures/fig2_rca_heatmap.png>] [24 <./figures/fig3_rca_manufacturing.pn
 g>]
-<figures/fig7_bilateral_trade.png, id=675, 722.7pt x 505.89pt>
+<figures/fig7_bilateral_trade.png, id=675, 722.7pt x 433.62pt>
 File: figures/fig7_bilateral_trade.png Graphic file (type png)
 <use figures/fig7_bilateral_trade.png>
 Package pdftex.def Info: figures/fig7_bilateral_trade.png  used on input line 1
 45.
-(pdftex.def)             Requested size: 422.52057pt x 295.76305pt.
+(pdftex.def)             Requested size: 422.52057pt x 253.51118pt.
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
 50.
 
@@ -1162,12 +1162,12 @@ Package pdftex.def Info: figures/fig5_manufacturing_forecast.png  used on input
  line 314.
 (pdftex.def)             Requested size: 422.52057pt x 230.47253pt.
 [60] [61 <./figures/fig5_manufacturing_forecast.png>]
-<figures/fig10_mechanism_trajectory.png, id=912, 686.565pt x 433.62pt>
+<figures/fig10_mechanism_trajectory.png, id=912, 722.7pt x 433.62pt>
 File: figures/fig10_mechanism_trajectory.png Graphic file (type png)
 <use figures/fig10_mechanism_trajectory.png>
 Package pdftex.def Info: figures/fig10_mechanism_trajectory.png  used on input 
 line 334.
-(pdftex.def)             Requested size: 399.05278pt x 252.0291pt.
+(pdftex.def)             Requested size: 399.05278pt x 239.43127pt.
  [62] [63 <./figures/fig10_mechanism_trajectory.png>] [64] (chapters/ch_discuss
 ion.tex
 Underfull \hbox (badness 10000) in paragraph at lines 31--31
@@ -1356,8 +1356,13 @@ line 402.
 (pdftex.def)             Requested size: 422.52057pt x 253.51118pt.
  [77 <./figures/fig0_indicator_trends.png> <./figures/fig6_scenario_dashboard.p
 ng>] [78 <./figures/fig11_growth_decomposition.png>]
-No file report_main.bbl.
-(report_main.aux)
+(report_main.bbl [79] [80]
+Overfull \hbox (9.2805pt too wide) in paragraph at lines 170--173
+\OT1/ptm/b/n/14.4 URL: \OT1/ptm/m/it/14.4 https://www.worldbank.org/en/country/
+uzbekistan/publication/uzbekistan-
+ []
+
+) [81] (report_main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -1366,163 +1371,34 @@ L3 programming layer <2025-12-24>
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `report_main.out' has not changed.
 (rerunfilecheck)             Checksum: 63C4A48C7A0A5071267A1327B81BBCE6;22517.
  ) 
 Here is how much of TeX's memory you used:
- 14095 strings out of 467871
- 230255 string characters out of 5418377
+ 14173 strings out of 467871
+ 231971 string characters out of 5418377
  659026 words of memory out of 5000000
- 42497 multiletter control sequences out of 15000+600000
+ 42569 multiletter control sequences out of 15000+600000
  679521 words of font info for 145 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,13n,79p,1879b,619s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{cite.farole2011} has been referenced but does not e
-xist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.kaplinsky2001} has been referenced but does no
-t exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.mackinnon1985} has been referenced but does no
-t exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.balassa1965} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.danermark2019} has been referenced but does no
-t exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.bhaskar1975} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.akramov2024} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.andreoni2023cje} has been referenced but does 
-not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.hidalgo2009} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.worldbank2025} has been referenced but does no
-t exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.pomfret2019} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.dunning1981} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.akamatsu1962} has been referenced but does not
- exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.andreoni2023rp} has been referenced but does n
-ot exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.mcmillan2017} has been referenced but does not
- exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.diao2019} has been referenced but does not exi
-st, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.rodrik2016} has been referenced but does not e
-xist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.usmanov2024} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.rakhmatullayev2023} has been referenced but do
-es not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.baldwin2016} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.gereffi1994} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.carrere2004} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.arvis2016} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.limao2001} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.chang2002} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.evans1995} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.wade1990} has been referenced but does not exi
-st, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.amsden1989} has been referenced but does not e
-xist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.sturgeon2008} has been referenced but does not
- exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.humphrey2002} has been referenced but does not
- exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.milberg2013} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.gereffi2005} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.world_bank_wdi} has been referenced but does n
-ot exist, replaced by a fixed one
-
-<C:/Users/nuobe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-ex10.pfb><C:/Users/nuobe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmmi10.pfb><C:/Users/nuobe/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb><C:/Users/nuobe/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb><C:/Users/nuobe/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/nuobe/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/nuobe/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/nuobe/AppData/Local/Program
-s/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/nuobe/AppData/Local/Program
-s/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/nuobe/AppData/Local/Program
-s/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report_main.pdf (78 pages, 4091096 bytes).
+<C:/Users/nuobe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmex10.pfb><C:/Users/nuobe/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmmi10.pfb><C:/Users/nuobe/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb><C:/Users/nuobe/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/nuobe/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/nuobe/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/nuobe/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/nuobe/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/nuobe/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/nuobe/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on report_main.pdf (81 pages, 4073779 bytes).
 PDF statistics:
- 1112 PDF objects out of 1200 (max. 8388607)
- 239 named destinations out of 1000 (max. 500000)
+ 1126 PDF objects out of 1200 (max. 8388607)
+ 242 named destinations out of 1000 (max. 500000)
  735 words of extra memory for PDF output out of 10000 (max. 10000000)
 
