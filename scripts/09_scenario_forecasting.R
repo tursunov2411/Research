@@ -8,6 +8,7 @@
 
 source("scripts/00_setup.R")
 
+dir.create("figures", recursive = TRUE, showWarnings = FALSE)
 dir.create("output/figures", recursive = TRUE, showWarnings = FALSE)
 dir.create("output/tables", recursive = TRUE, showWarnings = FALSE)
 dir.create("output/logs", recursive = TRUE, showWarnings = FALSE)
@@ -287,16 +288,14 @@ if (nrow(target_summary) == 0) {
   })
 }
 
-fig_manuf_forecast <- full_series %>%
-  filter(!is.na(manuf_va)) %>%
-  ggplot(aes(x = year, y = manuf_va, color = scenario, linetype = scenario)) +
+fig_manuf_forecast <- ggplot() +
+  # Confidence ribbon for Scenario A (no legend entry)
   geom_ribbon(
     data = filter(scenario_forecasts, scenario_id == "A"),
     aes(x = year, ymin = lo80_manuf, ymax = hi80_manuf),
     fill = thesis_colours["neutral"],
     alpha = 0.15,
-    color = NA,
-    inherit.aes = FALSE
+    color = NA
   ) +
   geom_vline(
     xintercept = REFORM_YEAR,
@@ -316,7 +315,18 @@ fig_manuf_forecast <- full_series %>%
     color = thesis_colours["vietnam"],
     linewidth = 0.8
   ) +
-  geom_line(linewidth = 1.2, na.rm = TRUE) +
+  # Historical series: draw as single black solid line, mapped to legend
+  geom_line(
+    data = filter(full_series, period == "historical", !is.na(manuf_va)),
+    aes(x = year, y = manuf_va, color = "Historical", linetype = "Historical"),
+    linewidth = 1.2
+  ) +
+  # Forecast scenarios: each gets its own legend entry
+  geom_line(
+    data = filter(full_series, period == "forecast", !is.na(manuf_va)),
+    aes(x = year, y = manuf_va, color = scenario, linetype = scenario),
+    linewidth = 1.2
+  ) +
   scale_color_manual(values = scenario_palette, name = NULL) +
   scale_linetype_manual(values = scenario_types, name = NULL) +
   scale_x_continuous(breaks = seq(2010, FORECAST_END, 2)) +
@@ -333,13 +343,15 @@ fig_manuf_forecast <- full_series %>%
   theme(legend.position = "bottom")
 
 ggsave(
-  "output/figures/fig5_manufacturing_forecast.png",
+  "figures/fig5_manufacturing_forecast.png",
   fig_manuf_forecast,
   width = 11,
   height = 6,
   dpi = 300,
   bg = "white"
 )
+file.copy("figures/fig5_manufacturing_forecast.png",
+          "output/figures/fig5_manufacturing_forecast.png", overwrite = TRUE)
 
 p_manuf <- full_series %>%
   filter(!is.na(manuf_va)) %>%
@@ -386,13 +398,15 @@ fig_dashboard <- p_manuf + p_fdi + p_eci +
   theme(legend.position = "bottom")
 
 ggsave(
-  "output/figures/fig6_scenario_dashboard.png",
+  "figures/fig6_scenario_dashboard.png",
   fig_dashboard,
   width = 14,
   height = 5.5,
   dpi = 300,
   bg = "white"
 )
+file.copy("figures/fig6_scenario_dashboard.png",
+          "output/figures/fig6_scenario_dashboard.png", overwrite = TRUE)
 
 sink("output/logs/scenario_forecasting_log.txt")
 cat("SCENARIO FORECASTING LOG\n")

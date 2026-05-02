@@ -1,5 +1,5 @@
 SCENARIO FORECASTING LOG
-Date: 2026-05-02 18:37:25 
+Date: 2026-05-02 19:43:54 
 
 Forecast horizon: 2024 - 2030 
 Manufacturing model: ARIMA - 0,1,0 

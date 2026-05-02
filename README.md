@@ -22,7 +22,7 @@ uzbekistan_thesis/
 │
 ├── report_main.tex          # Master LaTeX manuscript (single source of truth)
 ├── report_main.pdf          # Compiled PDF (latest version)
-├── references_cleaned.bib   # Deduplicated BibTeX database (102 entries, incl. 5 from 2023–2026)
+├── references_cleaned.bib   # Deduplicated BibTeX database (audited)
 │
 ├── chapters/                # LaTeX chapter files (input into report_main.tex)
 │   ├── ch_literature_review.tex
@@ -37,27 +37,29 @@ uzbekistan_thesis/
 ├── scripts/                 # R analysis scripts (run in order)
 │   ├── 00_setup.R           # Package installation and environment setup
 │   ├── 01_data_cleaning.R   # WDI pull (2010–2026) + IMF WEO 2025 projections
-│   ├── 02_descriptive_analysis.R
+│   ├── 02_descriptive_analysis.R  # Descriptive stats (means, SDs, trends)
 │   ├── 03_rca_analysis.R    # Revealed Comparative Advantage (Balassa 1965)
-│   ├── 04_trend_regression.R
-│   ├── 05_chow_test.R       # Structural break test (Chow 1960)
+│   ├── 04_trend_regression.R     # Linear time-trend regressions
+│   ├── 05_chow_test.R       # Structural break test (Chow + Bai–Perron endogenous)
 │   ├── 06_comparative_analysis.R
-│   ├── 07_visualisations.R
+│   ├── 07_visualisations.R  # ALL figure generation (consolidated)
 │   ├── 08_export_latex_tables.R
 │   ├── 09_scenario_forecasting.R  # Three-scenario Manufacturing VA through 2030
 │   ├── 10_triad_figures.R
+│   ├── 11_ols_regression.R  # OLS with BACI-computed intermediate goods share
 │   ├── 14_new_advanced_figures.R
 │   ├── 15_export_new_chapter_tables.R
 │   ├── 16_fetch_academic_literature.R
 │   └── panel_robustness.R   # Panel data robustness checks (plm, Hausman test)
 │
-├── figures/                 # All generated figures (PNG, 300 dpi)
+├── output/
+│   ├── figures/             # ALL generated figures (PNG, 300 dpi) — SINGLE SOURCE
+│   ├── tables/              # LaTeX regression tables
+│   └── logs/                # R execution logs
+├── figures/                 # Legacy figure directory (see output/figures/)
 ├── data/
 │   ├── raw/                 # Original unmodified data files
 │   └── processed/           # Cleaned datasets (RDS + CSV)
-├── output/
-│   ├── tables/              # LaTeX regression tables
-│   └── logs/                # R execution logs
 ├── policy_toolkit/          # Policy visualisation scripts
 └── stata/                   # Supplementary Stata scripts (if any)
 ```
@@ -81,7 +83,9 @@ uzbekistan_thesis/
 | Method | Finding |
 |---|---|
 | Chow Structural Break Test | 2017 confirmed as a structural break for manufacturing VA (F=6.937, p=0.013) |
-| OLS Regression | Intermediate goods imports significant (β=2.34, p<0.05); FDI volume insignificant (β=0.002, p=0.15) |
+| Endogenous Breakpoint (Bai–Perron) | Data-determined break coincides with 2017, strengthening the exogenous result |
+| Interaction Term | β=0.219, p=0.319 — not significant individually (see note on joint vs individual tests) |
+| OLS Regression | Time trend significant (β=0.723, p<0.01); FDI volume insignificant |
 | RCA Analysis | No new manufactured export comparative advantages established post-2017 |
 | Trade Network (Betweenness) | Uzbekistan: 0.26 — conduit node, not relational producer |
 | Comparative Benchmark | FDI at 2.4% of GDP vs Vietnam's 9.8% at comparable reform stage |
@@ -92,15 +96,35 @@ uzbekistan_thesis/
 ## How to Reproduce
 
 ### 1. Run R scripts (requires R ≥ 4.2, packages in `scripts/00_setup.R`)
+
+Run the numbered scripts in order. The full execution sequence:
+
 ```r
+# Core data pipeline
 source("scripts/00_setup.R")
-source("scripts/01_data_cleaning.R")   # pulls WDI + appends IMF WEO projections
-source("scripts/03_rca_analysis.R")
-source("scripts/05_chow_test.R")
-source("scripts/07_visualisations.R")
+source("scripts/01_data_cleaning.R")      # pulls WDI + appends IMF WEO projections
+source("scripts/02_descriptive_analysis.R") # descriptive statistics (Table 1)
+source("scripts/03_rca_analysis.R")        # Revealed Comparative Advantage
+source("scripts/04_trend_regression.R")    # time-trend regressions
+source("scripts/05_chow_test.R")           # structural break + endogenous search
+source("scripts/06_comparative_analysis.R") # UZB vs VNM benchmarking
+
+# Figures (consolidated — replaces root-level generate_*.R scripts)
+source("scripts/07_visualisations.R")      # ALL figures → output/figures/
+
+# Tables and additional analysis
+source("scripts/08_export_latex_tables.R")
 source("scripts/09_scenario_forecasting.R")
-source("scripts/panel_robustness.R")
+source("scripts/10_triad_figures.R")
+source("scripts/11_ols_regression.R")      # OLS with BACI-computed interm_share
+source("scripts/14_new_advanced_figures.R")
+source("scripts/15_export_new_chapter_tables.R")
+
+# Robustness
+source("scripts/panel_robustness.R")       # panel data + Hausman test
 ```
+
+**Note:** The root-level `generate_figures.R` and `generate_network_figures.R` are retained for backward compatibility but are superseded by `scripts/07_visualisations.R`. All figures are now consolidated in `output/figures/`.
 
 ### 2. Compile the PDF
 ```bash
@@ -122,12 +146,13 @@ pandoc report_main.tex \
 
 ## Bibliography
 
-The `references_cleaned.bib` file contains 102 deduplicated entries including 5 new references from 2023–2026:
-- Usmanov (2024) — GVC integration in Central Asia (*Post-Communist Economies*)
-- Akramov & Tilekeyev (2024) — Agricultural value chains (*IFPRI*)
-- Andreoni & Chang (2023) — Political economy of industrial policy (*CJE*)
-- Rakhmatullayev et al. (2023) — Institutional constraints on FDI (*Eurasian Geography and Economics*)
-- World Bank (2025) — *Uzbekistan Economic Update*
+The `references_cleaned.bib` file has been audited (2026-05-02):
+- **38 irrelevant entries removed** (COVID clinical, machine learning, cancer statistics, digital twins, geology, urban planning, etc.)
+- **Andreoni & Chang (2023) duplicate resolved**: `andreoni2023rp` (Research Policy) and `andreoni2023cje` (Cambridge Journal of Economics)
+- **3 references added**:
+  - Hausmann, Hwang & Rodrik (2007) — *What You Export Matters* (Journal of Economic Growth)
+  - Taglioni & Winkler (2016) — *Making Global Value Chains Work for Development* (World Bank)
+  - Harding & Javorcik (2011) — *Roll Out the Red Carpet* (Economic Journal)
 
 ---
 
