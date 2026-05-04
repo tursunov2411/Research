@@ -69,7 +69,7 @@ def fetch_wdi(start: int = 1995, end: int = 2024) -> pd.DataFrame:
             for item in data[1]:
                 rows.append(
                     {
-                        "country_code": iso3,
+                        "country_code": item["countryiso3code"],
                         "country": item["country"]["value"],
                         "year": int(item["date"]),
                         "series": name,
@@ -170,7 +170,7 @@ def plot_structural_break(wdi: pd.DataFrame) -> None:
     ax.text(2017.2, ax.get_ylim()[0] + 0.15, "2017 reform", fontsize=9, color="#102a43")
     ax.set_xlabel("Year")
     ax.set_ylabel("Manufacturing VA (% GDP)")
-    ax.set_title("Manufacturing value added, Uzbekistan, 1995-2026", fontsize=13, weight="bold")
+    ax.set_title("Manufacturing value added, Uzbekistan, 2010-2026", fontsize=13, weight="bold")
     ax.legend(frameon=False, fontsize=8, loc="best")
     style_axes(ax)
     fig.tight_layout()
@@ -212,7 +212,8 @@ def plot_comparative(wdi: pd.DataFrame, eci: pd.DataFrame) -> None:
     handles, labels = axes[0, 0].get_legend_handles_labels()
     fig.legend(handles, labels, ncol=4, frameon=False, loc="lower center")
     fig.suptitle("Comparative reform trajectories", fontsize=14, weight="bold")
-    fig.tight_layout(rect=[0, 0.05, 1, 0.96])
+    fig.text(0.5, 0.935, "Kazakhstan year 0 = 2014 (Nurly Zhol programme)", ha="center", fontsize=10, color="#4b5563")
+    fig.tight_layout(rect=[0, 0.05, 1, 0.93])
     fig.savefig(FIG_DIR / "fig12R_comparative_trajectory.png", bbox_inches="tight")
     plt.close(fig)
 
@@ -222,9 +223,16 @@ def plot_middle_corridor() -> None:
         {
             "year": [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
             "tonnes_m": [0.8, 0.8, 0.8, 0.84, 1.5, 2.76, 4.48, 4.12],
+            "series_note": ["Approximate author estimate from TITR-related public reporting"] * 8,
         }
     )
-    teu = pd.DataFrame({"year": [2023, 2024, 2025], "teu": [20500, 55000, 77000]})
+    teu = pd.DataFrame(
+        {
+            "year": [2023, 2024, 2025],
+            "teu": [20500, 55000, 77000],
+            "series_note": ["Preliminary container figures from public corridor reporting"] * 3,
+        }
+    )
     cargo.to_csv(TABLE_DIR / "table_middle_corridor_cargo.csv", index=False)
     teu.to_csv(TABLE_DIR / "table_middle_corridor_teu.csv", index=False)
 
@@ -244,6 +252,14 @@ def plot_middle_corridor() -> None:
     lines1, labels1 = ax1.get_legend_handles_labels()
     lines2, labels2 = ax2.get_legend_handles_labels()
     ax1.legend(lines1 + lines2, labels1 + labels2, frameon=False, fontsize=8, loc="upper left")
+    fig.text(
+        0.5,
+        0.01,
+        "Approximate author-compiled values from TITR-related public reporting, Ports Europe, and RAND; 2024-2025 TEU figures are preliminary.",
+        ha="center",
+        fontsize=8,
+        color="#4b5563",
+    )
     fig.tight_layout()
     fig.savefig(FIG_DIR / "fig_newB_middle_corridor.png", bbox_inches="tight")
     plt.close(fig)

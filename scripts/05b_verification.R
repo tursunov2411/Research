@@ -1,5 +1,5 @@
 # ============================================================
-# Script: 07_verification.R
+# Script: 05b_verification.R
 # Purpose: Cross-verify structural break results using strucchange
 # Thesis: FDI-Led Industrialisation in Uzbekistan
 # ============================================================

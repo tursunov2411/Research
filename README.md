@@ -85,7 +85,7 @@ uzbekistan_thesis/
 | Chow Structural Break Test | 2017 confirmed as a structural break for manufacturing VA (F=6.937, p=0.013) |
 | Endogenous Breakpoint (Bai–Perron) | Data-determined break coincides with 2017, strengthening the exogenous result |
 | Interaction Term | β=0.219, p=0.319 — not significant individually (see note on joint vs individual tests) |
-| OLS Regression | Time trend significant (β=0.723, p<0.01); FDI volume insignificant |
+| OLS Regression | Time trend significant (β=0.723, p<0.01); aggregate intermediate-goods share negative and insignificant; FDI volume insignificant |
 | RCA Analysis | No new manufactured export comparative advantages established post-2017 |
 | Trade Network (Betweenness) | Uzbekistan: 0.26 — conduit node, not relational producer |
 | Comparative Benchmark | FDI at 2.4% of GDP vs Vietnam's 9.8% at comparable reform stage |
@@ -107,6 +107,7 @@ source("scripts/02_descriptive_analysis.R") # descriptive statistics (Table 1)
 source("scripts/03_rca_analysis.R")        # Revealed Comparative Advantage
 source("scripts/04_trend_regression.R")    # time-trend regressions
 source("scripts/05_chow_test.R")           # structural break + endogenous search
+source("scripts/05b_verification.R")       # cross-verification of break diagnostics
 source("scripts/06_comparative_analysis.R") # UZB vs VNM benchmarking
 
 # Figures (consolidated — replaces root-level generate_*.R scripts)
@@ -131,6 +132,8 @@ python scripts/12_empirical_robustness.py
 ```
 
 **Note:** The root-level `generate_figures.R` and `generate_network_figures.R` are retained for backward compatibility but are superseded by `scripts/07_visualisations.R`. All figures are now consolidated in `output/figures/`.
+
+`scripts/07_verification.R` has been renumbered to `scripts/05b_verification.R` to avoid duplicate `07_` pipeline numbering and to keep it adjacent to the main structural-break workflow.
 
 ### 2. Compile the PDF
 ```bash

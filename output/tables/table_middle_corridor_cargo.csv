@@ -1,9 +1,9 @@
-year,tonnes_m
-2018,0.8
-2019,0.8
-2020,0.8
-2021,0.84
-2022,1.5
-2023,2.76
-2024,4.48
-2025,4.12
+year,tonnes_m,series_note
+2018,0.8,Approximate author estimate from TITR-related public reporting
+2019,0.8,Approximate author estimate from TITR-related public reporting
+2020,0.8,Approximate author estimate from TITR-related public reporting
+2021,0.84,Approximate author estimate from TITR-related public reporting
+2022,1.5,Approximate author estimate from TITR-related public reporting
+2023,2.76,Approximate author estimate from TITR-related public reporting
+2024,4.48,Approximate author estimate from TITR-related public reporting
+2025,4.12,Approximate author estimate from TITR-related public reporting

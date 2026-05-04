@@ -14,7 +14,7 @@ library(WDI)
 dir.create("output/tables", recursive = TRUE, showWarnings = FALSE)
 
 # ── 1. Fetch panel data for comparator group ──────────────────────────────────
-countries <- c("UZ", "VN", "KZ", "GE", "ET")  # Uzbekistan, Vietnam, Kazakhstan, Georgia, Ethiopia
+countries <- c("UZ", "VN", "KZ", "GE", "MN")  # Uzbekistan, Vietnam, Kazakhstan, Georgia, Mongolia
 
 indicators <- c(
   mfg_va      = "NV.IND.MANF.ZS",
@@ -100,25 +100,32 @@ hausman_result <- if (n_groups > k_coeff) {
 
 
 # ── 7. Output LaTeX table ─────────────────────────────────────────────────────
-stargazer(
-  m_uz, m_fe, m_twfe,
-  type    = "latex",
-  title   = "Panel Robustness Check: Manufacturing Value Added (\\% GDP), 2010--2023",
-  label   = "tab:panel_robustness",
-  column.labels = c("UZ Only (N=12)", "Country FE (N$\\approx$60)", "Two-Way FE (N$\\approx$60)"),
-  covariate.labels = c("FDI (t-1)", "Trade openness", "Post-2017 dummy", "Log GDP per capita"),
-  dep.var.labels = "Manufacturing VA (\\% GDP)",
-  se      = list(se_uz, se_fe, se_twfe),
-  add.lines = list(
-    c("Country FE", "No",  "Yes", "Yes"),
-    c("Year FE",    "No",  "No",  "Yes"),
-    c("F-test FE p-value", "--",
-      sprintf("%.4f", fe_test$p.value), "--"),
-    c("Hausman p-value (FE vs RE)", "--", hausman_result, "--")
-  ),
-  notes = "Cluster-robust SE by country (HC1). UZ-only model uses HC3. Hausman test infeasible when N_groups <= k.",
-  out   = "output/tables/panel_robustness.tex"
-)
+stargazer_ok <- tryCatch({
+  stargazer(
+    m_uz, m_fe, m_twfe,
+    type    = "latex",
+    title   = "Panel Robustness Check: Manufacturing Value Added (\\% GDP), 2010--2023",
+    label   = "tab:panel_robustness",
+    column.labels = c("UZ Only (N=12)", "Country FE (N$\\approx$60)", "Two-Way FE (N$\\approx$60)"),
+    covariate.labels = c("FDI (t-1)", "Trade openness", "Post-2017 dummy", "Log GDP per capita"),
+    dep.var.labels = "Manufacturing VA (\\% GDP)",
+    se      = list(se_uz, se_fe, se_twfe),
+    add.lines = list(
+      c("Country FE", "No",  "Yes", "Yes"),
+      c("Year FE",    "No",  "No",  "Yes"),
+      c("F-test FE p-value", "--",
+        sprintf("%.4f", fe_test$p.value), "--"),
+      c("Hausman p-value (FE vs RE)", "--", hausman_result, "--")
+    ),
+    notes = "Cluster-robust SE by country (HC1). UZ-only model uses HC3. Comparator set: Uzbekistan, Vietnam, Kazakhstan, Georgia, Mongolia. With only five country clusters, inference should be treated cautiously; Cameron-Miller style wild cluster bootstrap would be preferable in a finalized robustness appendix.",
+    out   = "output/tables/panel_robustness.tex"
+  )
+  TRUE
+}, error = function(e) {
+  message("stargazer export failed: ", e$message)
+  message("Use python scripts/12_empirical_robustness.py to regenerate panel_robustness.tex from the updated comparator panel.")
+  FALSE
+})
 
 
 # ── 8. Also run R-based Chow test as cross-verification (Problem 2) ───────────
@@ -145,3 +152,6 @@ write_csv(verification_log, "output/logs/r_verification.csv")
 cat("\n── Chow Test Cross-Verification ────────────────────────────────\n")
 print(verification_log)
 cat("\nAll outputs written to output/tables/ and output/logs/\n")
+if (!stargazer_ok) {
+  cat("Note: stargazer export was skipped due to a formatting error; the Python fallback can regenerate panel_robustness.tex.\n")
+}

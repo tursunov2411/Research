@@ -185,7 +185,7 @@ Countries & {len(countries)} & {len(countries)} & {len(countries)} \\
 Country effects & No & Yes & Partial \\
 Hausman FE vs RE & -- & \multicolumn{{2}}{{c}}{{{h_note}}} \\
 \hline\hline
-\multicolumn{{4}}{{p{{0.92\textwidth}}}}{{\footnotesize Notes: Balanced panel from cached WDI data for Ethiopia, Georgia, Kazakhstan, Uzbekistan, and Viet Nam. Standard errors are HC3 robust and clustered by country. The panel starts in 2011 because FDI is lagged one year. The Hausman statistic is reported as a diagnostic; with only five country clusters, inference should be interpreted cautiously.}} \\
+\multicolumn{{4}}{{p{{0.92\textwidth}}}}{{\footnotesize Notes: Balanced panel from cached WDI data for Georgia, Kazakhstan, Mongolia, Uzbekistan, and Viet Nam. Standard errors are HC3 robust and clustered by country. The panel starts in 2011 because FDI is lagged one year. The Hausman statistic is reported as a diagnostic; with only five country clusters, inference should be interpreted cautiously, and a wild cluster bootstrap would be preferable in a finalized appendix.}} \\
 \end{{tabular}}
 \end{{table}}
 """

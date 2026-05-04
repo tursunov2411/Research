@@ -1,5 +1,5 @@
 Panel robustness generated from cached WDI comparator panel
-Countries: ET, GE, KZ, UZ, VN
+Countries: GE, KZ, MN, UZ, VN
 Period after lag: 2011-2023
 Observations: 65
-Hausman diagnostic: 0.611 (df=4)
+Hausman diagnostic: 0.662 (df=4)

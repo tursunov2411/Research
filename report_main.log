@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.2)  4 MAY 2026 15:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.2)  4 MAY 2026 16:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -927,12 +927,12 @@ Package pdftex.def Info: figures/fig20_sez_performance.png  used on input line
 (pdftex.def)             Requested size: 422.52057pt x 232.38525pt.
  [50]) [51 <./figures/fig20_sez_performance.png>]
 (chapters/ch_constraints.tex [52] [53]
-<figures/fig_newB_middle_corridor.png, id=907, 643.203pt x 368.577pt>
+<figures/fig_newB_middle_corridor.png, id=907, 643.203pt x 377.41pt>
 File: figures/fig_newB_middle_corridor.png Graphic file (type png)
 <use figures/fig_newB_middle_corridor.png>
 Package pdftex.def Info: figures/fig_newB_middle_corridor.png  used on input li
 ne 46.
-(pdftex.def)             Requested size: 413.13632pt x 236.74332pt.
+(pdftex.def)             Requested size: 413.13632pt x 242.4169pt.
  [54 <./figures/fig_newB_middle_corridor.png>] [55] [56]
 <figures/fig_newA_wto_tracker.png, id=931, 711.8595pt x 339.669pt>
 File: figures/fig_newA_wto_tracker.png Graphic file (type png)
@@ -1094,13 +1094,13 @@ Package rerunfilecheck Info: File `report_main.out' has not changed.
 (rerunfilecheck)             Checksum: 999F7BB0F7A1700DA4445D7748DE198C;22940.
  ) 
 Here is how much of TeX's memory you used:
- 16831 strings out of 467871
- 275975 string characters out of 5418377
- 725937 words of memory out of 5000000
+ 16822 strings out of 467871
+ 275897 string characters out of 5418377
+ 726131 words of memory out of 5000000
  44647 multiletter control sequences out of 15000+600000
- 702986 words of font info for 484 fonts, out of 8000000 for 9000
+ 702632 words of font info for 478 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,2007b,652s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,79p,2009b,652s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/nuobe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmex10.pfb><C:/Users/nuobe/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmmi10.pfb><C:/Users/nuobe/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -1112,7 +1112,7 @@ rams/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/nuobe/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/nuobe/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/nuobe/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report_main.pdf (84 pages, 4219865 bytes).
+Output written on report_main.pdf (84 pages, 4235441 bytes).
 PDF statistics:
  1214 PDF objects out of 1440 (max. 8388607)
  260 named destinations out of 1000 (max. 500000)
