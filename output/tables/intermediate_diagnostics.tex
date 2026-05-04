@@ -1,0 +1,47 @@
+
+\begin{table}[!htbp]\centering
+\caption{Diagnostics for the Intermediate-Goods Coefficient. Source: World Bank WDI; OEC/BACI. Processed by author calculations via R.}
+\label{tab:intermediate_diagnostics}
+\small
+\begin{tabular}{lc}
+\hline\hline
+Regressor & VIF \\
+\hline
+fdi\_lag1 & 1.56 \\
+interm\_share & 3.65 \\
+trade\_openness & 8.92 \\
+post\_2017 & 6.66 \\
+time\_trend & 5.89 \\
+\hline
+\multicolumn{2}{l}{Partial correlation, controlling for trend: 0.147} \\
+\hline\hline
+\end{tabular}
+\quad
+\begin{tabular}{lcc}
+\hline\hline
+First-difference model & Coef. & SE \\
+\hline
+Constant & 0.675$^{***}$ & (0.221) \\
+$\Delta$ Intermediate share & -11.912 & (14.156) \\
+$\Delta$ FDI & -0.139 & (0.265) \\
+$\Delta$ Trade openness & 0.038 & (0.038) \\
+\hline\hline
+\end{tabular}
+
+\vspace{0.75em}
+\begin{tabular}{lcc}
+\hline\hline
+Partner-decomposed level model & Coef. & SE \\
+\hline
+Constant & 50.205$^{**}$ & (21.862) \\
+China intermediate share & -17.013$^{*}$ & (10.075) \\
+Japan+Korea intermediate share & -33.601$^{*}$ & (19.130) \\
+FDI (t-1) & 0.141 & (0.280) \\
+Trade openness & 0.063$^{*}$ & (0.034) \\
+Time trend & 0.768$^{***}$ & (0.075) \\
+\hline\hline
+\end{tabular}
+\begin{minipage}{0.92\textwidth}
+\footnotesize Notes: VIFs use the single-country OLS specification in Table~\ref{tab:ols_mfg}. The partial correlation residualises both manufacturing VA and the aggregate intermediate-goods share on a linear time trend. First differences use annual changes over 2011--2023. Partner decomposition separates China's intermediate share from the combined Japan+Korea share; estimates are exploratory because the annual sample remains very small.
+\end{minipage}
+\end{table}

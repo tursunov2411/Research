@@ -28,8 +28,9 @@ Alongside this quantitative sequence, qualitative-comparative analysis of instit
 
 Table~\ref{tab:variables} presents the full set of indicators used in this dissertation, their operationalisation, sources, and expected directional relationships with the outcome variables.
 
-\begin{longtable}{@{}p{3.0cm}p{4.5cm}p{3.0cm}p{2.0cm}@{}}
- \caption{Variable Operationalisation, Sources, and Expected Signs}
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}>{\RaggedRight\arraybackslash}p{2.4cm}>{\RaggedRight\arraybackslash}p{5.3cm}>{\RaggedRight\arraybackslash}p{2.6cm}>{\RaggedRight\arraybackslash}p{1.7cm}@{}}
+ \caption{Variable Operationalisation. Source: World Bank WDI; OEC; OEC/BACI; World Bank WGI; UNCTAD IPFSD; Uzinfoinvest. Processed by author calculations via R.}
  \label{tab:variables} \\
  \toprule
  Variable & Operationalisation & Source & Sign \\
@@ -68,26 +69,26 @@ All quantitative data are sourced from publicly accessible databases. Table~\ref
 
 \begin{table}[H]
  \centering
- \caption{Data Sources, Access Methods, and Coverage}
+ \caption{Data Sources, Access Methods, and Coverage. Source: World Bank WDI; World Bank WGI; OEC/BACI; UNCTAD FDIstat; OECD TiVA; Uzbekstat; UNIDO INDSTAT; ADB Key Indicators. Processed by author compilation via R.}
  \label{tab:datasources}
  \small
  \begin{tabular}{@{}p{3.5cm}p{4.5cm}p{2.5cm}p{1.5cm}@{}}
  \toprule
  Dataset & API / URL & Coverage & Sections \\
  \midrule
- World Bank WDI & \texttt{api.worldbank.org/v2/} & 2000--2023 & 3--9 \\
- World Bank WGI & \texttt{api.worldbank.org/v2/} & 2000--2022 & 9 \\
- OEC / BACI & \texttt{oec.world/api/} & 2010--2022 & 5--8 \\
- UNCTAD FDIstat & \texttt{unctadstat.unctad.org/} & 2000--2023 & 9 \\
- OECD TiVA & \texttt{stats.oecd.org/} & 2005--2020 & 6--7 \\
- Uzbekstat & \texttt{stat.uz} & 2015--2024 & 10 \\
- UNIDO INDSTAT & \texttt{stat.unido.org/} & 2010--2021 & 5, 9 \\
- ADB Key Indicators & \texttt{kidb.adb.org/} & 2000--2023 & 10--11 \\
+ World Bank WDI & \url{api.worldbank.org/v2/} & 2000--2023 & 3--9 \\
+ World Bank WGI & \url{api.worldbank.org/v2/} & 2000--2022 & 9 \\
+ OEC / BACI & \url{oec.world/api/} & 2010--2022 & 5--8 \\
+ UNCTAD FDIstat & \url{unctadstat.unctad.org/} & 2000--2023 & 9 \\
+ OECD TiVA & \url{stats.oecd.org/} & 2005--2020 & 6--7 \\
+ Uzbekstat & \url{stat.uz} & 2015--2024 & 10 \\
+ UNIDO INDSTAT & \url{stat.unido.org/} & 2010--2021 & 5, 9 \\
+ ADB Key Indicators & \url{kidb.adb.org/} & 2000--2023 & 10--11 \\
  \bottomrule
  \end{tabular}
 \end{table}
 
-This study draws on four principal data sources. First, the World Bank World Development Indicators (WDI) database \citep{world_bank_wdi} provides annual macroeconomic indicators for Uzbekistan and comparator countries, including manufacturing value added as a share of GDP, FDI net inflows as a share of GDP, GDP per capita, trade openness, and the Logistics Performance Index. Data span 2010--2026, with 2024--2026 supplemented by IMF WEO April 2025 projections where WDI data are unavailable. The primary analytical window for historical analysis is 2010--2023.
+This study draws on four principal data sources. First, the World Bank World Development Indicators (WDI) database \citep{world_bank_wdi} provides annual macroeconomic indicators for Uzbekistan and comparator countries, including manufacturing value added as a share of GDP, FDI net inflows as a share of GDP, GDP per capita, trade openness, and the Logistics Performance Index. For the 2026 update, the historical WDI window is extended back to 1995 and forward to the latest available WDI observation. Values shown beyond the latest historical WDI year are author scenario extensions calibrated against the IMF October 2025 macro outlook, not direct IMF manufacturing-VA or FDI projections \citep{imf2025uzbekistan}. The primary econometric window remains 2010--2023, where all core Uzbekistan variables are observed rather than projected.
 
 Second, the Observatory of Economic Complexity (OEC) BACI international trade database provides bilateral merchandise trade flows at the HS-2 section level. Intermediate goods are proxied using HS sections 07 (plastics and rubbers), 15 (base metals), 16 (machinery), 17 (transportation equipment), and 18 (instruments) --- sections representing capital goods and inputs rather than final consumption. Revealed comparative advantage indices are computed using the Balassa (1965) formula:
 \begin{equation}
@@ -118,19 +119,30 @@ where $RSS_R$ is the residual sum of squares from the restricted pooled regressi
 
 To estimate the association between Northeast Asian economic engagement and manufacturing upgrading, the following OLS specifications are estimated:
 \begin{equation}
- MfgVA_t = \alpha_0 + \beta_1 \cdot FDI_{t-1} + \beta_2 \cdot IntermShare_t + \beta_3 \cdot TradeOpen_t + \beta_4 \cdot Post2017_t + \beta_5 \cdot \text{Trend}_t + \varepsilon_t
+\begin{aligned}
+ MfgVA_t ={}& \alpha_0 + \beta_1 \cdot FDI_{t-1} + \beta_2 \cdot IntermShare_t \\
+ &+ \beta_3 \cdot TradeOpen_t + \beta_4 \cdot Post2017_t \\
+ &+ \beta_5 \cdot \text{Trend}_t + \varepsilon_t
+\end{aligned}
  \label{eq:ols_mfg}
 \end{equation}
 
 A second specification tests for delayed capital-stock effects, accounting for the time between investment commitments and productive capacity coming online:
 \begin{equation}
- MfgVA_t = \alpha_0 + \beta_1 \cdot FDI_{t-2} + \beta_2 \cdot IntermShare_t + \beta_3 \cdot TradeOpen_t + \beta_4 \cdot Post2017_t + \beta_5 \cdot \text{Trend}_t + \varepsilon_t
+\begin{aligned}
+ MfgVA_t ={}& \alpha_0 + \beta_1 \cdot FDI_{t-2} + \beta_2 \cdot IntermShare_t \\
+ &+ \beta_3 \cdot TradeOpen_t + \beta_4 \cdot Post2017_t \\
+ &+ \beta_5 \cdot \text{Trend}_t + \varepsilon_t
+\end{aligned}
  \label{eq:ols_mfg2}
 \end{equation}
 
 For economic complexity, the specification is:
 \begin{equation}
- ECI_t = \alpha_0 + \beta_1 \cdot MfgVA_t + \beta_2 \cdot TradeOpen_t + \beta_3 \cdot Post2017_t + \beta_4 \cdot \text{Trend}_t + \varepsilon_t
+\begin{aligned}
+ ECI_t ={}& \alpha_0 + \beta_1 \cdot MfgVA_t + \beta_2 \cdot TradeOpen_t \\
+ &+ \beta_3 \cdot Post2017_t + \beta_4 \cdot \text{Trend}_t + \varepsilon_t
+\end{aligned}
  \label{eq:ols_eci}
 \end{equation}
 

@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dissertation Audit: Uzbekistan GVC Thesis</title>
+  <style>
+    :root {
+      --ink: #172026;
+      --muted: #66717a;
+      --line: #d9e0e6;
+      --bg: #f6f8fa;
+      --panel: #ffffff;
+      --critical: #b42318;
+      --high: #b54708;
+      --medium: #175cd3;
+      --low: #067647;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 15px/1.5 "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+    }
+    header {
+      padding: 28px clamp(18px, 4vw, 48px);
+      background: #102a43;
+      color: white;
+    }
+    header h1 { margin: 0 0 8px; font-size: clamp(26px, 4vw, 42px); }
+    header p { margin: 0; color: #d9e6f2; max-width: 980px; }
+    main { padding: 24px clamp(18px, 4vw, 48px) 48px; }
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .metric, .card, .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 1px 2px rgba(16, 42, 67, 0.04);
+    }
+    .metric { padding: 16px; }
+    .metric strong { display: block; font-size: 28px; }
+    .metric span { color: var(--muted); }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 18px 0;
+    }
+    button {
+      border: 1px solid var(--line);
+      background: white;
+      color: var(--ink);
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button.active { background: #102a43; color: white; border-color: #102a43; }
+    .grid { display: grid; gap: 14px; }
+    .card { padding: 16px; }
+    .card h2 { margin: 0 0 8px; font-size: 18px; }
+    .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+    .pill {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 2px 9px;
+      font-size: 12px;
+      font-weight: 700;
+      border: 1px solid var(--line);
+    }
+    .critical { color: var(--critical); border-color: #fecdca; background: #fff1f0; }
+    .high { color: var(--high); border-color: #fedf89; background: #fffaeb; }
+    .medium { color: var(--medium); border-color: #b2ddff; background: #eff8ff; }
+    .low { color: var(--low); border-color: #abefc6; background: #ecfdf3; }
+    .card p { margin: 8px 0; }
+    .label { font-weight: 700; }
+    code {
+      background: #eef2f6;
+      border-radius: 4px;
+      padding: 1px 5px;
+      font-size: 13px;
+    }
+    a { color: #175cd3; }
+    .panel { padding: 18px; margin-top: 18px; }
+    .panel h2 { margin-top: 0; }
+    .sources li { margin-bottom: 6px; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dissertation Audit: Method, Evidence, and Completeness</h1>
+    <p>Local audit generated on 2026-05-04 from the dissertation repository. The Claude shared link was not fetchable from this environment, so this report is based on the local manuscript, scripts, outputs, and a targeted web-source check.</p>
+  </header>
+  <main>
+    <section class="summary">
+      <div class="metric"><strong>11</strong><span>actionable findings</span></div>
+      <div class="metric"><strong>4</strong><span>critical/high blockers</span></div>
+      <div class="metric"><strong>0</strong><span>remaining <code>??</code> refs found</span></div>
+      <div class="metric"><strong>83</strong><span>PDF pages compile locally</span></div>
+    </section>
+
+    <section class="panel">
+      <h2>Executive Diagnosis</h2>
+      <p>The dissertation is now structurally coherent and compiles, but it is not yet methodologically complete at the standard implied by its own text. The largest remaining risks are evidence provenance and overclaiming: IMF WEO is used as a label for projections it does not directly supply, the panel robustness check is still a limited cached fallback rather than the promised seven-country 2000-2023 specification, and several scorecards rely on author judgement without transparent raw inputs.</p>
+      <p>The best next move is not more prose. It is a reproducibility cleanup: align every empirical claim with a source table or script, downgrade claims that are proxy-based, and separate "completed analysis" from "future research".</p>
+    </section>
+
+    <div class="controls" aria-label="filters">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="critical">Critical</button>
+      <button data-filter="high">High</button>
+      <button data-filter="medium">Medium</button>
+      <button data-filter="low">Low</button>
+      <button data-filter="method">Method</button>
+      <button data-filter="source">Sources</button>
+      <button data-filter="presentation">Presentation</button>
+      <button data-filter="code">Code</button>
+    </div>
+
+    <section class="grid" id="findings">
+      <article class="card" data-tags="critical method source">
+        <div class="meta"><span class="pill critical">Critical</span><span class="pill">Method</span><span class="pill">Sources</span></div>
+        <h2>IMF WEO is over-cited for variables it does not directly provide</h2>
+        <p><span class="label">Evidence:</span> <code>scripts/01_data_cleaning.R:230-257</code> hardcodes 2024-2026 manufacturing VA and FDI values, then labels all 2024+ rows as <code>IMF WEO April 2025</code>. The manuscript abstract and methodology describe data spanning 2010-2026 with IMF WEO projections.</p>
+        <p><span class="label">Why it matters:</span> WEO is appropriate for macro projections such as GDP and inflation, but not a direct source for manufacturing value added (% GDP) or FDI net inflows (% GDP). This is the most dangerous provenance issue in the dissertation.</p>
+        <p><span class="label">Fix:</span> Re-label these rows as author scenarios calibrated using WEO macro assumptions, or remove 2024-2026 from empirical claims and keep projections only in the scenario chapter.</p>
+      </article>
+
+      <article class="card" data-tags="critical method">
+        <div class="meta"><span class="pill critical">Critical</span><span class="pill">Method</span></div>
+        <h2>Panel robustness check is still not the promised panel regression</h2>
+        <p><span class="label">Evidence:</span> <code>output/tables/panel_robustness.tex</code> uses 5 countries and 65 observations over 2011-2023 after lagging FDI. It lacks Bangladesh and Cambodia, does not cover 2000-2023, and does not include intermediate-goods share, LPI, ECI, or country-specific reform-year binaries.</p>
+        <p><span class="label">Why it matters:</span> The current table is a useful stopgap but cannot bear the dissertation's stronger claim that cross-country identification resolves the small-N problem for the Northeast Asian mechanism.</p>
+        <p><span class="label">Fix:</span> Either complete the true 7-country 2000-2023 panel in R/plm, or explicitly describe the current table as a limited macro robustness check.</p>
+      </article>
+
+      <article class="card" data-tags="high method">
+        <div class="meta"><span class="pill high">High</span><span class="pill">Method</span></div>
+        <h2>Negative intermediate-goods coefficient is now acknowledged but still needs final alignment</h2>
+        <p><span class="label">Evidence:</span> <code>output/tables/intermediate_diagnostics.tex</code> shows VIFs up to 8.92, partial correlation controlling for trend of 0.147, and an insignificant first-difference coefficient of -11.912.</p>
+        <p><span class="label">Why it matters:</span> The new interpretation is more honest: the mechanism is compositional rather than aggregate. The conclusion and abstract still need a final pass to ensure they do not imply the aggregate coefficient supports the theory.</p>
+        <p><span class="label">Fix:</span> Carry the compositional framing into the abstract, central findings, and policy implications: Japan/Korea technology-intensive intermediates are the mechanism, not total intermediate share.</p>
+      </article>
+
+      <article class="card" data-tags="high presentation method">
+        <div class="meta"><span class="pill high">High</span><span class="pill">Presentation</span><span class="pill">Method</span></div>
+        <h2>Vietnam reform-year baseline is inconsistent</h2>
+        <p><span class="label">Evidence:</span> <code>scripts/06_comparative_analysis.R</code> uses Vietnam 2000-2008 as the reform window, while <code>report_main.tex</code> Figure 4 caption says year zero is Vietnam's 2007 WTO accession.</p>
+        <p><span class="label">Why it matters:</span> This changes the interpretation of the FDI and manufacturing gap. A 2000 baseline and a 2007 WTO baseline are both defensible, but they are not the same comparison.</p>
+        <p><span class="label">Fix:</span> Choose one baseline in figure, caption, script comments, and text. Best option: show both as a sensitivity note, with 2007 as the institutional-comparator baseline.</p>
+      </article>
+
+      <article class="card" data-tags="high code presentation">
+        <div class="meta"><span class="pill high">High</span><span class="pill">Code</span><span class="pill">Presentation</span></div>
+        <h2><code>archive/build_tsue.py</code> should not be used for the final thesis</h2>
+        <p><span class="label">Evidence:</span> The script opens missing <code>references_expanded.bib</code>, randomly selects citation keys, and generates a separate TSUE report with unsupported text and generic claims.</p>
+        <p><span class="label">Why it matters:</span> Random citation insertion is academically unsafe and can fabricate source support. It also risks producing a parallel manuscript inconsistent with <code>report_main.tex</code>.</p>
+        <p><span class="label">Fix:</span> Move this script to a clearly marked deprecated archive or rewrite it as a deterministic formatter that consumes the validated manuscript.</p>
+      </article>
+
+      <article class="card" data-tags="medium source method">
+        <div class="meta"><span class="pill medium">Medium</span><span class="pill">Sources</span><span class="pill">Method</span></div>
+        <h2>SEZ scorecard needs raw indicators or should be labelled judgement-based</h2>
+        <p><span class="label">Evidence:</span> <code>chapters/ch_sez_analysis.tex</code> and <code>scripts/14_new_advanced_figures.R</code> cite Farole, Uzinfoinvest, Vietnam EPZ Authority, and Thailand BOI, but the normalised scores are not traceable to a raw scoring table with formulas.</p>
+        <p><span class="label">Why it matters:</span> The reader cannot distinguish measured performance from expert assessment.</p>
+        <p><span class="label">Fix:</span> Add a scorecard data table with each raw metric, scaling rule, and source. If data are unavailable, rename the figure as an expert diagnostic matrix.</p>
+      </article>
+
+      <article class="card" data-tags="medium source">
+        <div class="meta"><span class="pill medium">Medium</span><span class="pill">Sources</span></div>
+        <h2>Enterprise Survey and firm-level constraint tests remain future work</h2>
+        <p><span class="label">Evidence:</span> The repository has no Enterprise Survey microdata or SEZ/non-SEZ firm-level regression. The World Bank confirms Uzbekistan 2019 Enterprise Survey availability, and firm-level data require registered access.</p>
+        <p><span class="label">Why it matters:</span> Claims about firm constraints, SEZ underperformance, and binding constraints are currently macro/qualitative.</p>
+        <p><span class="label">Fix:</span> Put Enterprise Survey regressions in the future research section unless microdata are actually downloaded and analysed.</p>
+      </article>
+
+      <article class="card" data-tags="medium method">
+        <div class="meta"><span class="pill medium">Medium</span><span class="pill">Method</span></div>
+        <h2>Value-added trade proxy is discussed but not implemented</h2>
+        <p><span class="label">Evidence:</span> The manuscript correctly notes Uzbekistan is absent from OECD TiVA and uses merchandise trade proxies. There is no Koopman-Wang-Wei style GVC participation calculation in the current outputs.</p>
+        <p><span class="label">Why it matters:</span> The "rightward but not upward" GVC positioning claim is plausible, but it remains a custom proxy rather than a recognised value-added participation index.</p>
+        <p><span class="label">Fix:</span> Either add a clearly labelled proxy GVC participation index or avoid invoking value-added trade language beyond limitations.</p>
+      </article>
+
+      <article class="card" data-tags="medium source">
+        <div class="meta"><span class="pill medium">Medium</span><span class="pill">Sources</span></div>
+        <h2>Political economy section is improved but still under-evidenced</h2>
+        <p><span class="label">Evidence:</span> <code>chapters/ch_constraints.tex</code> mentions reform reversal risk and distributional losers, but does not yet incorporate CPI trends, EBRD transition assessments, or the 2023 constitutional referendum implications.</p>
+        <p><span class="label">Why it matters:</span> Institutional lock-in is one of the dissertation's top policy claims, so political economy evidence must be stronger than a paragraph.</p>
+        <p><span class="label">Fix:</span> Add a short subsection using Transparency CPI 2017-2023, EBRD Transition Report governance findings, and OSCE coverage of the 2023 referendum.</p>
+      </article>
+
+      <article class="card" data-tags="low presentation">
+        <div class="meta"><span class="pill low">Low</span><span class="pill">Presentation</span></div>
+        <h2>Cross-reference audit is currently clean</h2>
+        <p><span class="label">Evidence:</span> Local search found no remaining <code>??</code> or stale <code>fig:intermediate_goods_share</code> references in <code>report_main.tex</code> or <code>chapters/</code>. The PDF compiles with no undefined references in the final log.</p>
+        <p><span class="label">Fix:</span> Keep this as a pre-submission check: run <code>rg -n "\\?\\?|undefined|fig:intermediate_goods_share" report_main.tex chapters</code> after every major edit.</p>
+      </article>
+
+      <article class="card" data-tags="low source">
+        <div class="meta"><span class="pill low">Low</span><span class="pill">Sources</span></div>
+        <h2>CKU railway date should be precise</h2>
+        <p><span class="label">Evidence:</span> The manuscript says construction begins in 2024. Official and trade-press sources place the launch/commencement ceremony on 27 December 2024, with some construction-phase details extending into 2025.</p>
+        <p><span class="label">Fix:</span> Say "officially launched on 27 December 2024" rather than generically "construction beginning in 2024".</p>
+      </article>
+    </section>
+
+    <section class="panel">
+      <h2>Recommended Workplan</h2>
+      <ol>
+        <li>Fix provenance first: relabel IMF WEO-derived scenario values and clean the 2024-2026 wording.</li>
+        <li>Choose the Vietnam baseline and regenerate Figure 4/caption/text consistently.</li>
+        <li>Either complete the full panel regression or downgrade the current table's claims.</li>
+        <li>Push the compositional intermediate-goods finding into abstract, conclusion, and policy recommendations.</li>
+        <li>Make judgement-based scorecards auditable with raw score tables.</li>
+      </ol>
+    </section>
+
+    <section class="panel">
+      <h2>Web-Checked Sources</h2>
+      <ul class="sources">
+        <li><a href="https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NV.IND.MANF.ZS">World Bank WDI metadata for NV.IND.MANF.ZS</a></li>
+        <li><a href="https://lpi.worldbank.org/index.php/international/global">World Bank LPI 2023 global table</a></li>
+        <li><a href="https://datacatalog.worldbank.org/search/dataset/0038649/logistics-performance-index">World Bank LPI Data Catalog methodology summary</a></li>
+        <li><a href="https://www.wto.org/english/thewto_e/acc_e/a1_ouzbekistan_e.htm">WTO accession status: Uzbekistan</a></li>
+        <li><a href="https://www.wto.org/english/news_e/news26_e/acc_09mar26_316_e.htm">WTO 2026 news on Uzbekistan accession momentum</a></li>
+        <li><a href="https://www.imf.org/en/Publications/WEO/weo-database/2025/april">IMF World Economic Outlook Database, April 2025</a></li>
+        <li><a href="https://microdata.worldbank.org/catalog/3723">World Bank Enterprise Survey: Uzbekistan 2019</a></li>
+        <li><a href="https://datacatalog.worldbank.org/search/dataset/0037947/enterprise-surveys">World Bank Enterprise Surveys Data Catalog</a></li>
+        <li><a href="https://2023.tr-ebrd.com/structural-reform">EBRD Transition Report 2023 structural reform</a></li>
+        <li><a href="https://www.aeaweb.org/articles?id=10.1257%2Faer.104.2.459">Koopman, Wang & Wei (2014), AER</a></li>
+        <li><a href="https://openknowledge.worldbank.org/entities/publication/bfe319e9-b5ab-5e60-893f-084cb8e0502d">Kummritz, Taglioni & Winkler (2017), World Bank</a></li>
+        <li><a href="https://www.hks.harvard.edu/publications/premature-deindustrialization">Rodrik (2016), Premature Deindustrialization</a></li>
+        <li><a href="https://english.www.gov.cn/news/202412/27/content_WS676eabb1c6d0868f4e8ee51f.html">CKU railway commencement ceremony, 27 Dec 2024</a></li>
+        <li><a href="https://www.osce.org/odihr/elections/uzbekistan/523889">OSCE/ODIHR: Uzbekistan constitutional referendum, 30 Apr 2023</a></li>
+      </ul>
+    </section>
+  </main>
+  <script>
+    const buttons = document.querySelectorAll("button[data-filter]");
+    const cards = document.querySelectorAll(".card[data-tags]");
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        const filter = button.dataset.filter;
+        buttons.forEach(b => b.classList.toggle("active", b === button));
+        cards.forEach(card => {
+          const tags = card.dataset.tags.split(" ");
+          card.classList.toggle("hidden", filter !== "all" && !tags.includes(filter));
+        });
+      });
+    });
+  </script>
+</body>
+</html>

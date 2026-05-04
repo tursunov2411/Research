@@ -1,30 +1,5 @@
-Panel Regression: Robustness Check for N=14 Problem
-Countries: UZB, VNM, KAZ, GEO, RWA
-Period: 2010-2023
-========================================================
-
-Call:
-lm(formula = manuf_va_gdp ~ fdi_gdp + trade_openness + post_2017 + 
-    factor(country_code), data = panel_wdi)
-
-Residuals:
-   Min     1Q Median     3Q    Max 
--3.686 -0.818 -0.065  0.770  3.388 
-
-Coefficients:
-                        Estimate Std. Error t value       Pr(>|t|)    
-(Intercept)               3.0797     1.7304    1.78        0.08001 .  
-fdi_gdp                   0.0546     0.1117    0.49        0.62645    
-trade_openness            0.0473     0.0191    2.47        0.01609 *  
-post_2017                 1.8501     0.5062    3.65        0.00053 ***
-factor(country_code)KAZ   4.3575     0.8710    5.00 0.000004943194 ***
-factor(country_code)RWA   1.5625     1.0812    1.45        0.15344    
-factor(country_code)UZB   8.2771     1.1072    7.48 0.000000000321 ***
-factor(country_code)VNM  10.5431     1.2995    8.11 0.000000000025 ***
----
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-
-Residual standard error: 1.5 on 62 degrees of freedom
-Multiple R-squared:  0.931,	Adjusted R-squared:  0.923 
-F-statistic:  119 on 7 and 62 DF,  p-value: <0.0000000000000002
-
+Panel robustness generated from cached WDI comparator panel
+Countries: ET, GE, KZ, UZ, VN
+Period after lag: 2011-2023
+Observations: 65
+Hausman diagnostic: 0.611 (df=4)

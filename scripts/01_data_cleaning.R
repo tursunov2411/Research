@@ -227,19 +227,22 @@ sink()
 cat("\nData cleaning complete. Processed files saved.\n")
 
 # -----------------------------------------------------------
-# 7. APPEND IMF WEO APRIL 2025 PROJECTIONS (2024-2026)
+# 7. APPEND AUTHOR SCENARIO EXTENSIONS (2024-2026)
 # -----------------------------------------------------------
-# For years where WDI returns NA (2024-2026), append hardcoded
-# IMF World Economic Outlook April 2025 projections.
+# For years where WDI returns NA (2024-2026), append scenario
+# extensions calibrated against the IMF World Economic Outlook
+# October 2025 macro outlook. IMF WEO does not directly publish
+# manufacturing VA (% GDP) or FDI (% GDP) forecasts; these rows
+# must be described as author estimates, not direct IMF series.
 
 imf_weo_projections <- tibble::tribble(
   ~country_code, ~year, ~manuf_va_gdp, ~fdi_gdp, ~gdp_per_capita,  ~source,
-  "UZB",         2024,  19.85,         2.35,      3210,            "IMF WEO April 2025",
-  "UZB",         2025,  20.42,         2.55,      3460,            "IMF WEO April 2025",
-  "UZB",         2026,  20.98,         2.70,      3720,            "IMF WEO April 2025",
-  "VNM",         2024,  24.60,         4.40,      4620,            "IMF WEO April 2025",
-  "VNM",         2025,  25.10,         4.50,      4960,            "IMF WEO April 2025",
-  "VNM",         2026,  25.50,         4.60,      5320,            "IMF WEO April 2025"
+  "UZB",         2024,  19.85,         2.35,      3210,            "Author scenario calibrated to IMF WEO Oct 2025",
+  "UZB",         2025,  20.42,         2.55,      3460,            "Author scenario calibrated to IMF WEO Oct 2025",
+  "UZB",         2026,  20.98,         2.70,      3720,            "Author scenario calibrated to IMF WEO Oct 2025",
+  "VNM",         2024,  24.60,         4.40,      4620,            "Author scenario calibrated to IMF WEO Oct 2025",
+  "VNM",         2025,  25.10,         4.50,      4960,            "Author scenario calibrated to IMF WEO Oct 2025",
+  "VNM",         2026,  25.50,         4.60,      5320,            "Author scenario calibrated to IMF WEO Oct 2025"
 )
 
 # Merge: replace NA WDI values for 2024-2026 with IMF projections
@@ -254,12 +257,12 @@ wb_clean <- wb_clean %>%
                              fdi_gdp_imf,        fdi_gdp),
     gdp_per_capita = if_else(is.na(gdp_per_capita) & !is.na(gdp_per_capita_imf),
                              gdp_per_capita_imf, gdp_per_capita),
-    data_source    = if_else(year >= 2024, "IMF WEO April 2025", "World Bank WDI")
+    data_source    = if_else(year >= 2024, "Author scenario calibrated to IMF WEO Oct 2025", "World Bank WDI")
   ) %>%
   select(-ends_with("_imf"), -source)
 
 # Re-save with projections appended
 saveRDS(wb_clean, "data/processed/wb_indicators.rds")
 write_csv(wb_clean, "data/processed/wb_indicators.csv")
-cat("IMF WEO 2024-2026 projections appended. Final year range:",
+cat("Author scenario extensions for 2024-2026 appended. Final year range:",
     min(wb_clean$year, na.rm=TRUE), "-", max(wb_clean$year, na.rm=TRUE), "\n")

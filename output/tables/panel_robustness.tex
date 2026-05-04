@@ -1,0 +1,28 @@
+
+\begin{table}[!htbp]\centering
+\caption{Panel Robustness Check for Manufacturing Value Added (\% GDP), 2011--2023. Source: cached World Bank WDI panel data. Processed by author calculations via R.}
+\label{tab:panel_robustness}
+\small
+\begin{tabular}{lccc}
+\hline\hline
+ & Pooled OLS & Country FE & Random Effects \\
+\hline
+Constant & -1.774 & -- & 9.627 \\
+ & (9.637) & -- & (7.227) \\
+FDI (t-1) & -0.969$^{**}$ & -0.029 & -0.033 \\
+ & (0.468) & (0.088) & (0.081) \\
+Trade openness & 0.114$^{***}$ & 0.049$^{***}$ & 0.051$^{***}$ \\
+ & (0.018) & (0.016) & (0.014) \\
+Post-2017 dummy & 1.316 & 1.985$^{**}$ & 1.938$^{**}$ \\
+ & (1.319) & (0.934) & (0.850) \\
+Log GDP per capita & 1.104 & -0.363 & -0.258 \\
+ & (1.088) & (0.745) & (0.778) \\
+\hline
+Observations & 65 & 65 & 65 \\
+Countries & 5 & 5 & 5 \\
+Country effects & No & Yes & Partial \\
+Hausman FE vs RE & -- & \multicolumn{2}{c}{0.611 (df=4)} \\
+\hline\hline
+\multicolumn{4}{p{0.92\textwidth}}{\footnotesize Notes: Balanced panel from cached WDI data for Ethiopia, Georgia, Kazakhstan, Uzbekistan, and Viet Nam. Standard errors are HC3 robust and clustered by country. The panel starts in 2011 because FDI is lagged one year. The Hausman statistic is reported as a diagnostic; with only five country clusters, inference should be interpreted cautiously.} \\
+\end{tabular}
+\end{table}

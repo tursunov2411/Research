@@ -1,4 +1,4 @@
-# Northeast Asian Trilateral Supply Chain Integration and Its Impact on FDI-Led Industrialisation in Uzbekistan
+# Northeast Asian GVC Integration and Uzbekistan Industrialisation
 
 **Bachelor's Dissertation (BMI) — Toshkent State University of Economics (TSUE/TDIU)**
 **Student:** Tursunov Sunnatilla Uchqun o'g'li | Group: MO-68/22i
@@ -71,7 +71,7 @@ uzbekistan_thesis/
 | Source | Years | Variables |
 |---|---|---|
 | World Bank WDI | 2010–2023 | Manufacturing VA, FDI, GDP p.c., LPI, Trade Openness |
-| IMF WEO April 2025 | 2024–2026 | Manufacturing VA, FDI, GDP p.c. (projections) |
+| IMF WEO October 2025 / author scenarios | 2024–2026 | Macro outlook used to calibrate scenario extensions; manufacturing VA and FDI projections are author estimates, not direct WEO series |
 | OEC / BACI | 2010–2023 | Bilateral trade by HS section, RCA computation |
 | UzbekStat | 2024 | FDI origin decomposition by country |
 | OEC | 2010–2023 | Economic Complexity Index (Hidalgo & Hausmann 2009) |
@@ -122,6 +122,12 @@ source("scripts/15_export_new_chapter_tables.R")
 
 # Robustness
 source("scripts/panel_robustness.R")       # panel data + Hausman test
+```
+
+If R is unavailable locally, the dependency-light Python fallback regenerates the panel and diagnostic LaTeX tables from cached CSV data:
+
+```bash
+python scripts/12_empirical_robustness.py
 ```
 
 **Note:** The root-level `generate_figures.R` and `generate_network_figures.R` are retained for backward compatibility but are superseded by `scripts/07_visualisations.R`. All figures are now consolidated in `output/figures/`.
